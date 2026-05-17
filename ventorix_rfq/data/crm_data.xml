@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="1">
+
+<!-- CRM Sales Team for RFQ -->
+<record id="crm_team_rfq" model="crm.team">
+    <field name="name">RFQ</field>
+    <field name="use_opportunities">True</field>
+</record>
+
+<!-- Email template for RFQ notification -->
+<record id="rfq_notification_email" model="mail.template">
+    <field name="name">Ventorix: New RFQ Notification</field>
+    <field name="model_id" ref="crm.model_crm_lead"/>
+    <field name="email_from">info@ventorix.com</field>
+    <field name="email_to">info@ventorix.com</field>
+    <field name="subject">New RFQ: {{ object.name }}</field>
+    <field name="body_html"><![CDATA[
+<div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+    <div style="background: #0A1628; padding: 20px 30px; border-bottom: 2px solid #2E86DE;">
+        <h2 style="color: #fff; margin: 0; font-size: 18px;">New RFQ Received</h2>
+    </div>
+    <div style="padding: 25px 30px; background: #f8f9fa;">
+        <h3 style="color: #0A1628; margin-top: 0;">{{ object.name }}</h3>
+
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+            <tr>
+                <td style="padding: 8px 12px; border: 1px solid #dee2e6; font-weight: bold; width: 140px; background: #e9ecef;">Company</td>
+                <td style="padding: 8px 12px; border: 1px solid #dee2e6;">{{ object.partner_name or '—' }}</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px 12px; border: 1px solid #dee2e6; font-weight: bold; background: #e9ecef;">Contact</td>
+                <td style="padding: 8px 12px; border: 1px solid #dee2e6;">{{ object.contact_name or '—' }}</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px 12px; border: 1px solid #dee2e6; font-weight: bold; background: #e9ecef;">Email</td>
+                <td style="padding: 8px 12px; border: 1px solid #dee2e6;">{{ object.email_from or '—' }}</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px 12px; border: 1px solid #dee2e6; font-weight: bold; background: #e9ecef;">Phone</td>
+                <td style="padding: 8px 12px; border: 1px solid #dee2e6;">{{ object.phone or '—' }}</td>
+            </tr>
+        </table>
+
+        <h4 style="color: #2E86DE; margin-bottom: 10px;">Specification</h4>
+        <pre style="background: #fff; padding: 15px; border: 1px solid #dee2e6; border-radius: 4px; white-space: pre-wrap; font-size: 13px;">{{ object.description or 'No details provided' }}</pre>
+
+        <p style="margin-top: 20px;">
+            <a href="{{ object.env['ir.config_parameter'].sudo().get_param('web.base.url') }}/odoo/crm/{{ object.id }}"
+               style="background: #2E86DE; color: #fff; padding: 10px 24px; text-decoration: none; border-radius: 4px; display: inline-block;">
+                Open in CRM
+            </a>
+        </p>
+    </div>
+    <div style="background: #0A1628; padding: 12px 30px; text-align: center;">
+        <span style="color: rgba(255,255,255,0.4); font-size: 12px;">Ventorix Global Trade — Automated RFQ System</span>
+    </div>
+</div>
+]]></field>
+</record>
+
+</data>
+</odoo>

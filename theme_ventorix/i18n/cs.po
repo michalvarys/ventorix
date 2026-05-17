@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0-20260421\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-12 12:00+0000\n"
-"PO-Revision-Date: 2026-05-12 12:00+0000\n"
+"POT-Creation-Date: 2026-05-17 12:00+0000\n"
+"PO-Revision-Date: 2026-05-17 12:00+0000\n"
 "Last-Translator: \n"
 "Language-Team: Czech\n"
 "MIME-Version: 1.0\n"
@@ -22,39 +22,28 @@ msgstr "+420 XXX XXX XXX"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "+420 ..."
+msgstr "+420 ..."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
 msgid ""
-"<i class=\"fa fa-info-circle me-2\" style=\"color: #2E86DE;\"/>\n"
-"                            You can also send inquiries directly to\n"
-"                            <strong style=\"color: #fff;\">info@ventorix.com</strong> with PDF/XLS specs attached."
+"<span class=\"vx-cert-badge\">ISO</span>\n"
+"                                <span class=\"vx-cert-badge\">CE</span>\n"
+"                                <span class=\"vx-cert-badge\">EN</span>\n"
+"                                <span class=\"vx-cert-badge\">API</span>\n"
+"                                <span class=\"vx-cert-badge\">PED</span>"
 msgstr ""
-"<i class=\"fa fa-info-circle me-2\" style=\"color: #2E86DE;\"/>\n"
-"                            Poptávky můžete také zasílat přímo na\n"
-"                            <strong style=\"color: #fff;\">info@ventorix.com</strong> s přiloženými specifikacemi v PDF/XLS."
+"<span class=\"vx-cert-badge\">ISO</span>\n"
+"                                <span class=\"vx-cert-badge\">CE</span>\n"
+"                                <span class=\"vx-cert-badge\">EN</span>\n"
+"                                <span class=\"vx-cert-badge\">API</span>\n"
+"                                <span class=\"vx-cert-badge\">PED</span>"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
-msgid ""
-"<select id=\"vxf6\" class=\"form-select s_website_form_input\" name=\"Product Interest\" style=\"background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 3px; padding: 0.875rem 1rem; color: rgba(255,255,255,0.7);\">\n"
-"                                                <option value=\"\" style=\"background: #0A1628;\">Select category...</option>\n"
-"                                                <option value=\"Flanges\" style=\"background: #0A1628;\">Flanges</option>\n"
-"                                                <option value=\"Pipes &amp; Tubes\" style=\"background: #0A1628;\">Pipes &amp; Tubes</option>\n"
-"                                                <option value=\"Fittings\" style=\"background: #0A1628;\">Fittings</option>\n"
-"                                                <option value=\"Valves\" style=\"background: #0A1628;\">Valves</option>\n"
-"                                                <option value=\"Pipeline Components\" style=\"background: #0A1628;\">Pipeline Components</option>\n"
-"                                                <option value=\"Industrial Materials\" style=\"background: #0A1628;\">Industrial Materials</option>\n"
-"                                                <option value=\"Other\" style=\"background: #0A1628;\">Other</option>\n"
-"                                            </select>"
-msgstr ""
-"<select id=\"vxf6\" class=\"form-select s_website_form_input\" name=\"Product Interest\" style=\"background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 3px; padding: 0.875rem 1rem; color: rgba(255,255,255,0.7);\">\n"
-"                                                <option value=\"\" style=\"background: #0A1628;\">Vyberte kategorii...</option>\n"
-"                                                <option value=\"Flanges\" style=\"background: #0A1628;\">Příruby</option>\n"
-"                                                <option value=\"Pipes &amp; Tubes\" style=\"background: #0A1628;\">Trubky &amp; profily</option>\n"
-"                                                <option value=\"Fittings\" style=\"background: #0A1628;\">Tvarovky</option>\n"
-"                                                <option value=\"Valves\" style=\"background: #0A1628;\">Ventily</option>\n"
-"                                                <option value=\"Pipeline Components\" style=\"background: #0A1628;\">Potrubní komponenty</option>\n"
-"                                                <option value=\"Industrial Materials\" style=\"background: #0A1628;\">Průmyslové materiály</option>\n"
-"                                                <option value=\"Other\" style=\"background: #0A1628;\">Ostatní</option>\n"
-"                                            </select>"
+msgid "<span class=\"s_website_form_label_content\">Attach Specification / Drawing</span>"
+msgstr "<span class=\"s_website_form_label_content\">Přiložit specifikaci / výkres</span>"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
@@ -72,6 +61,16 @@ msgstr ""
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "<span class=\"s_website_form_label_content\">Delivery Country</span>"
+msgstr "<span class=\"s_website_form_label_content\">Země dodání</span>"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "<span class=\"s_website_form_label_content\">Desired Delivery</span>"
+msgstr "<span class=\"s_website_form_label_content\">Požadované dodání</span>"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
 msgid "<span class=\"s_website_form_label_content\">Email To</span>"
 msgstr "<span class=\"s_website_form_label_content\">E-mail příjemce</span>"
 
@@ -86,79 +85,85 @@ msgstr ""
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "<span class=\"s_website_form_label_content\">Material Grade</span>"
+msgstr "<span class=\"s_website_form_label_content\">Jakost materiálu</span>"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
 msgid "<span class=\"s_website_form_label_content\">Phone</span>"
 msgstr "<span class=\"s_website_form_label_content\">Telefon</span>"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
-msgid "<span class=\"s_website_form_label_content\">Product Interest</span>"
-msgstr "<span class=\"s_website_form_label_content\">Zájmový produkt</span>"
+msgid "<span class=\"s_website_form_label_content\">Pressure Class</span>"
+msgstr "<span class=\"s_website_form_label_content\">Tlaková třída</span>"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "<span class=\"s_website_form_label_content\">Product Type</span>"
+msgstr "<span class=\"s_website_form_label_content\">Typ produktu</span>"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "<span class=\"s_website_form_label_content\">Quantity</span>"
+msgstr "<span class=\"s_website_form_label_content\">Množství</span>"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "<span class=\"s_website_form_label_content\">Size / Dimensions</span>"
+msgstr "<span class=\"s_website_form_label_content\">Rozměr / Dimenze</span>"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "<span class=\"s_website_form_label_content\">Standard / Norm</span>"
+msgstr "<span class=\"s_website_form_label_content\">Standard / Norma</span>"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
 msgid ""
-"<span class=\"s_website_form_label_content\">Requirements</span>\n"
+"<span class=\"s_website_form_label_content\">Subject / RFQ Title</span>\n"
 "                                                <span class=\"s_website_form_mark\"> *</span>"
 msgstr ""
-"<span class=\"s_website_form_label_content\">Požadavky</span>\n"
+"<span class=\"s_website_form_label_content\">Předmět / Název poptávky</span>\n"
 "                                                <span class=\"s_website_form_mark\"> *</span>"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
-msgid ""
-"<span class=\"s_website_form_label_content\">Subject</span>\n"
-"                                                <span class=\"s_website_form_mark\"> *</span>"
-msgstr ""
-"<span class=\"s_website_form_label_content\">Předmět</span>\n"
-"                                                <span class=\"s_website_form_mark\"> *</span>"
+msgid "<span class=\"s_website_form_label_content\">Technical Requirements</span>"
+msgstr "<span class=\"s_website_form_label_content\">Technické požadavky</span>"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
-msgid ""
-"<span class=\"vx-cert-badge\">ISO</span>\n"
-"                                <span class=\"vx-cert-badge\">CE</span>\n"
-"                                <span class=\"vx-cert-badge\">EN</span>\n"
-"                                <span class=\"vx-cert-badge\">API</span>\n"
-"                                <span class=\"vx-cert-badge\">PED</span>"
-msgstr ""
-"<span class=\"vx-cert-badge\">ISO</span>\n"
-"                                <span class=\"vx-cert-badge\">CE</span>\n"
-"                                <span class=\"vx-cert-badge\">EN</span>\n"
-"                                <span class=\"vx-cert-badge\">API</span>\n"
-"                                <span class=\"vx-cert-badge\">PED</span>"
-
-#. module: theme_ventorix
-#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
-msgid "<span class=\"vx-footer-contact-label\">Email</span>"
+msgid "<span class=\"vx-footer-contact-label\">E-mail</span>"
 msgstr "<span class=\"vx-footer-contact-label\">E-mail</span>"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
 msgid ""
-"<span class=\"vx-footer-contact-label\">Location</span>\n"
-"                                    <span style=\"color: rgba(255,255,255,0.5); font-size: 0.875rem;\">Czech Republic, EU</span>"
+"<span class=\"vx-footer-contact-label\">Headquarters</span>\n"
+"                                    <span class=\"vx_text_muted_dark\" style=\"font-size: 0.875rem;\">Czech Republic, EU</span>"
 msgstr ""
 "<span class=\"vx-footer-contact-label\">Sídlo</span>\n"
-"                                    <span style=\"color: rgba(255,255,255,0.5); font-size: 0.875rem;\">Česká republika, EU</span>"
+"                                    <span class=\"vx_text_muted_dark\" style=\"font-size: 0.875rem;\">Česká republika, EU</span>"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
 msgid ""
 "<span class=\"vx-footer-contact-label\">Phone</span>\n"
-"                                    <span style=\"color: rgba(255,255,255,0.5); font-size: 0.875rem;\">+420 XXX XXX XXX</span>"
+"                                    <span class=\"vx_text_muted_dark\" style=\"font-size: 0.875rem;\">+420 XXX XXX XXX</span>"
 msgstr ""
 "<span class=\"vx-footer-contact-label\">Telefon</span>\n"
-"                                    <span style=\"color: rgba(255,255,255,0.5); font-size: 0.875rem;\">+420 XXX XXX XXX</span>"
+"                                    <span class=\"vx_text_muted_dark\" style=\"font-size: 0.875rem;\">+420 XXX XXX XXX</span>"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_cta
 msgid ""
 "<span style=\"color: #2E86DE; font-size: 0.75rem; letter-spacing: 3px; font-weight: 700; text-transform: uppercase;\">\n"
-"                    Let's Work Together\n"
+"                    Start Your Project\n"
 "                </span>"
 msgstr ""
 "<span style=\"color: #2E86DE; font-size: 0.75rem; letter-spacing: 3px; font-weight: 700; text-transform: uppercase;\">\n"
-"                    Pojďme spolupracovat\n"
+"                    Zahajte svůj projekt\n"
 "                </span>"
 
 #. module: theme_ventorix
@@ -201,17 +206,6 @@ msgid ""
 msgstr ""
 "<span style=\"color: #2E86DE; font-size: 0.8rem; letter-spacing: 3px; font-weight: 700; text-transform: uppercase;\">\n"
 "                            Katalog\n"
-"                        </span>"
-
-#. module: theme_ventorix
-#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
-msgid ""
-"<span style=\"color: #2E86DE; font-size: 0.8rem; letter-spacing: 3px; font-weight: 700; text-transform: uppercase;\">\n"
-"                            Get In Touch\n"
-"                        </span>"
-msgstr ""
-"<span style=\"color: #2E86DE; font-size: 0.8rem; letter-spacing: 3px; font-weight: 700; text-transform: uppercase;\">\n"
-"                            Kontaktujte nás\n"
 "                        </span>"
 
 #. module: theme_ventorix
@@ -262,10 +256,10 @@ msgstr ""
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_contact
 msgid ""
 "<span style=\"color: #2E86DE; font-size: 0.8rem; letter-spacing: 3px; font-"
-"weight: 700; text-transform: uppercase;\">Contact Us</span>"
+"weight: 700; text-transform: uppercase;\">Request For Quotation</span>"
 msgstr ""
 "<span style=\"color: #2E86DE; font-size: 0.8rem; letter-spacing: 3px; font-"
-"weight: 700; text-transform: uppercase;\">Kontaktujte nás</span>"
+"weight: 700; text-transform: uppercase;\">Žádost o nabídku</span>"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_certifications
@@ -319,11 +313,11 @@ msgstr ""
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
 msgid ""
-"<span style=\"font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1.5rem; color: #fff; text-transform: uppercase; letter-spacing: 0.06em;\">\n"
+"<span style=\"font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 0.06em;\">\n"
 "                                    VENTORIX\n"
 "                                </span>"
 msgstr ""
-"<span style=\"font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1.5rem; color: #fff; text-transform: uppercase; letter-spacing: 0.06em;\">\n"
+"<span style=\"font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 0.06em;\">\n"
 "                                    VENTORIX\n"
 "                                </span>"
 
@@ -453,30 +447,15 @@ msgstr ""
 "<strong style=\"color: #fff; font-size: 0.9rem;\">Normy DIN/ANSI</strong>"
 
 #. module: theme_ventorix
-#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
-msgid "<strong style=\"color: #fff; font-size: 0.9rem;\">Email</strong>"
-msgstr "<strong style=\"color: #fff; font-size: 0.9rem;\">E-mail</strong>"
-
-#. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_about
 msgid "<strong style=\"color: #fff; font-size: 0.9rem;\">Fast Delivery</strong>"
 msgstr "<strong style=\"color: #fff; font-size: 0.9rem;\">Rychlé dodání</strong>"
-
-#. module: theme_ventorix
-#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
-msgid "<strong style=\"color: #fff; font-size: 0.9rem;\">Office</strong>"
-msgstr "<strong style=\"color: #fff; font-size: 0.9rem;\">Kancelář</strong>"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
 msgid ""
 "<strong style=\"color: #fff; font-size: 0.9rem;\">Packaging Control</strong>"
 msgstr "<strong style=\"color: #fff; font-size: 0.9rem;\">Kontrola balení</strong>"
-
-#. module: theme_ventorix
-#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
-msgid "<strong style=\"color: #fff; font-size: 0.9rem;\">Phone</strong>"
-msgstr "<strong style=\"color: #fff; font-size: 0.9rem;\">Telefon</strong>"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
@@ -509,6 +488,13 @@ msgid ""
 msgstr ""
 "<strong style=\"color: #fff; font-size: 0.9rem;\">Koordinace "
 "přepravy</strong>"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid ""
+"Additional specifications, surface finish, coating, testing requirements (HIC/NACE/PMI), documentation needs (MTC 3.1/3.2), special packaging, etc."
+msgstr ""
+"Další specifikace, povrchová úprava, nátěr, požadavky na testování (HIC/NACE/PMI), požadavky na dokumentaci (MTC 3.1/3.2), speciální balení atd."
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_certifications
@@ -705,6 +691,17 @@ msgstr ""
 "vyráběné dle norem DIN, ANSI/ASME, JIS, BS a GOST."
 
 #. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid ""
+"Complete the form below with your technical requirements.\n"
+"                    Our team will review your specifications and provide a detailed\n"
+"                    quotation within 2-3 business days."
+msgstr ""
+"Vyplňte formulář níže s vašimi technickými požadavky.\n"
+"                    Náš tým posoudí vaše specifikace a poskytne podrobnou\n"
+"                    nabídku do 2–3 pracovních dnů."
+
+#. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_process
 msgid "Confirm Order"
 msgstr "Potvrdit objednávku"
@@ -716,26 +713,14 @@ msgid "Contact"
 msgstr "Kontakt"
 
 #. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "Contact Information"
+msgstr "Kontaktní údaje"
+
+#. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
-#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_cta
 msgid "Contact Us"
 msgstr "Kontaktujte nás"
-
-#. module: theme_ventorix
-#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_contact
-msgid ""
-"Contact Ventorix Global Trade for a free quote on industrial piping "
-"materials. Upload your specifications and receive pricing within 2-3 "
-"business days."
-msgstr ""
-"Kontaktujte Ventorix Global Trade pro nezávaznou nabídku na průmyslové "
-"potrubní materiály. Nahrajte své specifikace a obdržíte cenovou nabídku "
-"do 2–3 pracovních dnů."
-
-#. module: theme_ventorix
-#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_contact
-msgid "Contact | Ventorix Global Trade"
-msgstr "Kontakt | Ventorix Global Trade"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_process
@@ -746,6 +731,11 @@ msgstr "Proces spolupráce"
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_hero
 msgid "Countries"
 msgstr "Zemí"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "Czech Republic, EU"
+msgstr "Česká republika, EU"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
@@ -759,14 +749,14 @@ msgstr ""
 "svařované."
 
 #. module: theme_ventorix
-#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
-msgid "Czech Republic, EU"
-msgstr "Česká republika, EU"
-
-#. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_certifications
 msgid "DIN / ANSI"
 msgstr "DIN / ANSI"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_cta
+msgid "DIN / ANSI / API"
+msgstr "DIN / ANSI / API"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_process
@@ -783,6 +773,11 @@ msgstr "Podrobná nabídka do 2–3 pracovních dnů s cenami a dodacími lhůta
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
 msgid "Direct"
 msgstr "Přímý"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "Direct Contact"
+msgstr "Přímý kontakt"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
@@ -802,6 +797,11 @@ msgstr "Přímá logistika"
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
 msgid "Direct logistics for optimal delivery"
 msgstr "Přímá logistika pro optimální dodání"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "Direct sourcing from certified mills"
+msgstr "Přímý odběr z certifikovaných hutí"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_hero
@@ -828,6 +828,11 @@ msgid "EU Conformity"
 msgstr "Shoda s EU"
 
 #. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "EN, ISO, API, PED certified materials"
+msgstr "Materiály certifikované dle EN, ISO, API, PED"
+
+#. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
 msgid ""
 "Elbow (Long/Short Radius), Tee, Reducer (Concentric/Eccentric), Cap, "
@@ -844,6 +849,11 @@ msgid ""
 msgstr ""
 "Kolena, T-kusy, redukce, zátky, spojky. Tupé a hrdlové sváry.\n"
 "                            ASME B16.9, B16.11."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "Email"
+msgstr "E-mail"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_certifications
@@ -916,6 +926,11 @@ msgstr "Plný soulad"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "Full MTC 3.1 documentation"
+msgstr "Kompletní dokumentace MTC 3.1"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
 msgid "Full name"
 msgstr "Celé jméno"
 
@@ -961,9 +976,9 @@ msgid "Get Quote"
 msgstr "Získat nabídku"
 
 #. module: theme_ventorix
-#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_contact
-msgid "Get in Touch"
-msgstr "Ozvěte se nám"
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_cta
+msgid "Get Quotation"
+msgstr "Získat nabídku"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
@@ -971,7 +986,7 @@ msgid "Global shipping"
 msgstr "Globální přeprava"
 
 #. module: theme_ventorix
-#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_homepage
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_homepage_override
 msgid ""
 "Global supplier of flanges, pipes, valves, fittings and pipeline components."
 " Direct manufacturing oversight in China. DIN/ANSI certified."
@@ -1021,7 +1036,7 @@ msgid "Industrial Materials"
 msgstr "Průmyslové materiály"
 
 #. module: theme_ventorix
-#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_homepage
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_homepage_override
 msgid "Industrial Piping Materials | Ventorix Global Trade"
 msgstr "Průmyslové potrubní materiály | Ventorix Global Trade"
 
@@ -1059,6 +1074,11 @@ msgstr ""
 "průmyslové potrubní materiály s přímým dohledem nad výrobou v Číně."
 
 #. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_cta
+msgid "MTC 3.1 Included"
+msgstr "Včetně MTC 3.1"
+
+#. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_about
 msgid "Manufacturing facility"
 msgstr "Výrobní závod"
@@ -1084,6 +1104,11 @@ msgid "Mechanical property testing"
 msgstr "Testování mechanických vlastností"
 
 #. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_cta
+msgid "50+ Countries"
+msgstr "50+ zemí"
+
+#. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
 msgid "Navigation"
 msgstr "Navigace"
@@ -1092,6 +1117,18 @@ msgstr "Navigace"
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
 msgid "Need Custom Specifications?"
 msgstr "Potřebujete vlastní specifikace?"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_products
+msgid "Need a Custom Quotation?"
+msgstr "Potřebujete individuální nabídku?"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_cta
+msgid ""
+"Need Industrial Piping<br/>Materials?"
+msgstr ""
+"Potřebujete průmyslové<br/>potrubní materiály?"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_certifications
@@ -1104,9 +1141,19 @@ msgid "On-site in China"
 msgstr "Přímo v Číně"
 
 #. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "On-site quality oversight in China"
+msgstr "Dohled nad kvalitou přímo v Číně"
+
+#. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_products
 msgid "Our Products"
 msgstr "Naše produkty"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "PDF, XLS, DOC, DWG, DXF, JPG — max 10 MB"
+msgstr "PDF, XLS, DOC, DWG, DXF, JPG — max 10 MB"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_certifications
@@ -1117,6 +1164,11 @@ msgstr "PED"
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_certifications
 msgid "Petroleum Institute"
 msgstr "Ropný institut"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "Phone"
+msgstr "Telefon"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
@@ -1165,15 +1217,14 @@ msgid "Pressure Equipment"
 msgstr "Tlaková zařízení"
 
 #. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "Product Specification"
+msgstr "Specifikace produktu"
+
+#. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
 msgid "Privacy Policy"
 msgstr "Zásady ochrany osobních údajů"
-
-#. module: theme_ventorix
-#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
-msgid ""
-"Product type, quantity, specifications, standards, delivery timeline..."
-msgstr "Typ produktu, množství, specifikace, normy, termín dodání..."
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_process
@@ -1193,6 +1244,13 @@ msgid "Products | Ventorix Global Trade"
 msgstr "Produkty | Ventorix Global Trade"
 
 #. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_contact
+msgid ""
+"Provide your technical specifications and our team will prepare a competitive offer with full documentation and delivery details."
+msgstr ""
+"Uveďte své technické specifikace a náš tým připraví konkurenční nabídku s kompletní dokumentací a dodacími podmínkami."
+
+#. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_certifications
 msgid "Quality Management"
 msgstr "Řízení kvality"
@@ -1202,6 +1260,11 @@ msgstr "Řízení kvality"
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
 msgid "Quality Verified"
 msgstr "Ověřená kvalita"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "Quantity &amp; Delivery"
+msgstr "Množství &amp; dodání"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_certifications
@@ -1214,11 +1277,6 @@ msgid "Quality is Our Priority"
 msgstr "Kvalita je naší prioritou"
 
 #. module: theme_ventorix
-#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
-msgid "Quote request — flanges DN100 PN16"
-msgstr "Poptávka — příruby DN100 PN16"
-
-#. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
 msgid ""
 "Raw materials for flange manufacturing and industrial applications. Wide "
@@ -1229,28 +1287,46 @@ msgstr ""
 " a slitin dle požadavků zákazníka."
 
 #. module: theme_ventorix
-#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_cta
-msgid "Ready to Start<br/>Your Project?"
-msgstr "Připraveni začít<br/>váš projekt?"
-
-#. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_about
 msgid "Reliable Industrial<br/>Supply Since Day One"
 msgstr "Spolehlivé průmyslové<br/>dodávky od prvního dne"
 
 #. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "Request For Quotation"
+msgstr "Žádost o nabídku"
+
+#. module: theme_ventorix
 #: model:theme.website.menu,name:theme_ventorix.menu_quote
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
-#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_cta
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_categories
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_hero
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_products
 msgid "Request Quote"
 msgstr "Žádost o nabídku"
 
 #. module: theme_ventorix
-#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_contact
 msgid "Request a Quote"
 msgstr "Žádost o nabídku"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_contact
+msgid "Request a Quote | Ventorix Global Trade"
+msgstr "Žádost o nabídku | Ventorix Global Trade"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_contact
+msgid ""
+"Request a quote from Ventorix Global Trade. Upload your specifications for industrial piping materials and receive competitive pricing within 48 hours."
+msgstr ""
+"Vyžádejte si nabídku od Ventorix Global Trade. Nahrajte specifikace průmyslových potrubních materiálů a obdržíte konkurenční cenovou nabídku do 48 hodin."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "Response within 48 hours"
+msgstr "Odpověď do 48 hodin"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
@@ -1276,28 +1352,9 @@ msgstr ""
 "                            API 5L, ASTM A106, A53."
 
 #. module: theme_ventorix
-#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_process
 msgid "Send Inquiry"
 msgstr "Odeslat poptávku"
-
-#. module: theme_ventorix
-#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_contact
-msgid ""
-"Send us your requirements and receive a detailed quotation within 2-3 "
-"business days."
-msgstr ""
-"Pošlete nám své požadavky a obdržíte podrobnou nabídku do 2–3 pracovních "
-"dnů."
-
-#. module: theme_ventorix
-#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_cta
-msgid ""
-"Send us your specifications and receive a competitive quote\n"
-"                within 2-3 business days. No commitment required."
-msgstr ""
-"Pošlete nám své specifikace a obdržíte konkurenční nabídku\n"
-"                do 2–3 pracovních dnů. Bez závazků."
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
@@ -1343,6 +1400,16 @@ msgid "Steel round bars for flanges"
 msgstr "Ocelové kulatiny pro příruby"
 
 #. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "Submit RFQ"
+msgstr "Odeslat poptávku"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "Submit Your Inquiry"
+msgstr "Odešlete svou poptávku"
+
+#. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_process
 msgid "Submit requirements via form, email, or upload PDF/XLS specs."
 msgstr ""
@@ -1365,12 +1432,8 @@ msgstr "Ověření povrchové úpravy"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
-msgid ""
-"Tell us about your requirements and we'll provide a detailed quotation\n"
-"                        within 2-3 business days."
-msgstr ""
-"Sdělte nám své požadavky a my vám poskytneme podrobnou nabídku\n"
-"                        do 2–3 pracovních dnů."
+msgid "Technical Details"
+msgstr "Technické detaily"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
@@ -1400,6 +1463,24 @@ msgid ""
 msgstr ""
 "Na rozdíl od typických obchodních společností máme oddaného obchodního partnera\n"
 "                        přímo v Číně, který vlastní a provozuje svou vlastní firmu."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_cta
+msgid ""
+"Upload your specs, select your materials, and receive a competitive\n"
+"                quotation within 48 hours. No commitment required."
+msgstr ""
+"Nahrajte své specifikace, vyberte materiály a obdržíte konkurenční\n"
+"                nabídku do 48 hodin. Bez závazků."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_products
+msgid ""
+"Upload your specification sheets and receive detailed pricing\n"
+"                        with delivery timeline within 48 hours."
+msgstr ""
+"Nahrajte své specifikace a obdržíte podrobnou cenovou nabídku\n"
+"                        s dodacími lhůtami do 48 hodin."
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
@@ -1439,6 +1520,8 @@ msgstr ""
 "                        Propojujeme špičkové čínské výrobce s evropským průmyslem."
 
 #. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_categories
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_cta
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_hero
 msgid "View Catalog"
 msgstr "Zobrazit katalog"
@@ -1477,6 +1560,11 @@ msgid "What We Supply"
 msgstr "Co dodáváme"
 
 #. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "Why Work With Us"
+msgstr "Proč spolupracovat s námi"
+
+#. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_about
 msgid ""
 "With a dedicated partner directly in China overseeing production, quality control,\n"
@@ -1487,8 +1575,18 @@ msgstr ""
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
-msgid "Your company"
-msgstr "Vaše společnost"
+msgid "Worldwide delivery with tracking"
+msgstr "Celosvětové dodání se sledováním"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "You can also send inquiries directly to"
+msgstr "Poptávky můžete také zasílat přímo na"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "Your company name"
+msgstr "Název vaší společnosti"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
@@ -1503,11 +1601,155 @@ msgstr ""
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "e.g. DN100 / 4&quot; NPS / 114.3mm"
+msgstr "např. DN100 / 4&quot; NPS / 114.3mm"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "e.g. 50 pcs / 200 meters"
+msgstr "např. 50 ks / 200 metrů"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "e.g. Flanges DN100 PN16, Carbon Steel A105"
+msgstr "např. příruby DN100 PN16, uhlíková ocel A105"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "e.g. Germany, Czech Republic"
+msgstr "např. Německo, Česká republika"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "e.g. Q3 2026 / ASAP / 8 weeks"
+msgstr "např. Q3 2026 / ASAP / 8 týdnů"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
 msgid "email@company.com"
 msgstr "email@firma.cz"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "Headquarters"
+msgstr "Sídlo"
 
 #. module: theme_ventorix
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
 #: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
 msgid "info@ventorix.com"
 msgstr "info@ventorix.com"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid ""
+"<select id=\"vxf6\" class=\"form-select s_website_form_input\" name=\"Product Type\">\n"
+"                                                <option value=\"\">Select product...</option>\n"
+"                                                <option value=\"Flanges\">Flanges</option>\n"
+"                                                <option value=\"Pipes &amp; Tubes\">Pipes &amp; Tubes</option>\n"
+"                                                <option value=\"Fittings (Butt-weld)\">Fittings (Butt-weld)</option>\n"
+"                                                <option value=\"Fittings (Socket-weld / Threaded)\">Fittings (Socket-weld / Threaded)</option>\n"
+"                                                <option value=\"Valves\">Valves</option>\n"
+"                                                <option value=\"Gaskets\">Gaskets</option>\n"
+"                                                <option value=\"Stud Bolts / Fasteners\">Stud Bolts / Fasteners</option>\n"
+"                                                <option value=\"Pipeline Components\">Pipeline Components</option>\n"
+"                                                <option value=\"Multiple / Other\">Multiple / Other</option>\n"
+"                                            </select>"
+msgstr ""
+"<select id=\"vxf6\" class=\"form-select s_website_form_input\" name=\"Product Type\">\n"
+"                                                <option value=\"\">Vyberte produkt...</option>\n"
+"                                                <option value=\"Flanges\">Příruby</option>\n"
+"                                                <option value=\"Pipes &amp; Tubes\">Trubky &amp; profily</option>\n"
+"                                                <option value=\"Fittings (Butt-weld)\">Tvarovky (na tupo)</option>\n"
+"                                                <option value=\"Fittings (Socket-weld / Threaded)\">Tvarovky (hrdlové / závitové)</option>\n"
+"                                                <option value=\"Valves\">Ventily</option>\n"
+"                                                <option value=\"Gaskets\">Těsnění</option>\n"
+"                                                <option value=\"Stud Bolts / Fasteners\">Svorníky / spojovací materiál</option>\n"
+"                                                <option value=\"Pipeline Components\">Potrubní komponenty</option>\n"
+"                                                <option value=\"Multiple / Other\">Více položek / Ostatní</option>\n"
+"                                            </select>"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid ""
+"<select id=\"vxf7\" class=\"form-select s_website_form_input\" name=\"Material Grade\">\n"
+"                                                <option value=\"\">Select material...</option>\n"
+"                                                <option value=\"Carbon Steel (A105 / A234 WPB)\">Carbon Steel (A105 / A234 WPB)</option>\n"
+"                                                <option value=\"Stainless 304/304L\">Stainless Steel 304 / 304L</option>\n"
+"                                                <option value=\"Stainless 316/316L\">Stainless Steel 316 / 316L</option>\n"
+"                                                <option value=\"Alloy Steel (A182 F11/F22)\">Alloy Steel (A182 F11 / F22)</option>\n"
+"                                                <option value=\"Duplex / Super Duplex\">Duplex / Super Duplex</option>\n"
+"                                                <option value=\"Chrome-Moly (A335 P11/P22)\">Chrome-Moly (A335 P11 / P22)</option>\n"
+"                                                <option value=\"Inconel / Monel / Hastelloy\">Inconel / Monel / Hastelloy</option>\n"
+"                                                <option value=\"Other / Custom\">Other / Custom</option>\n"
+"                                            </select>"
+msgstr ""
+"<select id=\"vxf7\" class=\"form-select s_website_form_input\" name=\"Material Grade\">\n"
+"                                                <option value=\"\">Vyberte materiál...</option>\n"
+"                                                <option value=\"Carbon Steel (A105 / A234 WPB)\">Uhlíková ocel (A105 / A234 WPB)</option>\n"
+"                                                <option value=\"Stainless 304/304L\">Nerezová ocel 304 / 304L</option>\n"
+"                                                <option value=\"Stainless 316/316L\">Nerezová ocel 316 / 316L</option>\n"
+"                                                <option value=\"Alloy Steel (A182 F11/F22)\">Legovaná ocel (A182 F11 / F22)</option>\n"
+"                                                <option value=\"Duplex / Super Duplex\">Duplex / Super Duplex</option>\n"
+"                                                <option value=\"Chrome-Moly (A335 P11/P22)\">Chrome-Moly (A335 P11 / P22)</option>\n"
+"                                                <option value=\"Inconel / Monel / Hastelloy\">Inconel / Monel / Hastelloy</option>\n"
+"                                                <option value=\"Other / Custom\">Ostatní / Na zakázku</option>\n"
+"                                            </select>"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid ""
+"<select id=\"vxf8\" class=\"form-select s_website_form_input\" name=\"Standard\">\n"
+"                                                <option value=\"\">Select standard...</option>\n"
+"                                                <option value=\"ASME / ANSI\">ASME / ANSI</option>\n"
+"                                                <option value=\"DIN / EN\">DIN / EN</option>\n"
+"                                                <option value=\"API\">API</option>\n"
+"                                                <option value=\"ASTM\">ASTM</option>\n"
+"                                                <option value=\"JIS\">JIS</option>\n"
+"                                                <option value=\"GOST\">GOST</option>\n"
+"                                                <option value=\"Other\">Other</option>\n"
+"                                            </select>"
+msgstr ""
+"<select id=\"vxf8\" class=\"form-select s_website_form_input\" name=\"Standard\">\n"
+"                                                <option value=\"\">Vyberte standard...</option>\n"
+"                                                <option value=\"ASME / ANSI\">ASME / ANSI</option>\n"
+"                                                <option value=\"DIN / EN\">DIN / EN</option>\n"
+"                                                <option value=\"API\">API</option>\n"
+"                                                <option value=\"ASTM\">ASTM</option>\n"
+"                                                <option value=\"JIS\">JIS</option>\n"
+"                                                <option value=\"GOST\">GOST</option>\n"
+"                                                <option value=\"Other\">Ostatní</option>\n"
+"                                            </select>"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid ""
+"<select id=\"vxf10\" class=\"form-select s_website_form_input\" name=\"Pressure Class\">\n"
+"                                                <option value=\"\">Select class...</option>\n"
+"                                                <option value=\"PN10\">PN10</option>\n"
+"                                                <option value=\"PN16\">PN16</option>\n"
+"                                                <option value=\"PN25\">PN25</option>\n"
+"                                                <option value=\"PN40\">PN40</option>\n"
+"                                                <option value=\"Class 150\">Class 150</option>\n"
+"                                                <option value=\"Class 300\">Class 300</option>\n"
+"                                                <option value=\"Class 600\">Class 600</option>\n"
+"                                                <option value=\"Class 900\">Class 900</option>\n"
+"                                                <option value=\"Class 1500\">Class 1500</option>\n"
+"                                                <option value=\"Class 2500\">Class 2500</option>\n"
+"                                                <option value=\"Other\">Other</option>\n"
+"                                            </select>"
+msgstr ""
+"<select id=\"vxf10\" class=\"form-select s_website_form_input\" name=\"Pressure Class\">\n"
+"                                                <option value=\"\">Vyberte třídu...</option>\n"
+"                                                <option value=\"PN10\">PN10</option>\n"
+"                                                <option value=\"PN16\">PN16</option>\n"
+"                                                <option value=\"PN25\">PN25</option>\n"
+"                                                <option value=\"PN40\">PN40</option>\n"
+"                                                <option value=\"Class 150\">Class 150</option>\n"
+"                                                <option value=\"Class 300\">Class 300</option>\n"
+"                                                <option value=\"Class 600\">Class 600</option>\n"
+"                                                <option value=\"Class 900\">Class 900</option>\n"
+"                                                <option value=\"Class 1500\">Class 1500</option>\n"
+"                                                <option value=\"Class 2500\">Class 2500</option>\n"
+"                                                <option value=\"Other\">Ostatní</option>\n"
+"                                            </select>"

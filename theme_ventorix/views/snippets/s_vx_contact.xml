@@ -1,88 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-<template id="s_vx_contact" name="Ventorix Contact Section">
+<template id="s_vx_contact" name="Ventorix RFQ Section">
     <section class="s_vx_contact o_cc o_cc5 o_colored_level py-5" id="quote">
         <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-5">
-                    <div class="d-flex align-items-center gap-3 mb-3">
-                        <div class="vx_accent_line"/>
-                        <span class="vx_accent_label">
-                            Get In Touch
-                        </span>
-                    </div>
-                    <h2 class="vx_heading_light" style="font-size: 2.25rem; margin-bottom: 1.5rem;">
-                        Request a Quote
-                    </h2>
-                    <p class="vx_text_body_dark" style="line-height: 1.8; margin-bottom: 2.5rem;">
-                        Tell us about your requirements and we'll provide a detailed quotation
-                        within 2-3 business days.
-                    </p>
 
-                    <div class="mb-4">
-                        <div class="d-flex align-items-start gap-3 mb-4">
-                            <div class="vx_icon_circle_lg">
-                                <i class="fa fa-envelope" style="font-size: 1rem;"/>
+            <!-- Section Header -->
+            <div class="text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center gap-3 mb-3">
+                    <div class="vx_accent_line"/>
+                    <span class="vx_accent_label">Request For Quotation</span>
+                    <div class="vx_accent_line"/>
+                </div>
+                <h2 class="vx_heading_light" style="font-size: 2.25rem; margin-bottom: 1rem;">
+                    Submit Your Inquiry
+                </h2>
+                <p class="vx_text_muted_dark mx-auto" style="max-width: 600px; line-height: 1.8;">
+                    Complete the form below with your technical requirements.
+                    Our team will review your specifications and provide a detailed
+                    quotation within 2-3 business days.
+                </p>
+            </div>
+
+            <div class="row g-5">
+
+                <!-- Left Panel — Info + Benefits -->
+                <div class="col-lg-4">
+                    <div class="vx_image_card p-4 mb-4">
+                        <h6 style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: #2E86DE; margin-bottom: 1.25rem;">
+                            Why Work With Us
+                        </h6>
+                        <ul class="vx_rfq_benefits">
+                            <li>
+                                <i class="fa fa-clock-o"/>
+                                <span>Response within 48 hours</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-certificate"/>
+                                <span>EN, ISO, API, PED certified materials</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-globe"/>
+                                <span>Direct sourcing from certified mills</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check-circle"/>
+                                <span>Full MTC 3.1 documentation</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-truck"/>
+                                <span>Worldwide delivery with tracking</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-shield"/>
+                                <span>On-site quality oversight in China</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="vx_image_card p-4 mb-4">
+                        <h6 style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: #2E86DE; margin-bottom: 1.25rem;">
+                            Direct Contact
+                        </h6>
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <div class="vx_icon_circle_lg" style="width: 36px; height: 36px; min-width: 36px;">
+                                <i class="fa fa-envelope" style="font-size: 0.85rem;"/>
                             </div>
                             <div>
-                                <strong style="font-size: 0.9rem;">Email</strong>
-                                <p class="mb-0 vx_text_muted_dark" style="font-size: 0.9rem;">info@ventorix.com</p>
+                                <span class="vx_text_muted_dark" style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Email</span><br/>
+                                <a href="mailto:info@ventorix.com" style="color: #fff; font-size: 0.875rem; text-decoration: none;">info@ventorix.com</a>
                             </div>
                         </div>
-                        <div class="d-flex align-items-start gap-3 mb-4">
-                            <div class="vx_icon_circle_lg">
-                                <i class="fa fa-phone" style="font-size: 1rem;"/>
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <div class="vx_icon_circle_lg" style="width: 36px; height: 36px; min-width: 36px;">
+                                <i class="fa fa-phone" style="font-size: 0.85rem;"/>
                             </div>
                             <div>
-                                <strong style="font-size: 0.9rem;">Phone</strong>
-                                <p class="mb-0 vx_text_muted_dark" style="font-size: 0.9rem;">+420 XXX XXX XXX</p>
+                                <span class="vx_text_muted_dark" style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Phone</span><br/>
+                                <span style="color: #fff; font-size: 0.875rem;">+420 XXX XXX XXX</span>
                             </div>
                         </div>
                         <div class="d-flex align-items-start gap-3">
-                            <div class="vx_icon_circle_lg">
-                                <i class="fa fa-map-marker" style="font-size: 1rem;"/>
+                            <div class="vx_icon_circle_lg" style="width: 36px; height: 36px; min-width: 36px;">
+                                <i class="fa fa-map-marker" style="font-size: 0.85rem;"/>
                             </div>
                             <div>
-                                <strong style="font-size: 0.9rem;">Office</strong>
-                                <p class="mb-0 vx_text_muted_dark" style="font-size: 0.9rem;">Czech Republic, EU</p>
+                                <span class="vx_text_muted_dark" style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Headquarters</span><br/>
+                                <span style="color: #fff; font-size: 0.875rem;">Czech Republic, EU</span>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Tip Box -->
                     <div class="vx_info_box">
                         <p class="small mb-0 vx_text_body_dark">
-                            <i class="fa fa-info-circle me-2" style="color: #2E86DE;"/>
+                            <i class="fa fa-lightbulb-o me-2" style="color: #2E86DE;"/>
                             You can also send inquiries directly to
                             <strong>info@ventorix.com</strong> with PDF/XLS specs attached.
                         </p>
                     </div>
                 </div>
 
-                <div class="col-lg-7">
+                <!-- Right Panel — RFQ Form -->
+                <div class="col-lg-8">
                     <div class="vx_contact_form vx_image_card p-4 p-lg-5">
-                        <section class="s_website_form" data-snippet="s_website_form">
+                        <div class="vx_rfq_form_wrapper">
                             <div class="container p-0">
-                                <form id="vx_contactus_form" action="/website/form/" method="post"
+                                <form id="vx_rfq_form" action="#" method="post"
                                       enctype="multipart/form-data"
-                                      class="o_mark_required" data-mark="*"
-                                      data-model_name="mail.mail"
-                                      data-success-mode="redirect"
-                                      data-success-page="/contactus-thank-you">
-                                    <div class="s_website_form_rows row s_col_no_bgcolor g-3">
+                                      class="o_mark_required" data-mark="*">
+                                    <div class="s_website_form_rows row s_col_no_bgcolor">
+
+                                        <!-- ══════ SECTION 1: Contact Information ══════ -->
+                                        <div class="col-12 mb-2">
+                                            <div class="vx_rfq_section_header">
+                                                <span class="vx_rfq_section_number">01</span>
+                                                <span class="vx_rfq_section_title">Contact Information</span>
+                                            </div>
+                                        </div>
 
                                         <!-- Company Name -->
-                                        <div class="col-md-6 s_website_form_field s_website_form_custom" data-type="char" data-name="Field">
+                                        <div class="col-md-6 mb-3 s_website_form_field s_website_form_custom" data-type="char" data-name="Field">
                                             <label class="s_website_form_label" style="width: 100%;" for="vxf1">
                                                 <span class="s_website_form_label_content">Company Name</span>
                                             </label>
                                             <input id="vxf1" type="text" class="form-control s_website_form_input"
                                                    name="company" data-fill-with="commercial_company_name"
-                                                   placeholder="Your company"/>
+                                                   placeholder="Your company name"/>
                                         </div>
 
                                         <!-- Contact Person -->
-                                        <div class="col-md-6 s_website_form_field s_website_form_custom s_website_form_required" data-type="char" data-name="Field">
+                                        <div class="col-md-6 mb-3 s_website_form_field s_website_form_custom s_website_form_required" data-type="char" data-name="Field">
                                             <label class="s_website_form_label" style="width: 100%;" for="vxf2">
                                                 <span class="s_website_form_label_content">Contact Person</span>
                                                 <span class="s_website_form_mark"> *</span>
@@ -93,7 +142,7 @@
                                         </div>
 
                                         <!-- Email -->
-                                        <div class="col-md-6 s_website_form_field s_website_form_required s_website_form_model_required" data-type="email" data-name="Field">
+                                        <div class="col-md-6 mb-3 s_website_form_field s_website_form_required s_website_form_model_required" data-type="email" data-name="Field">
                                             <label class="s_website_form_label" style="width: 100%;" for="vxf3">
                                                 <span class="s_website_form_label_content">Email</span>
                                                 <span class="s_website_form_mark"> *</span>
@@ -104,83 +153,293 @@
                                         </div>
 
                                         <!-- Phone -->
-                                        <div class="col-md-6 s_website_form_field s_website_form_custom" data-type="char" data-name="Field">
+                                        <div class="col-md-6 mb-3 s_website_form_field s_website_form_custom" data-type="char" data-name="Field">
                                             <label class="s_website_form_label" style="width: 100%;" for="vxf4">
                                                 <span class="s_website_form_label_content">Phone</span>
                                             </label>
                                             <input id="vxf4" type="tel" class="form-control s_website_form_input"
                                                    name="phone" data-fill-with="phone"
-                                                   placeholder="+420..."/>
+                                                   placeholder="+420 ..."/>
+                                        </div>
+
+                                        <!-- ══════ SECTION 2: Product Specification ══════ -->
+                                        <div class="col-12 mt-3 mb-2">
+                                            <div class="vx_rfq_section_header">
+                                                <span class="vx_rfq_section_number">02</span>
+                                                <span class="vx_rfq_section_title">Product Specification</span>
+                                            </div>
                                         </div>
 
                                         <!-- Subject -->
-                                        <div class="col-12 s_website_form_field s_website_form_required s_website_form_model_required" data-type="char" data-name="Field">
+                                        <div class="col-12 mb-3 s_website_form_field s_website_form_required s_website_form_model_required" data-type="char" data-name="Field">
                                             <label class="s_website_form_label" style="width: 100%;" for="vxf5">
-                                                <span class="s_website_form_label_content">Subject</span>
+                                                <span class="s_website_form_label_content">Subject / RFQ Title</span>
                                                 <span class="s_website_form_mark"> *</span>
                                             </label>
                                             <input id="vxf5" type="text" class="form-control s_website_form_input"
                                                    name="subject" required=""
-                                                   placeholder="Quote request — flanges DN100 PN16"/>
+                                                   placeholder="e.g. Flanges DN100 PN16, Carbon Steel A105"/>
                                         </div>
 
-                                        <!-- Product Interest -->
-                                        <div class="col-12 s_website_form_field s_website_form_custom" data-type="selection" data-name="Field">
+                                        <!-- Product Type -->
+                                        <div class="col-md-6 mb-3 s_website_form_field s_website_form_custom" data-type="selection" data-name="Field">
                                             <label class="s_website_form_label" style="width: 100%;" for="vxf6">
-                                                <span class="s_website_form_label_content">Product Interest</span>
+                                                <span class="s_website_form_label_content">Product Type</span>
                                             </label>
-                                            <select id="vxf6" class="form-select s_website_form_input" name="Product Interest">
-                                                <option value="">Select category...</option>
+                                            <select id="vxf6" class="form-select s_website_form_input" name="Product Type">
+                                                <option value="">Select product...</option>
                                                 <option value="Flanges">Flanges</option>
                                                 <option value="Pipes &amp; Tubes">Pipes &amp; Tubes</option>
-                                                <option value="Fittings">Fittings</option>
+                                                <option value="Fittings (Butt-weld)">Fittings (Butt-weld)</option>
+                                                <option value="Fittings (Socket-weld / Threaded)">Fittings (Socket-weld / Threaded)</option>
                                                 <option value="Valves">Valves</option>
+                                                <option value="Gaskets">Gaskets</option>
+                                                <option value="Stud Bolts / Fasteners">Stud Bolts / Fasteners</option>
                                                 <option value="Pipeline Components">Pipeline Components</option>
-                                                <option value="Industrial Materials">Industrial Materials</option>
+                                                <option value="Multiple / Other">Multiple / Other</option>
+                                            </select>
+                                        </div>
+
+                                        <!-- Material Grade -->
+                                        <div class="col-md-6 mb-3 s_website_form_field s_website_form_custom" data-type="selection" data-name="Field">
+                                            <label class="s_website_form_label" style="width: 100%;" for="vxf7">
+                                                <span class="s_website_form_label_content">Material Grade</span>
+                                            </label>
+                                            <select id="vxf7" class="form-select s_website_form_input" name="Material Grade">
+                                                <option value="">Select material...</option>
+                                                <option value="Carbon Steel (A105 / A234 WPB)">Carbon Steel (A105 / A234 WPB)</option>
+                                                <option value="Stainless 304/304L">Stainless Steel 304 / 304L</option>
+                                                <option value="Stainless 316/316L">Stainless Steel 316 / 316L</option>
+                                                <option value="Alloy Steel (A182 F11/F22)">Alloy Steel (A182 F11 / F22)</option>
+                                                <option value="Duplex / Super Duplex">Duplex / Super Duplex</option>
+                                                <option value="Chrome-Moly (A335 P11/P22)">Chrome-Moly (A335 P11 / P22)</option>
+                                                <option value="Inconel / Monel / Hastelloy">Inconel / Monel / Hastelloy</option>
+                                                <option value="Other / Custom">Other / Custom</option>
+                                            </select>
+                                        </div>
+
+                                        <!-- Standard / Norm -->
+                                        <div class="col-md-4 mb-3 s_website_form_field s_website_form_custom" data-type="selection" data-name="Field">
+                                            <label class="s_website_form_label" style="width: 100%;" for="vxf8">
+                                                <span class="s_website_form_label_content">Standard / Norm</span>
+                                            </label>
+                                            <select id="vxf8" class="form-select s_website_form_input" name="Standard">
+                                                <option value="">Select standard...</option>
+                                                <option value="ASME / ANSI">ASME / ANSI</option>
+                                                <option value="DIN / EN">DIN / EN</option>
+                                                <option value="API">API</option>
+                                                <option value="ASTM">ASTM</option>
+                                                <option value="JIS">JIS</option>
+                                                <option value="GOST">GOST</option>
                                                 <option value="Other">Other</option>
                                             </select>
                                         </div>
 
-                                        <!-- Requirements / Message -->
-                                        <div class="col-12 s_website_form_field s_website_form_custom s_website_form_required" data-type="text" data-name="Field">
-                                            <label class="s_website_form_label" style="width: 100%;" for="vxf7">
-                                                <span class="s_website_form_label_content">Requirements</span>
-                                                <span class="s_website_form_mark"> *</span>
+                                        <!-- Size / Dimensions -->
+                                        <div class="col-md-4 mb-3 s_website_form_field s_website_form_custom" data-type="char" data-name="Field">
+                                            <label class="s_website_form_label" style="width: 100%;" for="vxf9">
+                                                <span class="s_website_form_label_content">Size / Dimensions</span>
                                             </label>
-                                            <textarea id="vxf7" class="form-control s_website_form_input"
-                                                      name="description" rows="5" required=""
-                                                      placeholder="Product type, quantity, specifications, standards, delivery timeline..."/>
+                                            <input id="vxf9" type="text" class="form-control s_website_form_input"
+                                                   name="Size" placeholder="e.g. DN100 / 4&quot; NPS / 114.3mm"/>
                                         </div>
 
-                                        <!-- Hidden email_to -->
-                                        <div class="col-12 s_website_form_field s_website_form_dnone">
-                                            <div class="row s_col_no_resize s_col_no_bgcolor">
-                                                <label class="col-form-label col-sm-auto s_website_form_label" for="vxf_email_to">
-                                                    <span class="s_website_form_label_content">Email To</span>
-                                                </label>
-                                                <div class="col-sm">
-                                                    <input id="vxf_email_to" type="hidden" class="form-control s_website_form_input" name="email_to" value="info@ventorix.com"/>
+                                        <!-- Pressure Class -->
+                                        <div class="col-md-4 mb-3 s_website_form_field s_website_form_custom" data-type="selection" data-name="Field">
+                                            <label class="s_website_form_label" style="width: 100%;" for="vxf10">
+                                                <span class="s_website_form_label_content">Pressure Class</span>
+                                            </label>
+                                            <select id="vxf10" class="form-select s_website_form_input" name="Pressure Class">
+                                                <option value="">Select class...</option>
+                                                <option value="PN10">PN10</option>
+                                                <option value="PN16">PN16</option>
+                                                <option value="PN25">PN25</option>
+                                                <option value="PN40">PN40</option>
+                                                <option value="Class 150">Class 150</option>
+                                                <option value="Class 300">Class 300</option>
+                                                <option value="Class 600">Class 600</option>
+                                                <option value="Class 900">Class 900</option>
+                                                <option value="Class 1500">Class 1500</option>
+                                                <option value="Class 2500">Class 2500</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+
+                                        <!-- ══════ SECTION 3: Logistics ══════ -->
+                                        <div class="col-12 mt-3 mb-2">
+                                            <div class="vx_rfq_section_header">
+                                                <span class="vx_rfq_section_number">03</span>
+                                                <span class="vx_rfq_section_title">Quantity &amp; Delivery</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- Quantity -->
+                                        <div class="col-md-4 mb-3 s_website_form_field s_website_form_custom" data-type="char" data-name="Field">
+                                            <label class="s_website_form_label" style="width: 100%;" for="vxf11">
+                                                <span class="s_website_form_label_content">Quantity</span>
+                                            </label>
+                                            <input id="vxf11" type="text" class="form-control s_website_form_input"
+                                                   name="Quantity" placeholder="e.g. 50 pcs / 200 meters"/>
+                                        </div>
+
+                                        <!-- Delivery Country -->
+                                        <div class="col-md-4 mb-3 s_website_form_field s_website_form_custom" data-type="char" data-name="Field">
+                                            <label class="s_website_form_label" style="width: 100%;" for="vxf12">
+                                                <span class="s_website_form_label_content">Delivery Country</span>
+                                            </label>
+                                            <input id="vxf12" type="text" class="form-control s_website_form_input"
+                                                   name="Delivery Country" placeholder="e.g. Germany, Czech Republic"/>
+                                        </div>
+
+                                        <!-- Desired Delivery Date -->
+                                        <div class="col-md-4 mb-3 s_website_form_field s_website_form_custom" data-type="char" data-name="Field">
+                                            <label class="s_website_form_label" style="width: 100%;" for="vxf13">
+                                                <span class="s_website_form_label_content">Desired Delivery</span>
+                                            </label>
+                                            <input id="vxf13" type="text" class="form-control s_website_form_input"
+                                                   name="Delivery Date" placeholder="e.g. Q3 2026 / ASAP / 8 weeks"/>
+                                        </div>
+
+                                        <!-- ══════ SECTION 4: Technical Details ══════ -->
+                                        <div class="col-12 mt-3 mb-2">
+                                            <div class="vx_rfq_section_header">
+                                                <span class="vx_rfq_section_number">04</span>
+                                                <span class="vx_rfq_section_title">Technical Details</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- Technical Requirements -->
+                                        <div class="col-12 mb-3 s_website_form_field s_website_form_custom" data-type="text" data-name="Field">
+                                            <label class="s_website_form_label" style="width: 100%;" for="vxf14">
+                                                <span class="s_website_form_label_content">Technical Requirements</span>
+                                            </label>
+                                            <textarea id="vxf14" class="form-control s_website_form_input"
+                                                      name="description" rows="5"
+                                                      placeholder="Additional specifications, surface finish, coating, testing requirements (HIC/NACE/PMI), documentation needs (MTC 3.1/3.2), special packaging, etc."/>
+                                        </div>
+
+                                        <!-- File Upload -->
+                                        <div class="col-12 mb-3 s_website_form_field s_website_form_custom" data-type="binary" data-name="Field">
+                                            <label class="s_website_form_label" style="width: 100%;" for="vxf15">
+                                                <span class="s_website_form_label_content">Attach Specification / Drawing</span>
+                                            </label>
+                                            <div class="vx_rfq_upload_zone">
+                                                <input id="vxf15" type="file" class="form-control s_website_form_input"
+                                                       name="Specification File"
+                                                       accept=".pdf,.xls,.xlsx,.doc,.docx,.dwg,.dxf,.jpg,.png"/>
+                                                <div class="vx_rfq_upload_hint">
+                                                    <i class="fa fa-cloud-upload me-2"/>
+                                                    PDF, XLS, DOC, DWG, DXF, JPG — max 10 MB
                                                 </div>
                                             </div>
                                         </div>
 
                                         <!-- Submit -->
-                                        <div class="col-12 mt-4 s_website_form_submit" data-name="Submit Button">
-                                            <div class="s_website_form_label" style="width: 0;"/>
-                                            <a href="#" role="button" class="btn vx_btn_primary w-100 py-3 s_website_form_send"
+                                        <div class="col-12 mt-4">
+                                            <a href="#" role="button" class="btn vx_btn_primary w-100 py-3 vx_rfq_submit"
                                                style="font-size: 0.95rem;">
-                                                Send Inquiry
+                                                <i class="fa fa-paper-plane me-2"/>Submit RFQ
                                             </a>
                                             <span id="s_website_form_result"/>
                                         </div>
+
                                     </div>
                                 </form>
                             </div>
-                        </section>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
+
+        <script>
+            (function() {
+                function initRFQ() {
+                    var btn = document.querySelector('.vx_rfq_submit');
+                    if (!btn || btn.dataset.rfqBound) return;
+                    btn.dataset.rfqBound = '1';
+
+                    btn.addEventListener('click', function(ev) {
+                        ev.preventDefault();
+                        ev.stopPropagation();
+
+                        var form = document.getElementById('vx_rfq_form');
+                        if (!form) return;
+
+                        var resultEl = document.getElementById('s_website_form_result');
+                        var valid = true;
+                        form.querySelectorAll('[required]').forEach(function(input) {
+                            if (!input.value.trim()) { input.classList.add('is-invalid'); valid = false; }
+                            else { input.classList.remove('is-invalid'); }
+                        });
+                        if (!valid) {
+                            if (resultEl) resultEl.innerHTML = '&lt;span class="text-danger mt-2 d-block"&gt;Please fill in all required fields.&lt;/span&gt;';
+                            return;
+                        }
+
+                        var origHTML = btn.innerHTML;
+                        btn.innerHTML = '&lt;i class="fa fa-spinner fa-spin me-2"&gt;&lt;/i&gt;Sending...';
+                        btn.classList.add('disabled');
+                        if (resultEl) resultEl.innerHTML = '';
+
+                        function getVal(n) { var el = form.querySelector('[name="' + n + '"]'); return el ? el.value : ''; }
+
+                        var fileInput = form.querySelector('input[type="file"]');
+                        var filePromise;
+                        if (fileInput &amp;&amp; fileInput.files.length &gt; 0 &amp;&amp; fileInput.files[0].size &lt;= 10485760) {
+                            filePromise = new Promise(function(resolve) {
+                                var reader = new FileReader();
+                                reader.onload = function() { resolve({name: fileInput.files[0].name, data: reader.result}); };
+                                reader.onerror = function() { resolve({name:'', data:''}); };
+                                reader.readAsDataURL(fileInput.files[0]);
+                            });
+                        } else {
+                            filePromise = Promise.resolve({name:'', data:''});
+                        }
+
+                        filePromise.then(function(file) {
+                            return fetch('/ventorix/rfq/submit', {
+                                method: 'POST',
+                                headers: {'Content-Type': 'application/json'},
+                                body: JSON.stringify({
+                                    jsonrpc: '2.0', method: 'call', id: 1,
+                                    params: {
+                                        company: getVal('company'), name: getVal('name'),
+                                        email_from: getVal('email_from'), phone: getVal('phone'),
+                                        subject: getVal('subject'),
+                                        product_type: getVal('Product Type'), material: getVal('Material Grade'),
+                                        standard: getVal('Standard'), size: getVal('Size'),
+                                        pressure: getVal('Pressure Class'), quantity: getVal('Quantity'),
+                                        country: getVal('Delivery Country'), delivery_date: getVal('Delivery Date'),
+                                        description: getVal('description'),
+                                        attachment_name: file.name, attachment_data: file.data
+                                    }
+                                })
+                            });
+                        }).then(function(r) { return r.json(); })
+                        .then(function(data) {
+                            if (data.result &amp;&amp; data.result.success) {
+                                window.location.href = '/contactus-thank-you';
+                            } else {
+                                throw new Error('fail');
+                            }
+                        }).catch(function(err) {
+                            console.error('RFQ error:', err);
+                            btn.innerHTML = origHTML;
+                            btn.classList.remove('disabled');
+                            if (resultEl) resultEl.innerHTML = '&lt;span class="text-danger mt-2 d-block"&gt;Something went wrong. Please try again.&lt;/span&gt;';
+                        });
+                    });
+                }
+
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', initRFQ);
+                } else {
+                    initRFQ();
+                }
+            })();
+        </script>
     </section>
 </template>
 

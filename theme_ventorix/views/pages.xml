@@ -175,30 +175,10 @@
 <!-- ===================== CONTACT PAGE ===================== -->
 <template id="vx_page_contact" name="Ventorix Contact">
     <t t-call="website.layout">
-        <t t-set="additional_title">Contact | Ventorix Global Trade</t>
-        <t t-set="meta_description">Contact Ventorix Global Trade for a free quote on industrial piping materials. Upload your specifications and receive pricing within 2-3 business days.</t>
+        <t t-set="additional_title">Request a Quote | Ventorix Global Trade</t>
+        <t t-set="meta_description">Request a quote from Ventorix Global Trade. Upload your specifications for industrial piping materials and receive competitive pricing within 48 hours.</t>
 
         <div id="wrap" class="oe_structure oe_empty">
-            <section class="o_cc o_cc5 py-5 position-relative overflow-hidden" style="background-color: #0A1628;">
-                <div class="position-absolute w-100 h-100"
-                     style="top: 0; left: 0;
-                            background-image: url('/theme_ventorix/static/src/img/logistics.jpg');
-                            background-size: cover; background-position: center;
-                            opacity: 0.12;"/>
-                <div class="position-absolute" style="bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, #2E86DE, transparent); opacity: 0.3;"/>
-                <div class="container position-relative text-center py-5" style="z-index: 2;">
-                    <div class="d-flex align-items-center justify-content-center gap-3 mb-3">
-                        <div style="width: 40px; height: 2px; background: linear-gradient(90deg, transparent, #2E86DE);"/>
-                        <span style="color: #2E86DE; font-size: 0.8rem; letter-spacing: 3px; font-weight: 700; text-transform: uppercase;">Contact Us</span>
-                        <div style="width: 40px; height: 2px; background: linear-gradient(90deg, #2E86DE, transparent);"/>
-                    </div>
-                    <h1 style="font-family: 'Montserrat', sans-serif; font-weight: 900; color: #fff; font-size: 2.75rem; text-transform: uppercase; letter-spacing: 0.02em;">Get in Touch</h1>
-                    <p style="color: rgba(255,255,255,0.5); max-width: 500px; margin: 1rem auto 0; line-height: 1.7;">
-                        Send us your requirements and receive a detailed quotation within 2-3 business days.
-                    </p>
-                </div>
-            </section>
-
             <t t-call="theme_ventorix.s_vx_contact"/>
         </div>
     </t>
@@ -209,6 +189,7 @@
     <field name="view_id" ref="vx_page_contact"/>
     <field name="is_published" eval="True"/>
 </record>
+
 
 </data>
 </odoo>

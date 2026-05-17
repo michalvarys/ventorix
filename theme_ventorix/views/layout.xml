@@ -5,7 +5,10 @@
     <!-- HEADER                                                        -->
     <!-- ============================================================ -->
     <template id="vx_header" inherit_id="website.layout" name="Ventorix Header" active="True">
-        <xpath expr="//header//nav" position="replace">
+        <xpath expr="//header[@id='top']" position="replace">
+            <header id="top" data-anchor="true" data-name="Header"
+                    data-extra-items-toggle-aria-label="Extra items button"
+                    t-attf-class="#{_header_classes or ''}" t-att-style="_header_style">
             <nav class="navbar navbar-expand-lg vx-navbar py-0"
                  style="background-color: rgba(10, 22, 40, 0.95); backdrop-filter: blur(12px);">
                 <!-- Glow line -->
@@ -112,6 +115,7 @@
 
                 </div>
             </nav>
+            </header>
         </xpath>
     </template>
 

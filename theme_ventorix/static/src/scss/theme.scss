@@ -689,6 +689,123 @@ $vx-muted-text:       #6B7280;
         background-color: $vx-primary-hex;
         color: $vx-white;
     }
+
+    // File upload input
+    input[type="file"] {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.85rem;
+
+        &::file-selector-button {
+            background: rgba(46, 134, 222, 0.12);
+            border: 1px solid rgba(46, 134, 222, 0.3);
+            color: $vx-accent-hex;
+            padding: 0.5rem 1.25rem;
+            border-radius: 3px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-right: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        &::file-selector-button:hover {
+            background: rgba(46, 134, 222, 0.2);
+            border-color: $vx-accent-hex;
+        }
+    }
+}
+
+// ---------------------------------------------------------------------------
+// RFQ Section Headers
+// ---------------------------------------------------------------------------
+.vx_rfq_section_header {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.25rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.vx_rfq_section_number {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.125rem;
+    color: $vx-accent-hex;
+    min-width: 28px;
+}
+
+.vx_rfq_section_title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+// ---------------------------------------------------------------------------
+// RFQ Benefits List
+// ---------------------------------------------------------------------------
+.vx_rfq_benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.625rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.75);
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        i {
+            color: $vx-accent-hex;
+            font-size: 0.875rem;
+            width: 18px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+    }
+}
+
+// ---------------------------------------------------------------------------
+// RFQ Upload Zone
+// ---------------------------------------------------------------------------
+.vx_rfq_upload_zone {
+    border: 1px dashed rgba(46, 134, 222, 0.25);
+    border-radius: 4px;
+    padding: 1.25rem;
+    background: rgba(46, 134, 222, 0.03);
+    transition: all 0.3s ease;
+
+    &:hover {
+        border-color: rgba(46, 134, 222, 0.5);
+        background: rgba(46, 134, 222, 0.06);
+    }
+}
+
+.vx_rfq_upload_hint {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 0.75rem;
+    margin-top: 0.625rem;
+    letter-spacing: 0.02em;
+
+    i {
+        color: rgba(46, 134, 222, 0.5);
+    }
 }
 
 // ---------------------------------------------------------------------------

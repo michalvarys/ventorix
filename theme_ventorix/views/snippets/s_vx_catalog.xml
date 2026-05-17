@@ -325,10 +325,9 @@
                         We can source materials according to custom specifications and design standards.
                         Send us your requirements for a competitive quote.
                     </p>
-                    <div class="d-flex flex-wrap justify-content-center gap-3">
-                        <a href="/contact#quote" class="btn vx_btn_white px-5 py-3">Request Quote</a>
-                        <a href="/contact" class="btn vx_btn_outline px-5 py-3">Contact Us</a>
-                    </div>
+                    <a href="/contact#quote" class="btn vx_btn_white px-5 py-3">
+                        <i class="fa fa-paper-plane me-2"/>Request Quote
+                    </a>
                 </div>
             </div>
 

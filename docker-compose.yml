@@ -10,6 +10,7 @@ services:
       - "8071:8069"
     volumes:
       - ./theme_ventorix:/mnt/extra-addons/theme_ventorix
+      - ./ventorix_rfq:/mnt/extra-addons/ventorix_rfq
       - ./settings_ventorix:/mnt/extra-addons/settings_ventorix
       - ventrix-web-data:/var/lib/odoo
     environment:
