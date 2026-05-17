@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_vx_process" name="Ventorix Cooperation Process">
+    <section class="s_vx_process o_cc o_cc1 o_colored_level py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center gap-3 mb-3">
+                    <div class="vx_accent_line_left"/>
+                    <span class="vx_accent_label">
+                        How It Works
+                    </span>
+                    <div class="vx_accent_line_right"/>
+                </div>
+                <h2 class="vx_heading" style="font-size: 2.5rem;">
+                    Cooperation Process
+                </h2>
+                <p style="color: #6B7280; max-width: 500px; margin: 1rem auto 0; line-height: 1.7;">
+                    From initial inquiry to delivery — transparent, efficient, reliable.
+                </p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg col-md-6">
+                    <div class="text-center p-4 h-100" style="position: relative;">
+                        <div class="vx_step_number">
+                            1
+                        </div>
+                        <h6 class="vx_step_title">
+                            Send Inquiry
+                        </h6>
+                        <p class="small mb-0" style="color: #6B7280; line-height: 1.6;">
+                            Submit requirements via form, email, or upload PDF/XLS specs.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg col-md-6">
+                    <div class="text-center p-4 h-100">
+                        <div class="vx_step_number">
+                            2
+                        </div>
+                        <h6 class="vx_step_title">
+                            Get Quote
+                        </h6>
+                        <p class="small mb-0" style="color: #6B7280; line-height: 1.6;">
+                            Detailed quotation within 2-3 business days with pricing and lead times.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg col-md-6">
+                    <div class="text-center p-4 h-100">
+                        <div class="vx_step_number">
+                            3
+                        </div>
+                        <h6 class="vx_step_title">
+                            Confirm Order
+                        </h6>
+                        <p class="small mb-0" style="color: #6B7280; line-height: 1.6;">
+                            Approve the quote and confirm. We handle all documentation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg col-md-6">
+                    <div class="text-center p-4 h-100">
+                        <div class="vx_step_number">
+                            4
+                        </div>
+                        <h6 class="vx_step_title">
+                            Production &amp; QC
+                        </h6>
+                        <p class="small mb-0" style="color: #6B7280; line-height: 1.6;">
+                            Manufacturing with on-site quality inspection by our China partner.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg col-md-6">
+                    <div class="text-center p-4 h-100">
+                        <div class="vx_step_number">
+                            5
+                        </div>
+                        <h6 class="vx_step_title">
+                            Delivery
+                        </h6>
+                        <p class="small mb-0" style="color: #6B7280; line-height: 1.6;">
+                            Direct shipment to your warehouse. Full tracking included.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

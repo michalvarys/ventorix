@@ -1,0 +1,1393 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* theme_ventorix
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0-20260421\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-12 12:00+0000\n"
+"PO-Revision-Date: 2026-05-12 12:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "+420 XXX XXX XXX"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid ""
+"<i class=\"fa fa-info-circle me-2\" style=\"color: #2E86DE;\"/>\n"
+"                            You can also send inquiries directly to\n"
+"                            <strong style=\"color: #fff;\">info@ventorix.com</strong> with PDF/XLS specs attached."
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid ""
+"<select id=\"vxf6\" class=\"form-select s_website_form_input\" name=\"Product Interest\" style=\"background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 3px; padding: 0.875rem 1rem; color: rgba(255,255,255,0.7);\">\n"
+"                                                <option value=\"\" style=\"background: #0A1628;\">Select category...</option>\n"
+"                                                <option value=\"Flanges\" style=\"background: #0A1628;\">Flanges</option>\n"
+"                                                <option value=\"Pipes &amp; Tubes\" style=\"background: #0A1628;\">Pipes &amp; Tubes</option>\n"
+"                                                <option value=\"Fittings\" style=\"background: #0A1628;\">Fittings</option>\n"
+"                                                <option value=\"Valves\" style=\"background: #0A1628;\">Valves</option>\n"
+"                                                <option value=\"Pipeline Components\" style=\"background: #0A1628;\">Pipeline Components</option>\n"
+"                                                <option value=\"Industrial Materials\" style=\"background: #0A1628;\">Industrial Materials</option>\n"
+"                                                <option value=\"Other\" style=\"background: #0A1628;\">Other</option>\n"
+"                                            </select>"
+msgstr ""
+"<select class=\"form-select s_website_form_input\" name=\"Product Interest\" style=\"background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 3px; padding: 0.875rem 1rem; color: rgba(255,255,255,0.7);\" id=\"vxf6\">\n"
+"                                            <option value=\"\" style=\"background: #0A1628;\">Select category...</option>\n"
+"                                            <option value=\"Flanges\" style=\"background: #0A1628;\">Flanges</option>\n"
+"                                            <option value=\"Pipes &amp; Tubes\" style=\"background: #0A1628;\">Pipes &amp; Tubes</option>\n"
+"                                            <option value=\"Fittings\" style=\"background: #0A1628;\">Fittings</option>\n"
+"                                            <option value=\"Valves\" style=\"background: #0A1628;\">Valves</option>\n"
+"                                            <option value=\"Pipeline Components\" style=\"background: #0A1628;\">Pipeline Components</option>\n"
+"                                            <option value=\"Industrial Materials\" style=\"background: #0A1628;\">Industrial Materials</option>\n"
+"                                            <option value=\"Other\" style=\"background: #0A1628;\">Other</option>\n"
+"                                        </select>"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "<span class=\"s_website_form_label_content\">Company Name</span>"
+msgstr "Company Name <span class=\"s_website_form_label_content\"> *</span>"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid ""
+"<span class=\"s_website_form_label_content\">Contact Person</span>\n"
+"                                                <span class=\"s_website_form_mark\"> *</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "<span class=\"s_website_form_label_content\">Email To</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid ""
+"<span class=\"s_website_form_label_content\">Email</span>\n"
+"                                                <span class=\"s_website_form_mark\"> *</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "<span class=\"s_website_form_label_content\">Phone</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "<span class=\"s_website_form_label_content\">Product Interest</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid ""
+"<span class=\"s_website_form_label_content\">Requirements</span>\n"
+"                                                <span class=\"s_website_form_mark\"> *</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid ""
+"<span class=\"s_website_form_label_content\">Subject</span>\n"
+"                                                <span class=\"s_website_form_mark\"> *</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
+msgid ""
+"<span class=\"vx-cert-badge\">ISO</span>\n"
+"                                <span class=\"vx-cert-badge\">CE</span>\n"
+"                                <span class=\"vx-cert-badge\">EN</span>\n"
+"                                <span class=\"vx-cert-badge\">API</span>\n"
+"                                <span class=\"vx-cert-badge\">PED</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
+msgid "<span class=\"vx-footer-contact-label\">Email</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
+msgid ""
+"<span class=\"vx-footer-contact-label\">Location</span>\n"
+"                                    <span style=\"color: rgba(255,255,255,0.5); font-size: 0.875rem;\">Czech Republic, EU</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
+msgid ""
+"<span class=\"vx-footer-contact-label\">Phone</span>\n"
+"                                    <span style=\"color: rgba(255,255,255,0.5); font-size: 0.875rem;\">+420 XXX XXX XXX</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_cta
+msgid ""
+"<span style=\"color: #2E86DE; font-size: 0.75rem; letter-spacing: 3px; font-weight: 700; text-transform: uppercase;\">\n"
+"                    Let's Work Together\n"
+"                </span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"<span style=\"color: #2E86DE; font-size: 0.75rem; letter-spacing: 3px; font-"
+"weight: 700; text-transform: uppercase;\">Category</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_hero
+msgid ""
+"<span style=\"color: #2E86DE; font-size: 0.85rem; letter-spacing: 3px; font-weight: 700; text-transform: uppercase;\">\n"
+"                            Global Industrial Partner\n"
+"                        </span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_about
+msgid ""
+"<span style=\"color: #2E86DE; font-size: 0.8rem; letter-spacing: 3px; font-weight: 700; text-transform: uppercase;\">\n"
+"                            About Ventorix\n"
+"                        </span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_products
+msgid ""
+"<span style=\"color: #2E86DE; font-size: 0.8rem; letter-spacing: 3px; font-weight: 700; text-transform: uppercase;\">\n"
+"                            Catalog\n"
+"                        </span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid ""
+"<span style=\"color: #2E86DE; font-size: 0.8rem; letter-spacing: 3px; font-weight: 700; text-transform: uppercase;\">\n"
+"                            Get In Touch\n"
+"                        </span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
+msgid ""
+"<span style=\"color: #2E86DE; font-size: 0.8rem; letter-spacing: 3px; font-weight: 700; text-transform: uppercase;\">\n"
+"                            Our Competitive Advantage\n"
+"                        </span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_process
+msgid ""
+"<span style=\"color: #2E86DE; font-size: 0.8rem; letter-spacing: 3px; font-weight: 700; text-transform: uppercase;\">\n"
+"                        How It Works\n"
+"                    </span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_categories
+msgid ""
+"<span style=\"color: #2E86DE; font-size: 0.8rem; letter-spacing: 3px; font-weight: 700; text-transform: uppercase;\">\n"
+"                        Our Products\n"
+"                    </span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_certifications
+msgid ""
+"<span style=\"color: #2E86DE; font-size: 0.8rem; letter-spacing: 3px; font-weight: 700; text-transform: uppercase;\">\n"
+"                        Quality Assurance\n"
+"                    </span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_contact
+msgid ""
+"<span style=\"color: #2E86DE; font-size: 0.8rem; letter-spacing: 3px; font-"
+"weight: 700; text-transform: uppercase;\">Contact Us</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_certifications
+msgid ""
+"<span style=\"color: #2E86DE; font-size: 0.8rem; letter-spacing: 3px; font-"
+"weight: 700; text-transform: uppercase;\">Our Commitment</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_certifications
+msgid ""
+"<span style=\"color: #2E86DE; font-size: 0.8rem; letter-spacing: 3px; font-"
+"weight: 700; text-transform: uppercase;\">Quality Standards</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_about
+msgid ""
+"<span style=\"color: #2E86DE; font-size: 0.8rem; letter-spacing: 3px; font-"
+"weight: 700; text-transform: uppercase;\">Who We Are</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_header
+msgid ""
+"<span style=\"font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1.1rem; color: #fff; text-transform: uppercase; letter-spacing: 0.06em;\">\n"
+"                                VENTORIX\n"
+"                            </span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_header
+msgid ""
+"<span style=\"font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1.25rem; color: #fff; text-transform: uppercase; letter-spacing: 0.06em;\">\n"
+"                            VENTORIX\n"
+"                        </span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
+msgid ""
+"<span style=\"font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1.5rem; color: #fff; text-transform: uppercase; letter-spacing: 0.06em;\">\n"
+"                                    VENTORIX\n"
+"                                </span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"<strong style=\"color: #2E86DE; font-size: 0.8rem; text-transform: "
+"uppercase; letter-spacing: 2px;\">Materials</strong>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"<strong style=\"color: #2E86DE; font-size: 0.8rem; text-transform: "
+"uppercase; letter-spacing: 2px;\">Pressure Ratings</strong>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"<strong style=\"color: #2E86DE; font-size: 0.8rem; text-transform: "
+"uppercase; letter-spacing: 2px;\">Standards</strong>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"<strong style=\"color: #2E86DE; font-size: 0.8rem; text-transform: "
+"uppercase; letter-spacing: 2px;\">Types</strong>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"<strong style=\"color: #fff; font-size: 0.85rem;\">Alloy Steel</strong>\n"
+"                                    <span style=\"color: rgba(255,255,255,0.45); font-size: 0.85rem;\"> — ASTM A182-F5, F9, F11, F12, F22, F91...</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"<strong style=\"color: #fff; font-size: 0.85rem;\">Aluminum</strong>\n"
+"                                    <span style=\"color: rgba(255,255,255,0.45); font-size: 0.85rem;\"> — 6061-T6, 5083...</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"<strong style=\"color: #fff; font-size: 0.85rem;\">Carbon Steel</strong>\n"
+"                                    <span style=\"color: rgba(255,255,255,0.45); font-size: 0.85rem;\"> — ASTM A105, ASTM 350Gr. LF2, LF3...</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"<strong style=\"color: #fff; font-size: 0.85rem;\">Copper &amp; Brass</strong>\n"
+"                                    <span style=\"color: rgba(255,255,255,0.45); font-size: 0.85rem;\"> — C12200, C26000, Admiralty Brass...</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"<strong style=\"color: #fff; font-size: 0.85rem;\">Ductile Iron</strong>\n"
+"                                    <span style=\"color: rgba(255,255,255,0.45); font-size: 0.85rem;\"> — ASTM A395, ASTM A536...</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"<strong style=\"color: #fff; font-size: 0.85rem;\">Duplex Stainless Steel</strong>\n"
+"                                    <span style=\"color: rgba(255,255,255,0.45); font-size: 0.85rem;\"> — ASTM A182-2205, S31803/F60, S32205, 2507...</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"<strong style=\"color: #fff; font-size: 0.85rem;\">Monel</strong>\n"
+"                                    <span style=\"color: rgba(255,255,255,0.45); font-size: 0.85rem;\"> — ASTM B564-400 (N04400), 500 (N05500)...</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"<strong style=\"color: #fff; font-size: 0.85rem;\">Stainless Steel</strong>\n"
+"                                    <span style=\"color: rgba(255,255,255,0.45); font-size: 0.85rem;\"> — ASTM A182-F304(L), F316(L), F316LN, F317L...</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_about
+msgid ""
+"<strong style=\"color: #fff; font-size: 0.9rem;\">Competitive "
+"Pricing</strong>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_about
+msgid ""
+"<strong style=\"color: #fff; font-size: 0.9rem;\">DIN/ANSI "
+"Standards</strong>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "<strong style=\"color: #fff; font-size: 0.9rem;\">Email</strong>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_about
+msgid "<strong style=\"color: #fff; font-size: 0.9rem;\">Fast Delivery</strong>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "<strong style=\"color: #fff; font-size: 0.9rem;\">Office</strong>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
+msgid ""
+"<strong style=\"color: #fff; font-size: 0.9rem;\">Packaging Control</strong>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "<strong style=\"color: #fff; font-size: 0.9rem;\">Phone</strong>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
+msgid ""
+"<strong style=\"color: #fff; font-size: 0.9rem;\">Production "
+"Oversight</strong>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_about
+msgid "<strong style=\"color: #fff; font-size: 0.9rem;\">Quality Control</strong>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
+msgid ""
+"<strong style=\"color: #fff; font-size: 0.9rem;\">Quality "
+"Inspection</strong>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
+msgid ""
+"<strong style=\"color: #fff; font-size: 0.9rem;\">Shipment "
+"Coordination</strong>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_certifications
+msgid "API"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid "API 5L | ASTM A106, A53, A252 | ASTM A213 | EN 10216/10217"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid "API 600, API 6D | ASME B16.34 | EN 12516 | BS 1873"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid "ASME B16.5, B16.47 | EN 1092-1 | JIS B2220 | GOST 12820/12821"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid "ASME B16.9, B16.11 | MSS SP-75, SP-83 | EN 10253"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_certifications
+msgid "ASTM"
+msgstr ""
+
+#. module: theme_ventorix
+#: model:theme.website.menu,name:theme_ventorix.menu_about
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
+msgid "About Us"
+msgstr "O nás"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_about
+msgid "About Us | Ventorix Global Trade"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_about
+msgid "About Ventorix"
+msgstr "O společnosti Ventorix"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_certifications
+msgid ""
+"All products comply with international standards and come with full "
+"documentation."
+msgstr ""
+"Všechny produkty splňují mezinárodní normy a jsou dodávány s kompletní "
+"dokumentací."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid "Alloy steel materials for valves"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_process
+msgid "Approve the quote and confirm. We handle all documentation."
+msgstr "Schvalte nabídku a potvrďte. Veškerou dokumentaci zajistíme."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"Ball Valves, Butterfly Valves, Check Valves, Globe Valves, Gate Valves, "
+"Diaphragm Valves, Needle Valves, Plug Valves, Safety Valves, Solenoid Valves"
+msgstr ""
+"Kulové ventily, motýlkové ventily, zpětné ventily, regulační ventily, "
+"šoupátka, membránové ventily, jehličkové ventily, kohoutové ventily, "
+"pojistné ventily, elektromagnetické ventily"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid "Ball valve"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_products
+msgid ""
+"Browse our full range of industrial piping materials: flanges, pipes, tubes,"
+" fittings, valves, and pipeline components."
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_certifications
+msgid "CE Marking"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"Carbon Steel (A105, A350 LF2) | Stainless Steel (F304, F316, F316Ti, F321) |\n"
+"                                Alloy Steel (F11, F22, F91) | Duplex (F51, F53, F55) |\n"
+"                                Nickel Alloys (Monel, Inconel, Hastelloy)"
+msgstr ""
+"Uhlíková ocel (A105, A350 LF2) | Nerezová ocel (F304, F316, F316Ti, F321) |\n"
+"                                Legovaná ocel (F11, F22, F91) | Duplexní ocel (F51, F53, F55) |\n"
+"                                Niklové slitiny (Monel, Inconel, Hastelloy)"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"Carbon Steel (A105, A350 LF2, A234 WPB) |\n"
+"                                Stainless Steel (A182 F304, F316, F317, F321, F347) |\n"
+"                                Alloy Steel (A182 F11, F22, F91) |\n"
+"                                Duplex (A182 F51, F53, F55) |\n"
+"                                Nickel Alloys (Monel, Inconel, Hastelloy) | Bronze (B62, B61, B584) |\n"
+"                                Cast Iron (A126, EN 1561)"
+msgstr ""
+"Uhlíková ocel (A105, A350 LF2, A234 WPB) |\n"
+"                                Nerezová ocel (A182 F304, F316, F317, F321, F347) |\n"
+"                                Legovaná ocel (A182 F11, F22, F91) |\n"
+"                                Duplexní ocel (A182 F51, F53, F55) |\n"
+"                                Niklové slitiny (Monel, Inconel, Hastelloy) | Bronz (B62, B61, B584) |\n"
+"                                Litina (A126, EN 1561)"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"Carbon Steel (ASTM A106, API 5L X42-X70, PSL-1/PSL-2) |\n"
+"                                Stainless Steel (304, 304L, 316, 316L, 316Ti) |\n"
+"                                Duplex (2205, 2750) | Alloy Steel (ASTM A335 P11, P12, P22, P91) |\n"
+"                                Aluminum | Copper Alloy"
+msgstr ""
+"Uhlíková ocel (ASTM A106, API 5L X42-X70, PSL-1/PSL-2) |\n"
+"                                Nerezová ocel (304, 304L, 316, 316L, 316Ti) |\n"
+"                                Duplexní ocel (2205, 2750) | Legovaná ocel (ASTM A335 P11, P12, P22, P91) |\n"
+"                                Hliník | Měděné slitiny"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"Carbon Steel (ASTM A234 WPB WPL6, S235JR) |\n"
+"                                Stainless Steel (A182-F304, F304L, F316, F316Ti, F321) |\n"
+"                                Duplex (A182-2205, 2507) | Alloy Steel (A182-F11, F22, F91) |\n"
+"                                Nickel Alloys | Aluminum | Copper Alloy"
+msgstr ""
+"Uhlíková ocel (ASTM A234 WPB WPL6, S235JR) |\n"
+"                                Nerezová ocel (A182-F304, F304L, F316, F316Ti, F321) |\n"
+"                                Duplexní ocel (A182-2205, 2507) | Legovaná ocel (A182-F11, F22, F91) |\n"
+"                                Niklové slitiny | Hliník | Měděné slitiny"
+
+#. module: theme_ventorix
+#: model:theme.website.menu,name:theme_ventorix.menu_certifications
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_certifications
+msgid "Certifications"
+msgstr "Certifikace"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_certifications
+msgid "Certifications &amp; Standards"
+msgstr "Certifikace &amp; normy"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_certifications
+msgid "Certifications | Ventorix Global Trade"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_hero
+msgid "Certified"
+msgstr "Certifikováno"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_certifications
+msgid "Chemical composition analysis"
+msgstr "Analýza chemického složení"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid "Class 150, Class 300, Class 600, Class 1500, and others"
+msgstr "Třída 150, Třída 300, Třída 600, Třída 1500 a další"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_header
+msgid "Close"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"Complete range of industrial flanges for piping systems. All types "
+"manufactured to DIN, ANSI/ASME, JIS, BS, and GOST standards."
+msgstr ""
+"Kompletní sortiment průmyslových přírub pro potrubní systémy. Všechny typy "
+"vyráběné dle norem DIN, ANSI/ASME, JIS, BS a GOST."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_process
+msgid "Confirm Order"
+msgstr "Potvrdit objednávku"
+
+#. module: theme_ventorix
+#: model:theme.website.menu,name:theme_ventorix.menu_contact
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_cta
+msgid "Contact Us"
+msgstr "Kontaktujte nás"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_contact
+msgid ""
+"Contact Ventorix Global Trade for a free quote on industrial piping "
+"materials. Upload your specifications and receive pricing within 2-3 "
+"business days."
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_contact
+msgid "Contact | Ventorix Global Trade"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_process
+msgid "Cooperation Process"
+msgstr "Proces spolupráce"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_hero
+msgid "Countries"
+msgstr "Zemí"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"Cylindrical structures used to transport fluids and gases. Classified by "
+"shape, size, material, and manufacturing method — seamless, welded, and "
+"spiral-welded."
+msgstr ""
+"Válcové konstrukce pro transport kapalin a plynů. Klasifikovány podle tvaru,"
+" velikosti, materiálu a výrobní metody — bezešvé, svařované a spirálově "
+"svařované."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "Czech Republic, EU"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_certifications
+msgid "DIN / ANSI"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_process
+msgid "Delivery"
+msgstr "Dodání"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_process
+msgid ""
+"Detailed quotation within 2-3 business days with pricing and lead times."
+msgstr "Podrobná nabídka do 2–3 pracovních dnů s cenami a dodacími lhůtami."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
+msgid "Direct"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
+msgid ""
+"Direct Partner<br/>\n"
+"                        <span style=\"color: #2E86DE;\">in China</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_about
+msgid "Direct logistics"
+msgstr "Přímá logistika"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
+msgid "Direct logistics for optimal delivery"
+msgstr "Přímá logistika pro optimální dodání"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_hero
+msgid ""
+"Direct manufacturing oversight in China. DIN/ANSI certified materials.\n"
+"                        European quality standards at competitive pricing."
+msgstr ""
+"Přímý dohled nad výrobou v Číně. Materiály certifikované dle DIN/ANSI.\n"
+"                        Evropské standardy kvality za konkurenční ceny."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_process
+msgid "Direct shipment to your warehouse. Full tracking included."
+msgstr "Přímá zásilka do vašeho skladu. Včetně kompletního sledování."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_certifications
+msgid "EN 10204 3.1"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_certifications
+msgid "EU Conformity"
+msgstr "Shoda s EU"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"Elbow (Long/Short Radius), Tee, Reducer (Concentric/Eccentric), Cap, "
+"Coupling, Cross, Nipple, Bushing, Union"
+msgstr ""
+"Koleno (dlouhý/krátký poloměr), T-kus, redukce (soustředná/výstředná), "
+"zátka, spojka, kříž, vsuvka, pouzdro, šroubení"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_categories
+msgid ""
+"Elbows, tees, reducers, caps, couplings. Butt weld and socket weld.\n"
+"                            ASME B16.9, B16.11."
+msgstr ""
+"Kolena, T-kusy, redukce, zátky, spojky. Tupé a hrdlové sváry.\n"
+"                            ASME B16.9, B16.11."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_certifications
+msgid "Environmental"
+msgstr "Životní prostředí"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_certifications
+msgid ""
+"Every product comes with complete material certification\n"
+"                                and test reports as per EN 10204 3.1. Our on-site quality team in China\n"
+"                                performs rigorous inspections including:"
+msgstr ""
+"Každý produkt je dodáván s kompletní materiálovou certifikací\n"
+"                                a zkušebními protokoly dle EN 10204 3.1. Náš tým kontroly kvality přímo v Číně\n"
+"                                provádí přísné inspekce zahrnující:"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
+msgid "Factory Access"
+msgstr "Přístup do výroby"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_about
+msgid "Factory-direct"
+msgstr "Přímo z výroby"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
+msgid "Fast"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid "Fitting types — butt-weld, socket-weld, screwed, flanged"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_categories
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
+msgid "Fittings"
+msgstr "Tvarovky"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"Flange types — weld neck, slip-on, blind, threaded, socket weld, lap joint, "
+"orifice, pressure vessel nozzles"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_categories
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
+msgid "Flanges"
+msgstr "Příruby"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_process
+msgid "From initial inquiry to delivery — transparent, efficient, reliable."
+msgstr "Od prvního dotazu po dodání — transparentní, efektivní, spolehlivý."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_about
+msgid "Full compliance"
+msgstr "Plný soulad"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "Full name"
+msgstr "Celé jméno"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_products
+msgid ""
+"Full range of industrial piping materials, certified to international "
+"standards."
+msgstr ""
+"Kompletní sortiment průmyslových potrubních materiálů certifikovaných dle "
+"mezinárodních norem."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"Full range of piping fittings manufactured to international standards. "
+"Available in butt-weld, socket-weld, screwed, and flanged connections."
+msgstr ""
+"Kompletní sortiment potrubních tvarovek vyráběných dle mezinárodních norem. "
+"Dostupné v provedení na tupo, hrdlové, závitové a přírubové."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_categories
+msgid ""
+"Gaskets, bolts, studs, expansion joints, strainers.\n"
+"                            Complete pipeline assembly solutions."
+msgstr ""
+"Těsnění, šrouby, svorníky, kompenzátory, filtry.\n"
+"                            Kompletní řešení pro montáž potrubí."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_categories
+msgid ""
+"Gate, globe, check, ball and butterfly valves.\n"
+"                            Class 150-2500. API 600, API 6D."
+msgstr ""
+"Šoupátka, regulační, zpětné, kulové a motýlkové ventily.\n"
+"                            Class 150-2500. API 600, API 6D."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_process
+msgid "Get Quote"
+msgstr "Získat nabídku"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_contact
+msgid "Get in Touch"
+msgstr "Ozvěte se nám"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
+msgid "Global shipping"
+msgstr "Globální přeprava"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_homepage
+msgid ""
+"Global supplier of flanges, pipes, valves, fittings and pipeline components."
+" Direct manufacturing oversight in China. DIN/ANSI certified."
+msgstr ""
+
+#. module: theme_ventorix
+#: model:theme.website.menu,name:theme_ventorix.menu_home
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
+msgid "Home"
+msgstr "Úvod"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_certifications
+msgid "Hydrostatic pressure testing"
+msgstr "Hydrostatická tlaková zkouška"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_hero
+msgid "ISO"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_certifications
+msgid "ISO 14001"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_certifications
+msgid "ISO 9001"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_certifications
+msgid ""
+"ISO 9001, EN 10204 3.1, CE Marking, DIN, ANSI, API, ASTM — all "
+"certifications and quality standards we comply with."
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_categories
+msgid "Industrial Materials"
+msgstr "Průmyslové materiály"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_homepage
+msgid "Industrial Piping Materials | Ventorix Global Trade"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_certifications
+msgid "Industrial Standards"
+msgstr "Průmyslové normy"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid "Industrial flanges"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"Industrial valves meeting international and industry-specific standards. "
+"Complete range for flow control, isolation, and safety applications."
+msgstr ""
+"Průmyslové ventily splňující mezinárodní a oborové normy. Kompletní "
+"sortiment pro řízení průtoku, uzavírání a bezpečnostní aplikace."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid "Large pipe fittings"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_about
+msgid ""
+"Learn about Ventorix Global Trade — your trusted partner for industrial "
+"piping materials with direct manufacturing oversight in China."
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_about
+msgid "Manufacturing facility"
+msgstr "Výrobní závod"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_process
+msgid "Manufacturing with on-site quality inspection by our China partner."
+msgstr "Výroba s kontrolou kvality přímo na místě naším partnerem v Číně."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_certifications
+msgid "Material Certificates"
+msgstr "Materiálové certifikáty"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_certifications
+msgid "Material Testing"
+msgstr "Testování materiálů"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_certifications
+msgid "Mechanical property testing"
+msgstr "Testování mechanických vlastností"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
+msgid "Navigation"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid "Need Custom Specifications?"
+msgstr "Potřebujete vlastní specifikace?"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_certifications
+msgid "Non-destructive testing (NDT)"
+msgstr "Nedestruktivní testování (NDT)"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_about
+msgid "On-site in China"
+msgstr "Přímo v Číně"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_products
+msgid "Our Products"
+msgstr "Naše produkty"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_certifications
+msgid "PED"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_certifications
+msgid "Petroleum Institute"
+msgstr "Ropný institut"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
+msgid "Physical presence at manufacturing facilities"
+msgstr "Fyzická přítomnost ve výrobních závodech"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid "Pipe reducers and fittings"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"Pipe types — seamless, welded, exhaust, square, rectangle, decorative tubes"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_categories
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
+msgid "Pipeline Components"
+msgstr "Potrubní komponenty"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_categories
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
+msgid "Pipes &amp; Tubes"
+msgstr "Trubky &amp; profily"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_hero
+msgid ""
+"Premium Flanges,<br/>\n"
+"                        Pipes &amp; Pipeline<br/>\n"
+"                        <span style=\"background: linear-gradient(90deg, #2E86DE, #00D4FF); -webkit-background-clip: text; -webkit-text-fill-color: transparent;\">Components</span>"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_certifications
+msgid "Pressure Equipment"
+msgstr "Tlaková zařízení"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
+msgid "Privacy Policy"
+msgstr "Zásady ochrany osobních údajů"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid ""
+"Product type, quantity, specifications, standards, delivery timeline..."
+msgstr "Typ produktu, množství, specifikace, normy, termín dodání..."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_process
+msgid "Production &amp; QC"
+msgstr "Výroba &amp; kontrola kvality"
+
+#. module: theme_ventorix
+#: model:theme.website.menu,name:theme_ventorix.menu_products
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_hero
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
+msgid "Products"
+msgstr "Produkty"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_products
+msgid "Products | Ventorix Global Trade"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_certifications
+msgid "Quality Management"
+msgstr "Řízení kvality"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_about
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
+msgid "Quality Verified"
+msgstr "Ověřená kvalita"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_certifications
+msgid "Quality inspection"
+msgstr "Kontrola kvality"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_certifications
+msgid "Quality is Our Priority"
+msgstr "Kvalita je naší prioritou"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "Quote request — flanges DN100 PN16"
+msgstr "Poptávka — příruby DN100 PN16"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"Raw materials for flange manufacturing and industrial applications. Wide "
+"variety of steel grades and alloys available according to customer "
+"requirements."
+msgstr ""
+"Suroviny pro výrobu přírub a průmyslové aplikace. Široký výběr jakostí oceli"
+" a slitin dle požadavků zákazníka."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_cta
+msgid "Ready to Start<br/>Your Project?"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_about
+msgid "Reliable Industrial<br/>Supply Since Day One"
+msgstr ""
+
+#. module: theme_ventorix
+#: model:theme.website.menu,name:theme_ventorix.menu_quote
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_cta
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_hero
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
+msgid "Request Quote"
+msgstr "Žádost o nabídku"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "Request a Quote"
+msgstr "Žádost o nabídku"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
+msgid "Rigorous quality checks before every shipment"
+msgstr "Přísné kontroly kvality před každou zásilkou"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"Seamless Pipes, Welded Pipes, Exhaust Tubes, Square Tubes, Rectangle Tubes, "
+"Decorative Tubes"
+msgstr ""
+"Bezešvé trubky, svařované trubky, výfukové trubky, čtvercové profily, "
+"obdélníkové profily, dekorativní trubky"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_categories
+msgid ""
+"Seamless and welded steel pipes. Carbon, stainless, alloy steel.\n"
+"                            API 5L, ASTM A106, A53."
+msgstr ""
+"Bezešvé a svařované ocelové trubky. Uhlíková, nerezová, legovaná ocel.\n"
+"                            API 5L, ASTM A106, A53."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_process
+msgid "Send Inquiry"
+msgstr "Odeslat poptávku"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_contact
+msgid ""
+"Send us your requirements and receive a detailed quotation within 2-3 "
+"business days."
+msgstr ""
+"Pošlete nám své požadavky a obdržíte podrobnou nabídku do 2–3 pracovních "
+"dnů."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_cta
+msgid ""
+"Send us your specifications and receive a competitive quote\n"
+"                within 2-3 business days. No commitment required."
+msgstr ""
+"Pošlete nám své specifikace a obdržíte konkurenční nabídku\n"
+"                do 2–3 pracovních dnů. Bez závazků."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"Slip-on, Weld-Neck, Threaded, Blind, Socket-Weld, Lap Joint, Orifice, "
+"Pressure Vessel Nozzles"
+msgstr ""
+"Nástrčné, přivařovací, závitové, zaslepovací, hrdlové, překrývací, měřicí, "
+"hrdla tlakových nádob"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid "Stainless steel elbows"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid "Steel bars and round stock"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid "Steel pipes bundle"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid "Steel pipes stack"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_categories
+msgid ""
+"Steel plates, bars, profiles, sheets.\n"
+"                            Carbon, stainless, duplex and special alloys."
+msgstr ""
+"Ocelové plechy, tyče, profily.\n"
+"                            Uhlíková, nerezová, duplexní a speciální slitiny."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid "Steel round bars for flanges"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_process
+msgid "Submit requirements via form, email, or upload PDF/XLS specs."
+msgstr ""
+"Zadejte požadavky přes formulář, e-mail nebo nahrajte specifikace v PDF/XLS."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
+msgid "Supervised packing for international transport"
+msgstr "Kontrolované balení pro mezinárodní přepravu"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_hero
+msgid "Support"
+msgstr "Podpora"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_certifications
+msgid "Surface finish verification"
+msgstr "Ověření povrchové úpravy"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid ""
+"Tell us about your requirements and we'll provide a detailed quotation\n"
+"                        within 2-3 business days."
+msgstr ""
+"Sdělte nám své požadavky a my vám poskytneme podrobnou nabídku\n"
+"                        do 2–3 pracovních dnů."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
+msgid "Terms of Service"
+msgstr "Obchodní podmínky"
+
+#. module: theme_ventorix
+#: model:ir.model,name:theme_ventorix.model_theme_utils
+msgid "Theme Utils"
+msgstr "Utils šablony"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_header
+msgid "Toggle navigation"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
+msgid "Turnaround"
+msgstr "Rychlost dodání"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_china_partner
+msgid ""
+"Unlike typical trading companies, we have a dedicated business partner\n"
+"                        directly in China who owns and operates their own company."
+msgstr ""
+"Na rozdíl od typických obchodních společností máme oddaného obchodního partnera\n"
+"                        přímo v Číně, který vlastní a provozuje svou vlastní firmu."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"Valve types — ball, butterfly, check, globe, gate, diaphragm, needle, plug, "
+"safety, solenoid"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_categories
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
+msgid "Valves"
+msgstr "Ventily"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_snippets
+msgid "Ventorix"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
+msgid "Ventorix Global Trade s.r.o. All rights reserved."
+msgstr "Ventorix Global Trade s.r.o. Všechna práva vyhrazena."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_about
+msgid ""
+"Ventorix Global Trade specializes in high-quality piping materials,\n"
+"                        flanges, valves, and pipeline components for industrial projects worldwide.\n"
+"                        We bridge top-tier Chinese manufacturers and European industry."
+msgstr ""
+"Ventorix Global Trade se specializuje na vysoce kvalitní potrubní materiály,\n"
+"                        příruby, ventily a potrubní komponenty pro průmyslové projekty po celém světě.\n"
+"                        Propojujeme špičkové čínské výrobce s evropským průmyslem."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_hero
+msgid "View Catalog"
+msgstr "Zobrazit katalog"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_categories
+msgid "View Full Catalog"
+msgstr "Zobrazit celý katalog"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_page_certifications
+msgid "Visual and dimensional inspection"
+msgstr "Vizuální a rozměrová kontrola"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_catalog
+msgid ""
+"We can source materials according to custom specifications and design standards.\n"
+"                        Send us your requirements for a competitive quote."
+msgstr ""
+"Dokážeme zajistit materiály dle vlastních specifikací a konstrukčních norem.\n"
+"                        Pošlete nám své požadavky pro konkurenční nabídku."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_categories
+msgid ""
+"Weld neck, slip-on, blind, socket weld, threaded and lap joint.\n"
+"                            DIN, ANSI/ASME, JIS. PN10-PN400."
+msgstr ""
+"Přivařovací, nástrčné, zaslepovací, hrdlové, závitové a překrývací.\n"
+"                            DIN, ANSI/ASME, JIS. PN10-PN400."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_categories
+msgid "What We Supply"
+msgstr "Co dodáváme"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_about
+msgid ""
+"With a dedicated partner directly in China overseeing production, quality control,\n"
+"                        packaging and shipment — we guarantee consistent quality and transparent process."
+msgstr ""
+"S oddaným partnerem přímo v Číně, který dohlíží na výrobu, kontrolu kvality,\n"
+"                        balení a expedici — garantujeme konzistentní kvalitu a transparentní proces."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "Your company"
+msgstr "Vaše společnost"
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
+msgid ""
+"Your trusted partner for industrial piping materials.\n"
+"                                Direct sourcing from certified manufacturers with\n"
+"                                European quality standards and on-site oversight."
+msgstr ""
+"Váš spolehlivý partner pro průmyslové potrubní materiály.\n"
+"                                Přímý nákup od certifikovaných výrobců\n"
+"                                s evropskými standardy kvality a dohledem na místě."
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+msgid "email@company.com"
+msgstr ""
+
+#. module: theme_ventorix
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.s_vx_contact
+#: model_terms:theme.ir.ui.view,arch:theme_ventorix.vx_footer
+msgid "info@ventorix.com"
+msgstr ""

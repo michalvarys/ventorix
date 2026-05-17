@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_vx_catalog" name="Ventorix Full Catalog">
+    <section class="s_vx_catalog o_cc o_cc5 o_colored_level py-5">
+        <div class="container py-4">
+
+            <!-- ===== FLANGES ===== -->
+            <div id="flanges" class="mb-5 pb-4 vx_catalog_divider">
+                <div class="row align-items-center g-4 mb-4">
+                    <div class="col-lg-6">
+                        <div class="vx_image_card">
+                            <img src="/theme_ventorix/static/src/img/products/flanges-types.jpg"
+                                 class="img-fluid w-100" alt="Flange types — weld neck, slip-on, blind, threaded, socket weld, lap joint, orifice, pressure vessel nozzles"/>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="vx_accent_line"/>
+                            <span class="vx_accent_label" style="font-size: 0.75rem;">Category</span>
+                        </div>
+                        <h3 class="vx_catalog_heading">
+                            Flanges
+                        </h3>
+                        <p class="vx_catalog_desc">
+                            Complete range of industrial flanges for piping systems. All types manufactured to DIN, ANSI/ASME, JIS, BS, and GOST standards.
+                        </p>
+                        <div class="mb-3">
+                            <strong class="vx_catalog_label">Types</strong>
+                            <p class="mb-0 mt-1 vx_catalog_spec">
+                                Slip-on, Weld-Neck, Threaded, Blind, Socket-Weld, Lap Joint, Orifice, Pressure Vessel Nozzles
+                            </p>
+                        </div>
+                        <div class="mb-3">
+                            <strong class="vx_catalog_label">Materials</strong>
+                            <p class="mb-0 mt-1 vx_catalog_spec">
+                                Carbon Steel (A105, A350 LF2) | Stainless Steel (F304, F316, F316Ti, F321) |
+                                Alloy Steel (F11, F22, F91) | Duplex (F51, F53, F55) |
+                                Nickel Alloys (Monel, Inconel, Hastelloy)
+                            </p>
+                        </div>
+                        <div>
+                            <strong class="vx_catalog_label">Standards</strong>
+                            <p class="mb-0 mt-1 vx_catalog_spec" style="line-height: 1.6;">
+                                ASME B16.5, B16.47 | EN 1092-1 | JIS B2220 | GOST 12820/12821
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="vx_image_card">
+                            <img src="/theme_ventorix/static/src/img/products/flanges-photo.jpg"
+                                 class="img-fluid w-100" alt="Industrial flanges"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="vx_image_card">
+                            <img src="/theme_ventorix/static/src/img/products/steel-rods.jpg"
+                                 class="img-fluid w-100" alt="Steel round bars for flanges"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== PIPES & TUBES ===== -->
+            <div id="pipes" class="mb-5 pb-4 vx_catalog_divider">
+                <div class="row align-items-center g-4 mb-4">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="vx_image_card">
+                            <img src="/theme_ventorix/static/src/img/products/pipes-types.jpg"
+                                 class="img-fluid w-100" alt="Pipe types — seamless, welded, exhaust, square, rectangle, decorative tubes"/>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="vx_accent_line"/>
+                            <span class="vx_accent_label" style="font-size: 0.75rem;">Category</span>
+                        </div>
+                        <h3 class="vx_catalog_heading">
+                            Pipes &amp; Tubes
+                        </h3>
+                        <p class="vx_catalog_desc">
+                            Cylindrical structures used to transport fluids and gases. Classified by shape, size, material, and manufacturing method — seamless, welded, and spiral-welded.
+                        </p>
+                        <div class="mb-3">
+                            <strong class="vx_catalog_label">Types</strong>
+                            <p class="mb-0 mt-1 vx_catalog_spec">
+                                Seamless Pipes, Welded Pipes, Exhaust Tubes, Square Tubes, Rectangle Tubes, Decorative Tubes
+                            </p>
+                        </div>
+                        <div class="mb-3">
+                            <strong class="vx_catalog_label">Materials</strong>
+                            <p class="mb-0 mt-1 vx_catalog_spec">
+                                Carbon Steel (ASTM A106, API 5L X42-X70, PSL-1/PSL-2) |
+                                Stainless Steel (304, 304L, 316, 316L, 316Ti) |
+                                Duplex (2205, 2750) | Alloy Steel (ASTM A335 P11, P12, P22, P91) |
+                                Aluminum | Copper Alloy
+                            </p>
+                        </div>
+                        <div>
+                            <strong class="vx_catalog_label">Standards</strong>
+                            <p class="mb-0 mt-1 vx_catalog_spec" style="line-height: 1.6;">
+                                API 5L | ASTM A106, A53, A252 | ASTM A213 | EN 10216/10217
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="vx_image_card">
+                            <img src="/theme_ventorix/static/src/img/products/pipes-stack.jpg"
+                                 class="img-fluid w-100" alt="Steel pipes stack"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="vx_image_card">
+                            <img src="/theme_ventorix/static/src/img/products/pipes-bundle.jpg"
+                                 class="img-fluid w-100" alt="Steel pipes bundle"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== FITTINGS ===== -->
+            <div id="fittings" class="mb-5 pb-4 vx_catalog_divider">
+                <div class="row align-items-center g-4 mb-4">
+                    <div class="col-lg-6">
+                        <div class="vx_image_card">
+                            <img src="/theme_ventorix/static/src/img/products/fittings-types.jpg"
+                                 class="img-fluid w-100" alt="Fitting types — butt-weld, socket-weld, screwed, flanged"/>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="vx_accent_line"/>
+                            <span class="vx_accent_label" style="font-size: 0.75rem;">Category</span>
+                        </div>
+                        <h3 class="vx_catalog_heading">
+                            Fittings
+                        </h3>
+                        <p class="vx_catalog_desc">
+                            Full range of piping fittings manufactured to international standards. Available in butt-weld, socket-weld, screwed, and flanged connections.
+                        </p>
+                        <div class="mb-3">
+                            <strong class="vx_catalog_label">Types</strong>
+                            <p class="mb-0 mt-1 vx_catalog_spec">
+                                Elbow (Long/Short Radius), Tee, Reducer (Concentric/Eccentric), Cap, Coupling, Cross, Nipple, Bushing, Union
+                            </p>
+                        </div>
+                        <div class="mb-3">
+                            <strong class="vx_catalog_label">Pressure Ratings</strong>
+                            <p class="mb-0 mt-1 vx_catalog_spec" style="line-height: 1.6;">
+                                Class 150, Class 300, Class 600, Class 1500, and others
+                            </p>
+                        </div>
+                        <div class="mb-3">
+                            <strong class="vx_catalog_label">Materials</strong>
+                            <p class="mb-0 mt-1 vx_catalog_spec">
+                                Carbon Steel (ASTM A234 WPB WPL6, S235JR) |
+                                Stainless Steel (A182-F304, F304L, F316, F316Ti, F321) |
+                                Duplex (A182-2205, 2507) | Alloy Steel (A182-F11, F22, F91) |
+                                Nickel Alloys | Aluminum | Copper Alloy
+                            </p>
+                        </div>
+                        <div>
+                            <strong class="vx_catalog_label">Standards</strong>
+                            <p class="mb-0 mt-1 vx_catalog_spec" style="line-height: 1.6;">
+                                ASME B16.9, B16.11 | MSS SP-75, SP-83 | EN 10253
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="vx_image_card">
+                            <img src="/theme_ventorix/static/src/img/products/fittings-elbows.jpg"
+                                 class="img-fluid w-100" alt="Stainless steel elbows"/>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="vx_image_card">
+                            <img src="/theme_ventorix/static/src/img/products/fittings-warehouse.jpg"
+                                 class="img-fluid w-100" alt="Large pipe fittings"/>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="vx_image_card">
+                            <img src="/theme_ventorix/static/src/img/products/fittings-reducers.jpg"
+                                 class="img-fluid w-100" alt="Pipe reducers and fittings"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== VALVES ===== -->
+            <div id="valves" class="mb-5 pb-4 vx_catalog_divider">
+                <div class="row align-items-center g-4 mb-4">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="vx_image_card">
+                            <img src="/theme_ventorix/static/src/img/products/valves-grid.jpg"
+                                 class="img-fluid w-100" alt="Valve types — ball, butterfly, check, globe, gate, diaphragm, needle, plug, safety, solenoid"/>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="vx_accent_line"/>
+                            <span class="vx_accent_label" style="font-size: 0.75rem;">Category</span>
+                        </div>
+                        <h3 class="vx_catalog_heading">
+                            Valves
+                        </h3>
+                        <p class="vx_catalog_desc">
+                            Industrial valves meeting international and industry-specific standards. Complete range for flow control, isolation, and safety applications.
+                        </p>
+                        <div class="mb-3">
+                            <strong class="vx_catalog_label">Types</strong>
+                            <p class="mb-0 mt-1 vx_catalog_spec">
+                                Ball Valves, Butterfly Valves, Check Valves, Globe Valves, Gate Valves, Diaphragm Valves, Needle Valves, Plug Valves, Safety Valves, Solenoid Valves
+                            </p>
+                        </div>
+                        <div class="mb-3">
+                            <strong class="vx_catalog_label">Materials</strong>
+                            <p class="mb-0 mt-1 vx_catalog_spec">
+                                Carbon Steel (A105, A350 LF2, A234 WPB) |
+                                Stainless Steel (A182 F304, F316, F317, F321, F347) |
+                                Alloy Steel (A182 F11, F22, F91) |
+                                Duplex (A182 F51, F53, F55) |
+                                Nickel Alloys (Monel, Inconel, Hastelloy) | Bronze (B62, B61, B584) |
+                                Cast Iron (A126, EN 1561)
+                            </p>
+                        </div>
+                        <div>
+                            <strong class="vx_catalog_label">Standards</strong>
+                            <p class="mb-0 mt-1 vx_catalog_spec" style="line-height: 1.6;">
+                                API 600, API 6D | ASME B16.34 | EN 12516 | BS 1873
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="vx_image_card">
+                            <img src="/theme_ventorix/static/src/img/products/valve-ball.jpg"
+                                 class="img-fluid w-100" alt="Ball valve"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="vx_image_card">
+                            <img src="/theme_ventorix/static/src/img/products/steel-alloy-rods.jpg"
+                                 class="img-fluid w-100" alt="Alloy steel materials for valves"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== INDUSTRIAL MATERIALS ===== -->
+            <div id="materials" class="mb-4">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-6">
+                        <div class="vx_image_card">
+                            <img src="/theme_ventorix/static/src/img/products/steel-bars.jpg"
+                                 class="img-fluid w-100" alt="Steel bars and round stock"/>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="vx_accent_line"/>
+                            <span class="vx_accent_label" style="font-size: 0.75rem;">Category</span>
+                        </div>
+                        <h3 class="vx_catalog_heading">
+                            Industrial Materials
+                        </h3>
+                        <p class="vx_catalog_desc">
+                            Raw materials for flange manufacturing and industrial applications. Wide variety of steel grades and alloys available according to customer requirements.
+                        </p>
+                        <div class="mb-3">
+                            <strong class="vx_catalog_label">Materials</strong>
+                            <div class="mt-2">
+                                <div class="mb-2">
+                                    <strong class="vx_catalog_material_name">Carbon Steel</strong>
+                                    <span class="vx_catalog_material_detail"> — ASTM A105, ASTM 350Gr. LF2, LF3...</span>
+                                </div>
+                                <div class="mb-2">
+                                    <strong class="vx_catalog_material_name">Stainless Steel</strong>
+                                    <span class="vx_catalog_material_detail"> — ASTM A182-F304(L), F316(L), F316LN, F317L...</span>
+                                </div>
+                                <div class="mb-2">
+                                    <strong class="vx_catalog_material_name">Duplex Stainless Steel</strong>
+                                    <span class="vx_catalog_material_detail"> — ASTM A182-2205, S31803/F60, S32205, 2507...</span>
+                                </div>
+                                <div class="mb-2">
+                                    <strong class="vx_catalog_material_name">Alloy Steel</strong>
+                                    <span class="vx_catalog_material_detail"> — ASTM A182-F5, F9, F11, F12, F22, F91...</span>
+                                </div>
+                                <div class="mb-2">
+                                    <strong class="vx_catalog_material_name">Monel</strong>
+                                    <span class="vx_catalog_material_detail"> — ASTM B564-400 (N04400), 500 (N05500)...</span>
+                                </div>
+                                <div class="mb-2">
+                                    <strong class="vx_catalog_material_name">Ductile Iron</strong>
+                                    <span class="vx_catalog_material_detail"> — ASTM A395, ASTM A536...</span>
+                                </div>
+                                <div class="mb-2">
+                                    <strong class="vx_catalog_material_name">Aluminum</strong>
+                                    <span class="vx_catalog_material_detail"> — 6061-T6, 5083...</span>
+                                </div>
+                                <div>
+                                    <strong class="vx_catalog_material_name">Copper &amp; Brass</strong>
+                                    <span class="vx_catalog_material_detail"> — C12200, C26000, Admiralty Brass...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== CTA STRIP ===== -->
+            <div class="text-center mt-5 pt-4">
+                <div class="vx_catalog_cta">
+                    <h4 class="vx_catalog_heading" style="font-size: 1.5rem; margin-bottom: 0.75rem;">
+                        Need Custom Specifications?
+                    </h4>
+                    <p class="vx_catalog_desc" style="max-width: 500px; margin: 0 auto 1.5rem; line-height: 1.7;">
+                        We can source materials according to custom specifications and design standards.
+                        Send us your requirements for a competitive quote.
+                    </p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="/contact#quote" class="btn vx_btn_white px-5 py-3">Request Quote</a>
+                        <a href="/contact" class="btn vx_btn_outline px-5 py-3">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</template>
+
+</odoo>

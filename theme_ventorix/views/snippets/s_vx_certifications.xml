@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_vx_certifications" name="Ventorix Certifications">
+    <section class="s_vx_certifications o_cc o_cc5 o_colored_level py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center gap-3 mb-3">
+                    <div class="vx_accent_line_left"/>
+                    <span class="vx_accent_label">
+                        Quality Assurance
+                    </span>
+                    <div class="vx_accent_line_right"/>
+                </div>
+                <h2 class="vx_heading_light" style="font-size: 2.5rem;">
+                    Certifications &amp; Standards
+                </h2>
+                <p class="vx_text_body_dark" style="max-width: 550px; margin: 1rem auto 0; line-height: 1.7;">
+                    All products comply with international standards and come with full documentation.
+                </p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="vx_image_card text-center p-4">
+                        <div class="vx_icon_circle_cert mb-3">
+                            <i class="fa fa-certificate"/>
+                        </div>
+                        <h6 class="vx_cert_title">ISO 9001</h6>
+                        <p class="vx_text_subtle_dark small mb-0">Quality Management</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="vx_image_card text-center p-4">
+                        <div class="vx_icon_circle_cert mb-3">
+                            <i class="fa fa-file-text"/>
+                        </div>
+                        <h6 class="vx_cert_title">EN 10204 3.1</h6>
+                        <p class="vx_text_subtle_dark small mb-0">Material Certificates</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="vx_image_card text-center p-4">
+                        <div class="vx_icon_circle_cert mb-3">
+                            <i class="fa fa-check-square"/>
+                        </div>
+                        <h6 class="vx_cert_title">CE Marking</h6>
+                        <p class="vx_text_subtle_dark small mb-0">EU Conformity</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="vx_image_card text-center p-4">
+                        <div class="vx_icon_circle_cert mb-3">
+                            <i class="fa fa-industry"/>
+                        </div>
+                        <h6 class="vx_cert_title">DIN / ANSI</h6>
+                        <p class="vx_text_subtle_dark small mb-0">Industrial Standards</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="vx_image_card text-center p-4">
+                        <div class="vx_icon_circle_cert mb-3">
+                            <i class="fa fa-flask"/>
+                        </div>
+                        <h6 class="vx_cert_title">API</h6>
+                        <p class="vx_text_subtle_dark small mb-0">Petroleum Institute</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="vx_image_card text-center p-4">
+                        <div class="vx_icon_circle_cert mb-3">
+                            <i class="fa fa-database"/>
+                        </div>
+                        <h6 class="vx_cert_title">ASTM</h6>
+                        <p class="vx_text_subtle_dark small mb-0">Material Testing</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="vx_image_card text-center p-4">
+                        <div class="vx_icon_circle_cert mb-3">
+                            <i class="fa fa-shield"/>
+                        </div>
+                        <h6 class="vx_cert_title">PED</h6>
+                        <p class="vx_text_subtle_dark small mb-0">Pressure Equipment</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="vx_image_card text-center p-4">
+                        <div class="vx_icon_circle_cert mb-3">
+                            <i class="fa fa-globe"/>
+                        </div>
+                        <h6 class="vx_cert_title">ISO 14001</h6>
+                        <p class="vx_text_subtle_dark small mb-0">Environmental</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

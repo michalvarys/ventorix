@@ -1,0 +1,118 @@
+// ============================================================================
+// Ventorix Global Trade — Bootstrap Overrides
+// Industrial B2B: no shadows, sharp corners, wide buttons
+// ============================================================================
+
+// ---------------------------------------------------------------------------
+// Border Radius — sharp, industrial edges
+// ---------------------------------------------------------------------------
+$border-radius:       2px;
+$border-radius-sm:    1px;
+$border-radius-lg:    2px;
+$border-radius-pill:  2px;
+
+// ---------------------------------------------------------------------------
+// Shadows — eliminated for clean industrial feel
+// ---------------------------------------------------------------------------
+$box-shadow:          none;
+$box-shadow-sm:       none;
+$box-shadow-lg:       none;
+$box-shadow-inset:    none;
+
+// ---------------------------------------------------------------------------
+// Buttons — wider, more commanding
+// ---------------------------------------------------------------------------
+$btn-padding-y:       0.75rem;
+$btn-padding-x:       2.25rem;
+$btn-padding-y-sm:    0.5rem;
+$btn-padding-x-sm:    1.5rem;
+$btn-padding-y-lg:    1rem;
+$btn-padding-x-lg:    3rem;
+$btn-font-weight:     600;
+$btn-border-width:    2px;
+$btn-border-radius:   2px;
+$btn-border-radius-sm: 1px;
+$btn-border-radius-lg: 2px;
+
+// ---------------------------------------------------------------------------
+// Typography — tighter, more structured
+// ---------------------------------------------------------------------------
+$font-weight-normal:  400;
+$font-weight-bold:    700;
+$headings-font-weight: 700;
+$headings-line-height: 1.2;
+$line-height-base:    1.65;
+$paragraph-margin-bottom: 1rem;
+
+// ---------------------------------------------------------------------------
+// Spacing — generous for readability
+// ---------------------------------------------------------------------------
+$spacer: 1rem;
+
+// ---------------------------------------------------------------------------
+// Cards — flat, industrial
+// ---------------------------------------------------------------------------
+$card-border-radius:  2px;
+$card-border-width:   1px;
+$card-border-color:   rgba(0, 0, 0, 0.08);
+$card-cap-bg:         transparent;
+
+// ---------------------------------------------------------------------------
+// Forms — clean inputs
+// ---------------------------------------------------------------------------
+$input-border-radius:     2px;
+$input-border-radius-sm:  1px;
+$input-border-radius-lg:  2px;
+$input-border-color:      #D1D5DB;
+$input-focus-border-color: #2E86DE;
+$input-padding-y:         0.625rem;
+$input-padding-x:         1rem;
+$input-font-size:         0.9375rem;
+$input-bg:                #FFFFFF;
+
+// ---------------------------------------------------------------------------
+// Navbar
+// ---------------------------------------------------------------------------
+$navbar-padding-y:        0;
+
+// ---------------------------------------------------------------------------
+// Grid — wider container for B2B content
+// ---------------------------------------------------------------------------
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1200px,
+    xxl: 1320px,
+);
+
+// ---------------------------------------------------------------------------
+// Transitions — subdued, professional
+// ---------------------------------------------------------------------------
+$transition-base:     all 0.25s ease;
+
+// ---------------------------------------------------------------------------
+// Badges — flat
+// ---------------------------------------------------------------------------
+$badge-border-radius: 2px;
+$badge-font-weight:   600;
+$badge-padding-y:     0.375em;
+$badge-padding-x:     0.75em;
+
+// ---------------------------------------------------------------------------
+// Breadcrumbs
+// ---------------------------------------------------------------------------
+$breadcrumb-font-size:    0.8125rem;
+$breadcrumb-active-color: #2E86DE;
+
+// ---------------------------------------------------------------------------
+// Modals — sharp
+// ---------------------------------------------------------------------------
+$modal-content-border-radius: 2px;
+$modal-header-border-width:   1px;
+
+// ---------------------------------------------------------------------------
+// Dropdowns — flat, sharp
+// ---------------------------------------------------------------------------
+$dropdown-border-radius: 2px;
+$dropdown-border-color:  rgba(0, 0, 0, 0.08);

@@ -1,0 +1,46 @@
+services:
+  web:
+    container_name: ventrix-web
+    image: odoo:18
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8071:8069"
+    volumes:
+      - ./theme_ventorix:/mnt/extra-addons/theme_ventorix
+      - ./settings_ventorix:/mnt/extra-addons/settings_ventorix
+      - ventrix-web-data:/var/lib/odoo
+    environment:
+      HOST: db
+      USER: ventrix
+      PASSWORD: gelato
+    command: >
+      odoo
+        --addons-path=/mnt/extra-addons,/usr/lib/python3/dist-packages/odoo/addons
+        -r ventrix -w ventrix
+        --db_host=db --db_port=5432
+        --db-filter=ventrix
+
+  db:
+    container_name: ventrix-db
+    image: postgres:15
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ventrix
+      POSTGRES_USER: ventrix
+      POSTGRES_PASSWORD: gelato
+    volumes:
+      - ventrix-db-data:/var/lib/postgresql/data
+    ports:
+      - "5473:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ventrix -d ventrix"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  ventrix-web-data:
+  ventrix-db-data:

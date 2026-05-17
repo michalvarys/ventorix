@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="vx_snippets" inherit_id="website.snippets" name="Ventorix Snippets">
+    <xpath expr="//snippets[@id='snippet_structure']" position="after">
+        <snippets id="vx_snippets_group" string="Ventorix">
+            <t t-snippet="theme_ventorix.s_vx_hero"
+               t-thumbnail="/theme_ventorix/static/src/img/icons/s_vx_hero.png"/>
+            <t t-snippet="theme_ventorix.s_vx_categories"
+               t-thumbnail="/theme_ventorix/static/src/img/icons/s_vx_categories.png"/>
+            <t t-snippet="theme_ventorix.s_vx_about"
+               t-thumbnail="/theme_ventorix/static/src/img/icons/s_vx_about.png"/>
+            <t t-snippet="theme_ventorix.s_vx_process"
+               t-thumbnail="/theme_ventorix/static/src/img/icons/s_vx_process.png"/>
+            <t t-snippet="theme_ventorix.s_vx_china_partner"
+               t-thumbnail="/theme_ventorix/static/src/img/icons/s_vx_china_partner.png"/>
+            <t t-snippet="theme_ventorix.s_vx_certifications"
+               t-thumbnail="/theme_ventorix/static/src/img/icons/s_vx_certifications.png"/>
+            <t t-snippet="theme_ventorix.s_vx_cta"
+               t-thumbnail="/theme_ventorix/static/src/img/icons/s_vx_cta.png"/>
+            <t t-snippet="theme_ventorix.s_vx_contact"
+               t-thumbnail="/theme_ventorix/static/src/img/icons/s_vx_contact.png"/>
+        </snippets>
+    </xpath>
+</template>
+
+</odoo>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+
+<!-- ===================== HOMEPAGE — inherit website.homepage ===================== -->
+<template id="vx_homepage_override" inherit_id="website.homepage" name="Ventorix Homepage Content" active="True">
+    <xpath expr="//div[@id='wrap']" position="replace">
+        <div id="wrap" class="oe_structure">
+            <t t-call="theme_ventorix.s_vx_hero"/>
+            <t t-call="theme_ventorix.s_vx_categories"/>
+            <t t-call="theme_ventorix.s_vx_about"/>
+            <t t-call="theme_ventorix.s_vx_process"/>
+            <t t-call="theme_ventorix.s_vx_china_partner"/>
+            <t t-call="theme_ventorix.s_vx_certifications"/>
+            <t t-call="theme_ventorix.s_vx_cta"/>
+            <t t-call="theme_ventorix.s_vx_contact"/>
+        </div>
+    </xpath>
+</template>
+
+<!-- ===================== PRODUCTS PAGE ===================== -->
+<template id="vx_page_products" name="Ventorix Products">
+    <t t-call="website.layout">
+        <t t-set="additional_title">Products | Ventorix Global Trade</t>
+        <t t-set="meta_description">Browse our full range of industrial piping materials: flanges, pipes, tubes, fittings, valves, and pipeline components.</t>
+
+        <div id="wrap" class="oe_structure oe_empty">
+            <!-- Sub-banner -->
+            <section class="o_cc o_cc5 py-5 position-relative overflow-hidden" style="background-color: #0A1628;">
+                <div class="position-absolute w-100 h-100"
+                     style="top: 0; left: 0;
+                            background-image: url('/theme_ventorix/static/src/img/flanges.jpg');
+                            background-size: cover; background-position: center;
+                            opacity: 0.15;"/>
+                <div class="position-absolute" style="bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, #2E86DE, transparent); opacity: 0.3;"/>
+                <div class="container position-relative text-center py-5" style="z-index: 2;">
+                    <div class="d-flex align-items-center justify-content-center gap-3 mb-3">
+                        <div style="width: 40px; height: 2px; background: linear-gradient(90deg, transparent, #2E86DE);"/>
+                        <span style="color: #2E86DE; font-size: 0.8rem; letter-spacing: 3px; font-weight: 700; text-transform: uppercase;">
+                            Catalog
+                        </span>
+                        <div style="width: 40px; height: 2px; background: linear-gradient(90deg, #2E86DE, transparent);"/>
+                    </div>
+                    <h1 style="font-family: 'Montserrat', sans-serif; font-weight: 900; color: #fff; font-size: 2.75rem; text-transform: uppercase; letter-spacing: 0.02em;">Our Products</h1>
+                    <p style="color: rgba(255,255,255,0.5); max-width: 500px; margin: 1rem auto 0; line-height: 1.7;">
+                        Full range of industrial piping materials, certified to international standards.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Full product catalog with photos -->
+            <t t-call="theme_ventorix.s_vx_catalog"/>
+        </div>
+    </t>
+</template>
+
+<record id="vx_page_products_page" model="theme.website.page">
+    <field name="url">/products</field>
+    <field name="view_id" ref="vx_page_products"/>
+    <field name="is_published" eval="True"/>
+</record>
+
+<!-- ===================== ABOUT PAGE ===================== -->
+<template id="vx_page_about" name="Ventorix About Us">
+    <t t-call="website.layout">
+        <t t-set="additional_title">About Us | Ventorix Global Trade</t>
+        <t t-set="meta_description">Learn about Ventorix Global Trade — your trusted partner for industrial piping materials with direct manufacturing oversight in China.</t>
+
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="o_cc o_cc5 py-5 position-relative overflow-hidden" style="background-color: #0A1628;">
+                <div class="position-absolute w-100 h-100"
+                     style="top: 0; left: 0;
+                            background-image: url('/theme_ventorix/static/src/img/warehouse.jpg');
+                            background-size: cover; background-position: center;
+                            opacity: 0.12;"/>
+                <div class="position-absolute" style="bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, #2E86DE, transparent); opacity: 0.3;"/>
+                <div class="container position-relative text-center py-5" style="z-index: 2;">
+                    <div class="d-flex align-items-center justify-content-center gap-3 mb-3">
+                        <div style="width: 40px; height: 2px; background: linear-gradient(90deg, transparent, #2E86DE);"/>
+                        <span style="color: #2E86DE; font-size: 0.8rem; letter-spacing: 3px; font-weight: 700; text-transform: uppercase;">Who We Are</span>
+                        <div style="width: 40px; height: 2px; background: linear-gradient(90deg, #2E86DE, transparent);"/>
+                    </div>
+                    <h1 style="font-family: 'Montserrat', sans-serif; font-weight: 900; color: #fff; font-size: 2.75rem; text-transform: uppercase; letter-spacing: 0.02em;">About Ventorix</h1>
+                </div>
+            </section>
+
+            <t t-call="theme_ventorix.s_vx_about"/>
+            <t t-call="theme_ventorix.s_vx_china_partner"/>
+            <t t-call="theme_ventorix.s_vx_certifications"/>
+            <t t-call="theme_ventorix.s_vx_cta"/>
+        </div>
+    </t>
+</template>
+
+<record id="vx_page_about_page" model="theme.website.page">
+    <field name="url">/about</field>
+    <field name="view_id" ref="vx_page_about"/>
+    <field name="is_published" eval="True"/>
+</record>
+
+<!-- ===================== CERTIFICATIONS PAGE ===================== -->
+<template id="vx_page_certifications" name="Ventorix Certifications">
+    <t t-call="website.layout">
+        <t t-set="additional_title">Certifications | Ventorix Global Trade</t>
+        <t t-set="meta_description">ISO 9001, EN 10204 3.1, CE Marking, DIN, ANSI, API, ASTM — all certifications and quality standards we comply with.</t>
+
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="o_cc o_cc5 py-5 position-relative overflow-hidden" style="background-color: #0A1628;">
+                <div class="position-absolute w-100 h-100"
+                     style="top: 0; left: 0;
+                            background-image: url('/theme_ventorix/static/src/img/quality-control.jpg');
+                            background-size: cover; background-position: center;
+                            opacity: 0.12;"/>
+                <div class="position-absolute" style="bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, #2E86DE, transparent); opacity: 0.3;"/>
+                <div class="container position-relative text-center py-5" style="z-index: 2;">
+                    <div class="d-flex align-items-center justify-content-center gap-3 mb-3">
+                        <div style="width: 40px; height: 2px; background: linear-gradient(90deg, transparent, #2E86DE);"/>
+                        <span style="color: #2E86DE; font-size: 0.8rem; letter-spacing: 3px; font-weight: 700; text-transform: uppercase;">Quality Standards</span>
+                        <div style="width: 40px; height: 2px; background: linear-gradient(90deg, #2E86DE, transparent);"/>
+                    </div>
+                    <h1 style="font-family: 'Montserrat', sans-serif; font-weight: 900; color: #fff; font-size: 2.75rem; text-transform: uppercase; letter-spacing: 0.02em;">Certifications</h1>
+                </div>
+            </section>
+
+            <t t-call="theme_ventorix.s_vx_certifications"/>
+
+            <!-- Quality priority section - dark theme -->
+            <section class="o_cc o_cc5 o_colored_level py-5" style="background-color: #0E1F38;">
+                <div class="container py-5">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div style="width: 40px; height: 2px; background: linear-gradient(90deg, #2E86DE, #00D4FF);"/>
+                                <span style="color: #2E86DE; font-size: 0.8rem; letter-spacing: 3px; font-weight: 700; text-transform: uppercase;">Our Commitment</span>
+                            </div>
+                            <h2 style="font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 2.25rem; color: #fff; text-transform: uppercase; letter-spacing: 0.02em; line-height: 1.2; margin-bottom: 1.5rem;">
+                                Quality is Our Priority
+                            </h2>
+                            <p style="color: rgba(255,255,255,0.55); line-height: 1.8; margin-bottom: 1.5rem;">
+                                Every product comes with complete material certification
+                                and test reports as per EN 10204 3.1. Our on-site quality team in China
+                                performs rigorous inspections including:
+                            </p>
+                            <ul style="color: rgba(255,255,255,0.6); line-height: 2.2; padding-left: 1.25rem;">
+                                <li>Visual and dimensional inspection</li>
+                                <li>Hydrostatic pressure testing</li>
+                                <li>Chemical composition analysis</li>
+                                <li>Mechanical property testing</li>
+                                <li>Non-destructive testing (NDT)</li>
+                                <li>Surface finish verification</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <div style="border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+                                <img src="/theme_ventorix/static/src/img/manufacturing.jpg"
+                                     class="img-fluid" alt="Quality inspection"
+                                     style="width: 100%;"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <t t-call="theme_ventorix.s_vx_cta"/>
+        </div>
+    </t>
+</template>
+
+<record id="vx_page_certifications_page" model="theme.website.page">
+    <field name="url">/certifications</field>
+    <field name="view_id" ref="vx_page_certifications"/>
+    <field name="is_published" eval="True"/>
+</record>
+
+<!-- ===================== CONTACT PAGE ===================== -->
+<template id="vx_page_contact" name="Ventorix Contact">
+    <t t-call="website.layout">
+        <t t-set="additional_title">Contact | Ventorix Global Trade</t>
+        <t t-set="meta_description">Contact Ventorix Global Trade for a free quote on industrial piping materials. Upload your specifications and receive pricing within 2-3 business days.</t>
+
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="o_cc o_cc5 py-5 position-relative overflow-hidden" style="background-color: #0A1628;">
+                <div class="position-absolute w-100 h-100"
+                     style="top: 0; left: 0;
+                            background-image: url('/theme_ventorix/static/src/img/logistics.jpg');
+                            background-size: cover; background-position: center;
+                            opacity: 0.12;"/>
+                <div class="position-absolute" style="bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, #2E86DE, transparent); opacity: 0.3;"/>
+                <div class="container position-relative text-center py-5" style="z-index: 2;">
+                    <div class="d-flex align-items-center justify-content-center gap-3 mb-3">
+                        <div style="width: 40px; height: 2px; background: linear-gradient(90deg, transparent, #2E86DE);"/>
+                        <span style="color: #2E86DE; font-size: 0.8rem; letter-spacing: 3px; font-weight: 700; text-transform: uppercase;">Contact Us</span>
+                        <div style="width: 40px; height: 2px; background: linear-gradient(90deg, #2E86DE, transparent);"/>
+                    </div>
+                    <h1 style="font-family: 'Montserrat', sans-serif; font-weight: 900; color: #fff; font-size: 2.75rem; text-transform: uppercase; letter-spacing: 0.02em;">Get in Touch</h1>
+                    <p style="color: rgba(255,255,255,0.5); max-width: 500px; margin: 1rem auto 0; line-height: 1.7;">
+                        Send us your requirements and receive a detailed quotation within 2-3 business days.
+                    </p>
+                </div>
+            </section>
+
+            <t t-call="theme_ventorix.s_vx_contact"/>
+        </div>
+    </t>
+</template>
+
+<record id="vx_page_contact_page" model="theme.website.page">
+    <field name="url">/contact</field>
+    <field name="view_id" ref="vx_page_contact"/>
+    <field name="is_published" eval="True"/>
+</record>
+
+</data>
+</odoo>

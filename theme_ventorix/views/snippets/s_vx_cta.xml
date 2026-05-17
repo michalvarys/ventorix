@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_vx_cta" name="Ventorix CTA Section">
+    <section class="s_vx_cta o_cc o_cc5 o_colored_level py-5 position-relative overflow-hidden"
+             style="background: linear-gradient(135deg, #1B3A5C 0%, #0A1628 100%);">
+        <!-- Background image -->
+        <div class="position-absolute w-100 h-100"
+             style="top: 0; left: 0;
+                    background-image: url('/theme_ventorix/static/src/img/steel-pipes.jpg');
+                    background-size: cover; background-position: center;
+                    opacity: 0.08;"/>
+        <!-- Glow accent -->
+        <div class="position-absolute"
+             style="top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, #2E86DE, transparent); opacity: 0.4;"/>
+
+        <div class="container position-relative text-center py-5" style="z-index: 2;">
+            <div class="d-flex align-items-center justify-content-center gap-3 mb-4">
+                <div class="vx_accent_line_left"/>
+                <span class="vx_accent_label" style="font-size: 0.75rem;">
+                    Let's Work Together
+                </span>
+                <div class="vx_accent_line_right"/>
+            </div>
+            <h2 class="vx_heading_light" style="font-size: 2.75rem;">
+                Ready to Start<br/>Your Project?
+            </h2>
+            <p class="vx_text_body_dark" style="font-size: 1.05rem; max-width: 500px; margin: 0 auto 2.5rem;">
+                Send us your specifications and receive a competitive quote
+                within 2-3 business days. No commitment required.
+            </p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="/contact#quote" class="btn vx_btn_white px-5 py-3">
+                    Request Quote
+                </a>
+                <a href="/contact" class="btn vx_btn_outline px-5 py-3">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

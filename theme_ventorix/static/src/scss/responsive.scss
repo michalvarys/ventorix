@@ -1,0 +1,417 @@
+// ============================================================================
+// Ventorix Global Trade — Responsive Styles (Premium Dark)
+// Breakpoints: 991px (tablet), 767px (mobile), 479px (small mobile)
+// ============================================================================
+
+// Hex values needed for rgba() in media queries
+$vx-accent-hex: #2E86DE;
+$vx-cyan-hex:   #00D4FF;
+
+// ===========================================================================
+// TABLET — max-width: 991.98px
+// ===========================================================================
+@media (max-width: 991.98px) {
+
+    // Header — ensure offcanvas isn't clipped
+    #wrapwrap header,
+    #wrapwrap header .o_header_standard,
+    #wrapwrap header .o_header_affixed,
+    #wrapwrap header nav {
+        overflow: visible !important;
+    }
+
+    // Hero
+    .s_vx_hero section {
+        min-height: 80vh;
+
+        h1 {
+            font-size: 2.5rem !important;
+        }
+    }
+
+    // Section padding
+    .s_vx_categories section,
+    .s_vx_about section,
+    .s_vx_process section,
+    .s_vx_china_partner section,
+    .s_vx_certifications section,
+    .s_vx_cta section,
+    .s_vx_contact section {
+        padding: 3.5rem 0 !important;
+    }
+
+    // Cards — no hover transform on touch
+    .vx_card,
+    .vx_card_light,
+    .vx_category_card {
+        &:hover {
+            transform: none;
+        }
+    }
+
+    // Geometric corners — hide on tablet
+    .vx_geo_corner {
+        display: none;
+    }
+
+    // Footer
+    .vx-footer .container > .row {
+        gap: 0.5rem;
+    }
+
+    .vx-copyright .row {
+        text-align: center;
+
+        .col-md-6 {
+            text-align: center !important;
+        }
+    }
+
+    .vx-copyright-links {
+        justify-content: center !important;
+    }
+}
+
+// ===========================================================================
+// GLOBAL MOBILE — prevent horizontal scroll from offcanvas drawer
+// ===========================================================================
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+#wrapwrap {
+    overflow-x: hidden;
+    position: relative;
+}
+
+// ===========================================================================
+// MOBILE — max-width: 767.98px
+// ===========================================================================
+@media (max-width: 767.98px) {
+
+    // Hero — compact
+    .s_vx_hero {
+        overflow: hidden !important;
+
+        section, & {
+            min-height: auto !important;
+        }
+
+        h1 {
+            font-size: 1.75rem !important;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            letter-spacing: -0.02em !important;
+        }
+
+        p {
+            font-size: 0.9rem !important;
+        }
+
+        .d-flex.flex-wrap.gap-3 {
+            flex-direction: column;
+            align-items: stretch;
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        // Geometric corners — hide on mobile
+        .position-absolute[style*="border-left"],
+        .position-absolute[style*="border-right"] {
+            display: none !important;
+        }
+
+        .row.min-vh-100 {
+            min-height: auto !important;
+            padding: 4rem 0 2rem !important;
+        }
+    }
+
+    // Hero stats bar — 2x2 grid
+    .s_vx_hero .row.text-center {
+        display: flex !important;
+        flex-wrap: wrap !important;
+
+        .col-3 {
+            flex: 0 0 50% !important;
+            max-width: 50% !important;
+            border-left: none !important;
+            padding: 0.75rem 0 !important;
+
+            &:nth-child(1),
+            &:nth-child(2) {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            }
+
+            &:nth-child(2),
+            &:nth-child(4) {
+                border-left: 1px solid rgba(255, 255, 255, 0.06) !important;
+            }
+
+            // Smaller stat numbers
+            > div:first-child {
+                font-size: 1.5rem !important;
+            }
+
+            > div:last-child {
+                font-size: 0.6rem !important;
+                letter-spacing: 1px !important;
+            }
+        }
+    }
+
+    // Section titles
+    .s_vx_categories h2,
+    .s_vx_about h2,
+    .s_vx_process h2,
+    .s_vx_china_partner h2,
+    .s_vx_certifications h2,
+    .s_vx_contact h2 {
+        font-size: 1.5rem !important;
+    }
+
+    // Process steps
+    .s_vx_process .row .col-lg-2 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    // Certifications grid
+    .s_vx_certifications .col-lg-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    // China partner stats — horizontal row, centered
+    .s_vx_china_partner .row.g-0.text-center {
+        flex-wrap: nowrap !important;
+        text-align: center !important;
+
+        .col-4 {
+            flex: 1 1 33.33% !important;
+            max-width: 33.33% !important;
+            border-left: none !important;
+            border-right: none !important;
+            padding: 1rem 0.25rem !important;
+
+            &:nth-child(2) {
+                border-left: 1px solid rgba(255, 255, 255, 0.06) !important;
+                border-right: 1px solid rgba(255, 255, 255, 0.06) !important;
+            }
+
+            > div:first-child {
+                font-size: 1.25rem !important;
+            }
+
+            > div:last-child {
+                font-size: 0.55rem !important;
+                letter-spacing: 1px !important;
+            }
+        }
+    }
+
+    // CTA
+    .s_vx_cta h2 {
+        font-size: 1.75rem !important;
+    }
+
+    .s_vx_cta .d-flex.gap-3 {
+        flex-direction: column;
+        align-items: stretch;
+
+        .btn {
+            width: 100%;
+        }
+    }
+
+    // Contact form
+    .vx_contact_form {
+        padding: 1.5rem !important;
+
+        .col-md-6 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    // Footer — compact two-column on mobile
+    .vx-footer > .container {
+        padding-top: 2rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+    .vx-footer .container > .row {
+        // Company info: full width but compact
+        > .col-lg-4:first-child {
+            flex: 0 0 100%;
+            max-width: 100%;
+            text-align: center;
+            margin-bottom: 0.5rem;
+            padding-bottom: 1.25rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+            p {
+                max-width: 320px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 1rem !important;
+                font-size: 0.8rem !important;
+                line-height: 1.7 !important;
+            }
+        }
+
+        // Nav + Products columns: side by side
+        > .col-lg-2 {
+            flex: 0 0 50%;
+            max-width: 50%;
+            text-align: left;
+        }
+
+        // Contact column: full width, compact card layout
+        > .col-lg-4:last-child {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding-top: 0.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+        }
+    }
+
+    .vx-footer-heading {
+        font-size: 0.7rem !important;
+        margin-bottom: 0.75rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+
+    .vx-footer-links {
+        li {
+            margin-bottom: 0.1rem !important;
+        }
+
+        a {
+            font-size: 0.8rem !important;
+            padding: 0.15rem 0 !important;
+        }
+    }
+
+    .vx-footer-contact-item {
+        justify-content: flex-start;
+        margin-bottom: 0.5rem !important;
+        font-size: 0.8rem !important;
+    }
+
+    .vx-footer-contact-icon {
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 0.7rem !important;
+    }
+
+    .vx-footer-contact-label {
+        font-size: 0.7rem !important;
+    }
+
+    // Contact items in a row on mobile
+    .vx-footer > .container > .row > .col-lg-4:last-child {
+        .vx-footer-heading {
+            text-align: center;
+
+            &::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        // Contact items as horizontal row
+        .vx-footer-contact-item {
+            display: inline-flex;
+            margin-right: 0.75rem;
+        }
+    }
+
+    .vx-footer .d-flex.flex-wrap.gap-2 {
+        justify-content: center;
+        gap: 0.25rem !important;
+    }
+
+    .vx-cert-badge {
+        min-width: 30px !important;
+        height: 24px !important;
+        font-size: 0.55rem !important;
+        padding: 0.15rem 0.35rem !important;
+    }
+
+    .vx-footer .btn.vx-btn-cta {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0.625rem 1rem !important;
+        font-size: 0.8rem !important;
+        margin-top: 0.75rem !important;
+    }
+
+    .vx-copyright {
+        padding: 0.75rem 0 !important;
+    }
+
+    .vx-copyright-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .vx-copyright-text {
+        font-size: 0.65rem !important;
+    }
+
+    // Buttons — full width
+    .vx_btn_primary,
+    .vx_btn_outline,
+    .vx_btn_white {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    // Page banners
+    .vx_page_banner h1,
+    section.py-5 h1 {
+        font-size: 1.75rem !important;
+    }
+}
+
+// ===========================================================================
+// SMALL MOBILE — max-width: 479.98px
+// ===========================================================================
+@media (max-width: 479.98px) {
+
+    .s_vx_hero {
+        h1 {
+            font-size: 1.35rem !important;
+        }
+
+        .row.min-vh-100 {
+            padding: 3rem 0 1.5rem !important;
+        }
+    }
+
+    // Process — single column
+    .s_vx_process .row .col-lg-2 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    // Certifications — single column
+    .s_vx_certifications .col-lg-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    // Category cards on about/product pages
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

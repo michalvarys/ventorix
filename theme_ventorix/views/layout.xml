@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ============================================================ -->
+    <!-- HEADER                                                        -->
+    <!-- ============================================================ -->
+    <template id="vx_header" inherit_id="website.layout" name="Ventorix Header" active="True">
+        <xpath expr="//header//nav" position="replace">
+            <nav class="navbar navbar-expand-lg vx-navbar py-0"
+                 style="background-color: rgba(10, 22, 40, 0.95); backdrop-filter: blur(12px);">
+                <!-- Glow line -->
+                <div class="position-absolute w-100"
+                     style="top: 0; left: 0; height: 1px; background: linear-gradient(90deg, transparent 0%, #2E86DE 30%, #00D4FF 50%, #2E86DE 70%, transparent 100%); opacity: 0.5; z-index: 10;"/>
+
+                <div class="container">
+
+                    <!-- Logo -->
+                    <a class="navbar-brand py-2" href="/">
+                        <span style="font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1.25rem; color: #fff; text-transform: uppercase; letter-spacing: 0.06em;">
+                            VENTORIX
+                        </span>
+                    </a>
+
+                    <!-- Mobile toggle -->
+                    <button class="navbar-toggler border-0 text-white"
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#vxMobileMenu"
+                            aria-controls="vxMobileMenu"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"/>
+                    </button>
+
+                    <!-- Desktop Navigation -->
+                    <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex"
+                         id="vxDesktopNav">
+                        <ul class="navbar-nav align-items-center gap-1">
+                            <t t-foreach="website.menu_id.child_id" t-as="menu">
+                                <t t-if="menu.name == 'Request Quote'">
+                                    <li class="nav-item ms-3">
+                                        <a class="btn btn-sm vx-btn-cta px-4 py-2"
+                                           t-att-href="menu.url"
+                                           t-out="menu.name"/>
+                                    </li>
+                                </t>
+                                <t t-else="">
+                                    <li class="nav-item">
+                                        <a class="nav-link px-3 py-3"
+                                           t-att-href="menu.url"
+                                           t-out="menu.name"/>
+                                    </li>
+                                </t>
+                            </t>
+                        </ul>
+                    </div>
+
+                    <!-- Mobile Offcanvas Menu -->
+                    <div class="offcanvas offcanvas-end d-lg-none"
+                         tabindex="-1"
+                         id="vxMobileMenu"
+                         aria-labelledby="vxMobileMenuLabel">
+                        <div class="offcanvas-header"
+                             style="border-bottom: 1px solid rgba(46,134,222,0.1);">
+                            <span style="font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1.1rem; color: #fff; text-transform: uppercase; letter-spacing: 0.06em;">
+                                VENTORIX
+                            </span>
+                            <button type="button"
+                                    class="btn-close btn-close-white"
+                                    data-bs-dismiss="offcanvas"
+                                    aria-label="Close"/>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav">
+                                <t t-foreach="website.menu_id.child_id" t-as="menu">
+                                    <t t-if="menu.name == 'Request Quote'">
+                                        <li class="nav-item mt-3">
+                                            <a class="btn vx-btn-cta w-100 py-3 vx-offcanvas-link"
+                                               t-att-href="menu.url"
+                                               t-out="menu.name"/>
+                                        </li>
+                                    </t>
+                                    <t t-else="">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white py-3 vx-offcanvas-link"
+                                               style="border-bottom: 1px solid rgba(255,255,255,0.05);"
+                                               t-att-href="menu.url"
+                                               t-out="menu.name"/>
+                                        </li>
+                                    </t>
+                                </t>
+                            </ul>
+                        </div>
+                    </div>
+                    <script>
+                        document.addEventListener('click', function(e) {
+                            var link = e.target.closest('.vx-offcanvas-link');
+                            if (!link) return;
+                            var href = link.getAttribute('href');
+                            if (!href) return;
+                            e.preventDefault();
+                            var el = document.getElementById('vxMobileMenu');
+                            if (el &amp;&amp; el.classList.contains('show')) {
+                                var close = el.querySelector('[data-bs-dismiss="offcanvas"]');
+                                if (close) close.click();
+                                setTimeout(function() { window.location.href = href; }, 350);
+                            } else {
+                                window.location.href = href;
+                            }
+                        });
+                    </script>
+
+                </div>
+            </nav>
+        </xpath>
+    </template>
+
+    <!-- ============================================================ -->
+    <!-- FOOTER                                                        -->
+    <!-- ============================================================ -->
+    <template id="vx_footer" inherit_id="website.layout" name="Ventorix Footer" active="True">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer" class="vx-footer o_cc o_cc5">
+
+                <!-- Glow divider at top -->
+                <div style="height: 1px; background: linear-gradient(90deg, transparent, #2E86DE, #00D4FF, #2E86DE, transparent); opacity: 0.3;"/>
+
+                <!-- Main Footer -->
+                <div class="container py-5">
+                    <div class="row g-4 g-lg-5">
+
+                        <!-- Column 1: Company Info -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="mb-3">
+                                <span style="font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 0.06em;">
+                                    VENTORIX
+                                </span>
+                            </div>
+                            <p class="vx_text_muted_dark" style="font-size: 0.875rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                                Your trusted partner for industrial piping materials.
+                                Direct sourcing from certified manufacturers with
+                                European quality standards and on-site oversight.
+                            </p>
+                            <!-- Cert badges row -->
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="vx-cert-badge">ISO</span>
+                                <span class="vx-cert-badge">CE</span>
+                                <span class="vx-cert-badge">EN</span>
+                                <span class="vx-cert-badge">API</span>
+                                <span class="vx-cert-badge">PED</span>
+                            </div>
+                        </div>
+
+                        <!-- Column 2: Quick Links -->
+                        <div class="col-lg-2 col-md-6">
+                            <h6 class="vx-footer-heading">Navigation</h6>
+                            <ul class="vx-footer-links">
+                                <li><a href="/"><i class="fa fa-home me-2"/>Home</a></li>
+                                <li><a href="/products"><i class="fa fa-cubes me-2"/>Products</a></li>
+                                <li><a href="/about"><i class="fa fa-building me-2"/>About Us</a></li>
+                                <li><a href="/certifications"><i class="fa fa-certificate me-2"/>Certifications</a></li>
+                                <li><a href="/contact"><i class="fa fa-paper-plane me-2"/>Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 3: Products -->
+                        <div class="col-lg-2 col-md-6">
+                            <h6 class="vx-footer-heading">Products</h6>
+                            <ul class="vx-footer-links">
+                                <li><a href="/products#flanges"><i class="fa fa-cog me-2"/>Flanges</a></li>
+                                <li><a href="/products#pipes"><i class="fa fa-industry me-2"/>Pipes &amp; Tubes</a></li>
+                                <li><a href="/products#fittings"><i class="fa fa-wrench me-2"/>Fittings</a></li>
+                                <li><a href="/products#valves"><i class="fa fa-stop-circle me-2"/>Valves</a></li>
+                                <li><a href="/products#materials"><i class="fa fa-cubes me-2"/>Industrial Materials</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 4: Contact Info -->
+                        <div class="col-lg-4 col-md-6">
+                            <h6 class="vx-footer-heading">Contact</h6>
+                            <div class="vx-footer-contact-item">
+                                <div class="vx-footer-contact-icon">
+                                    <i class="fa fa-envelope"/>
+                                </div>
+                                <div>
+                                    <span class="vx-footer-contact-label">E-mail</span>
+                                    <a href="mailto:info@ventorix.com">info@ventorix.com</a>
+                                </div>
+                            </div>
+                            <div class="vx-footer-contact-item">
+                                <div class="vx-footer-contact-icon">
+                                    <i class="fa fa-phone"/>
+                                </div>
+                                <div>
+                                    <span class="vx-footer-contact-label">Phone</span>
+                                    <span class="vx_text_muted_dark" style="font-size: 0.875rem;">+420 XXX XXX XXX</span>
+                                </div>
+                            </div>
+                            <div class="vx-footer-contact-item">
+                                <div class="vx-footer-contact-icon">
+                                    <i class="fa fa-map-marker"/>
+                                </div>
+                                <div>
+                                    <span class="vx-footer-contact-label">Headquarters</span>
+                                    <span class="vx_text_muted_dark" style="font-size: 0.875rem;">Czech Republic, EU</span>
+                                </div>
+                            </div>
+                            <!-- CTA -->
+                            <a href="/contact#quote" class="btn vx-btn-cta mt-3 px-4 py-2">
+                                Request Quote
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Copyright Bar -->
+                <div class="vx-copyright">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 text-center text-md-start">
+                                <p class="vx-copyright-text">
+                                    <t t-esc="str(datetime.date.today().year)"/>
+                                    Ventorix Global Trade s.r.o. All rights reserved.
+                                </p>
+                            </div>
+                            <div class="col-md-6 text-center text-md-end">
+                                <div class="vx-copyright-links justify-content-center justify-content-md-end">
+                                    <a href="/privacy">Privacy Policy</a>
+                                    <a href="/terms">Terms of Service</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </xpath>
+    </template>
+
+    <!-- ============================================================ -->
+    <!-- BODY CLASS                                                    -->
+    <!-- ============================================================ -->
+    <template id="vx_body_class" inherit_id="website.layout" name="Ventorix Body Class">
+        <xpath expr="//body" position="attributes">
+            <attribute name="class" separator=" " add="vx-body"/>
+        </xpath>
+    </template>
+
+</odoo>

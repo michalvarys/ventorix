@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_vx_contact" name="Ventorix Contact Section">
+    <section class="s_vx_contact o_cc o_cc5 o_colored_level py-5" id="quote">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="vx_accent_line"/>
+                        <span class="vx_accent_label">
+                            Get In Touch
+                        </span>
+                    </div>
+                    <h2 class="vx_heading_light" style="font-size: 2.25rem; margin-bottom: 1.5rem;">
+                        Request a Quote
+                    </h2>
+                    <p class="vx_text_body_dark" style="line-height: 1.8; margin-bottom: 2.5rem;">
+                        Tell us about your requirements and we'll provide a detailed quotation
+                        within 2-3 business days.
+                    </p>
+
+                    <div class="mb-4">
+                        <div class="d-flex align-items-start gap-3 mb-4">
+                            <div class="vx_icon_circle_lg">
+                                <i class="fa fa-envelope" style="font-size: 1rem;"/>
+                            </div>
+                            <div>
+                                <strong style="font-size: 0.9rem;">Email</strong>
+                                <p class="mb-0 vx_text_muted_dark" style="font-size: 0.9rem;">info@ventorix.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start gap-3 mb-4">
+                            <div class="vx_icon_circle_lg">
+                                <i class="fa fa-phone" style="font-size: 1rem;"/>
+                            </div>
+                            <div>
+                                <strong style="font-size: 0.9rem;">Phone</strong>
+                                <p class="mb-0 vx_text_muted_dark" style="font-size: 0.9rem;">+420 XXX XXX XXX</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="vx_icon_circle_lg">
+                                <i class="fa fa-map-marker" style="font-size: 1rem;"/>
+                            </div>
+                            <div>
+                                <strong style="font-size: 0.9rem;">Office</strong>
+                                <p class="mb-0 vx_text_muted_dark" style="font-size: 0.9rem;">Czech Republic, EU</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vx_info_box">
+                        <p class="small mb-0 vx_text_body_dark">
+                            <i class="fa fa-info-circle me-2" style="color: #2E86DE;"/>
+                            You can also send inquiries directly to
+                            <strong>info@ventorix.com</strong> with PDF/XLS specs attached.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="vx_contact_form vx_image_card p-4 p-lg-5">
+                        <section class="s_website_form" data-snippet="s_website_form">
+                            <div class="container p-0">
+                                <form id="vx_contactus_form" action="/website/form/" method="post"
+                                      enctype="multipart/form-data"
+                                      class="o_mark_required" data-mark="*"
+                                      data-model_name="mail.mail"
+                                      data-success-mode="redirect"
+                                      data-success-page="/contactus-thank-you">
+                                    <div class="s_website_form_rows row s_col_no_bgcolor g-3">
+
+                                        <!-- Company Name -->
+                                        <div class="col-md-6 s_website_form_field s_website_form_custom" data-type="char" data-name="Field">
+                                            <label class="s_website_form_label" style="width: 100%;" for="vxf1">
+                                                <span class="s_website_form_label_content">Company Name</span>
+                                            </label>
+                                            <input id="vxf1" type="text" class="form-control s_website_form_input"
+                                                   name="company" data-fill-with="commercial_company_name"
+                                                   placeholder="Your company"/>
+                                        </div>
+
+                                        <!-- Contact Person -->
+                                        <div class="col-md-6 s_website_form_field s_website_form_custom s_website_form_required" data-type="char" data-name="Field">
+                                            <label class="s_website_form_label" style="width: 100%;" for="vxf2">
+                                                <span class="s_website_form_label_content">Contact Person</span>
+                                                <span class="s_website_form_mark"> *</span>
+                                            </label>
+                                            <input id="vxf2" type="text" class="form-control s_website_form_input"
+                                                   name="name" required="" data-fill-with="name"
+                                                   placeholder="Full name"/>
+                                        </div>
+
+                                        <!-- Email -->
+                                        <div class="col-md-6 s_website_form_field s_website_form_required s_website_form_model_required" data-type="email" data-name="Field">
+                                            <label class="s_website_form_label" style="width: 100%;" for="vxf3">
+                                                <span class="s_website_form_label_content">Email</span>
+                                                <span class="s_website_form_mark"> *</span>
+                                            </label>
+                                            <input id="vxf3" type="email" class="form-control s_website_form_input"
+                                                   name="email_from" required="" data-fill-with="email"
+                                                   placeholder="email@company.com"/>
+                                        </div>
+
+                                        <!-- Phone -->
+                                        <div class="col-md-6 s_website_form_field s_website_form_custom" data-type="char" data-name="Field">
+                                            <label class="s_website_form_label" style="width: 100%;" for="vxf4">
+                                                <span class="s_website_form_label_content">Phone</span>
+                                            </label>
+                                            <input id="vxf4" type="tel" class="form-control s_website_form_input"
+                                                   name="phone" data-fill-with="phone"
+                                                   placeholder="+420..."/>
+                                        </div>
+
+                                        <!-- Subject -->
+                                        <div class="col-12 s_website_form_field s_website_form_required s_website_form_model_required" data-type="char" data-name="Field">
+                                            <label class="s_website_form_label" style="width: 100%;" for="vxf5">
+                                                <span class="s_website_form_label_content">Subject</span>
+                                                <span class="s_website_form_mark"> *</span>
+                                            </label>
+                                            <input id="vxf5" type="text" class="form-control s_website_form_input"
+                                                   name="subject" required=""
+                                                   placeholder="Quote request — flanges DN100 PN16"/>
+                                        </div>
+
+                                        <!-- Product Interest -->
+                                        <div class="col-12 s_website_form_field s_website_form_custom" data-type="selection" data-name="Field">
+                                            <label class="s_website_form_label" style="width: 100%;" for="vxf6">
+                                                <span class="s_website_form_label_content">Product Interest</span>
+                                            </label>
+                                            <select id="vxf6" class="form-select s_website_form_input" name="Product Interest">
+                                                <option value="">Select category...</option>
+                                                <option value="Flanges">Flanges</option>
+                                                <option value="Pipes &amp; Tubes">Pipes &amp; Tubes</option>
+                                                <option value="Fittings">Fittings</option>
+                                                <option value="Valves">Valves</option>
+                                                <option value="Pipeline Components">Pipeline Components</option>
+                                                <option value="Industrial Materials">Industrial Materials</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+
+                                        <!-- Requirements / Message -->
+                                        <div class="col-12 s_website_form_field s_website_form_custom s_website_form_required" data-type="text" data-name="Field">
+                                            <label class="s_website_form_label" style="width: 100%;" for="vxf7">
+                                                <span class="s_website_form_label_content">Requirements</span>
+                                                <span class="s_website_form_mark"> *</span>
+                                            </label>
+                                            <textarea id="vxf7" class="form-control s_website_form_input"
+                                                      name="description" rows="5" required=""
+                                                      placeholder="Product type, quantity, specifications, standards, delivery timeline..."/>
+                                        </div>
+
+                                        <!-- Hidden email_to -->
+                                        <div class="col-12 s_website_form_field s_website_form_dnone">
+                                            <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                <label class="col-form-label col-sm-auto s_website_form_label" for="vxf_email_to">
+                                                    <span class="s_website_form_label_content">Email To</span>
+                                                </label>
+                                                <div class="col-sm">
+                                                    <input id="vxf_email_to" type="hidden" class="form-control s_website_form_input" name="email_to" value="info@ventorix.com"/>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Submit -->
+                                        <div class="col-12 mt-4 s_website_form_submit" data-name="Submit Button">
+                                            <div class="s_website_form_label" style="width: 0;"/>
+                                            <a href="#" role="button" class="btn vx_btn_primary w-100 py-3 s_website_form_send"
+                                               style="font-size: 0.95rem;">
+                                                Send Inquiry
+                                            </a>
+                                            <span id="s_website_form_result"/>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

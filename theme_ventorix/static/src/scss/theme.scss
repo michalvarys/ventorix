@@ -1,0 +1,966 @@
+// ============================================================================
+// Ventorix Global Trade — Premium Industrial Theme
+// Modern, futuristic B2B design with trust-building elements
+// ============================================================================
+// RULES:
+//   - NEVER comma-separated box-shadow (Odoo editor crash)
+//   - NEVER :has() selector (libsass incompatible)
+//   - Single-value transitions only
+//   - Grid containers need clearfix neutralization
+//   - Use Odoo CSS custom properties for palette colors
+// ============================================================================
+
+// Odoo palette mapping:
+//   $vx-white = #FFFFFF   (white, light bg)
+//   $vx-dark-text = #333333   (dark text)
+//   var(--o-color-3) = #F4F6F8   (light gray, alt bg)
+//   $vx-accent-hex = #2E86DE   (accent blue)
+//   $vx-primary-hex = #0A1628   (dark navy)
+
+// Fixed brand colors — independent of Odoo palette/theme panel changes.
+// var(--o-color-X) gets overridden by user via Theme panel, so components
+// that need guaranteed contrast must use these SCSS variables instead.
+$vx-white:            #FFFFFF;
+$vx-dark-text:        #333333;
+$vx-light-bg:         #F4F6F8;
+$vx-accent-hex:       #2E86DE;
+$vx-accent-dark-hex:  #1A6FC4;
+$vx-cyan-hex:         #00D4FF;
+$vx-primary-hex:      #0A1628;
+$vx-primary-light-hex: #0E1F38;
+$vx-muted-text:       #6B7280;
+
+// ---------------------------------------------------------------------------
+// Global
+// ---------------------------------------------------------------------------
+#wrapwrap {
+    font-family: 'Inter', sans-serif;
+    color: $vx-dark-text;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// ---------------------------------------------------------------------------
+// Section Title
+// ---------------------------------------------------------------------------
+.vx_section_title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: $vx-primary-hex;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 1rem;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 60px;
+        height: 3px;
+        background: linear-gradient(90deg, $vx-accent-hex 0%, $vx-cyan-hex 100%);
+    }
+
+    &.text-center::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &.text-white {
+        color: $vx-white;
+    }
+}
+
+.vx_section_subtitle {
+    font-size: 1.0625rem;
+    color: #6B7280;
+    line-height: 1.7;
+    max-width: 680px;
+    margin-bottom: 2.5rem;
+
+    &.text-center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.vx_label {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: $vx-accent-hex;
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 2.5rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 2rem;
+        height: 2px;
+        background: linear-gradient(90deg, $vx-accent-hex, transparent);
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Accent line decorations (used in snippet headers)
+// ---------------------------------------------------------------------------
+.vx_accent_line {
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, $vx-accent-hex, $vx-cyan-hex);
+}
+
+.vx_accent_line_left {
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, $vx-accent-hex);
+}
+
+.vx_accent_line_right {
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, $vx-accent-hex, transparent);
+}
+
+.vx_accent_label {
+    color: $vx-accent-hex;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+// ---------------------------------------------------------------------------
+// Section headings (inside snippets — driven by CC class)
+// ---------------------------------------------------------------------------
+.vx_heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.vx_heading_light {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+}
+
+// ---------------------------------------------------------------------------
+// Sections
+// ---------------------------------------------------------------------------
+.vx_section {
+    padding: 6rem 0;
+
+    &.vx_section_dark {
+        color: rgba(255, 255, 255, 0.85);
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Buttons
+// ---------------------------------------------------------------------------
+.vx_btn_primary {
+    display: inline-block;
+    background: linear-gradient(135deg, $vx-accent-hex 0%, $vx-accent-dark-hex 100%);
+    color: $vx-white;
+    border: none;
+    padding: 0.9375rem 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(46, 134, 222, 0.3);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0 6px 25px rgba(46, 134, 222, 0.5);
+        transform: translateY(-2px);
+        color: $vx-white;
+        text-decoration: none;
+    }
+}
+
+.vx_btn_outline {
+    display: inline-block;
+    background-color: transparent;
+    color: $vx-white;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    padding: 0.8125rem 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:focus {
+        background-color: $vx-white;
+        border-color: $vx-white;
+        color: $vx-primary-hex;
+        text-decoration: none;
+    }
+
+    &.vx_btn_outline_blue {
+        color: $vx-accent-hex;
+        border-color: $vx-accent-hex;
+
+        &:hover,
+        &:focus {
+            background-color: $vx-accent-hex;
+            color: $vx-white;
+        }
+    }
+}
+
+.vx_btn_white {
+    display: inline-block;
+    background-color: $vx-white;
+    color: $vx-primary-hex;
+    border: none;
+    padding: 0.9375rem 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:focus {
+        background-color: $vx-accent-hex;
+        color: $vx-white;
+        text-decoration: none;
+        transform: translateY(-2px);
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Cards — Glassmorphism on dark backgrounds
+// ---------------------------------------------------------------------------
+.vx_card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+        border-color: rgba(46, 134, 222, 0.3);
+        box-shadow: 0 8px 32px rgba(46, 134, 222, 0.1);
+        transform: translateY(-3px);
+    }
+}
+
+.vx_card_light {
+    background: $vx-white;
+    border: 1px solid #E8ECF1;
+    border-radius: 4px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, $vx-accent-hex, transparent);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    &:hover {
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+        transform: translateY(-4px);
+
+        &::before {
+            opacity: 1;
+        }
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Hero Section
+// ---------------------------------------------------------------------------
+.vx_hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+    .vx_hero_content {
+        position: relative;
+        z-index: 2;
+        max-width: 860px;
+        padding: 2rem 0;
+    }
+
+    .vx_hero_title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 3.75rem;
+        color: $vx-white;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+    }
+
+    .vx_hero_subtitle {
+        font-size: 1.25rem;
+        color: rgba(255, 255, 255, 0.75);
+        line-height: 1.7;
+        margin-bottom: 2.5rem;
+        max-width: 580px;
+    }
+
+    .vx_hero_actions {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Stat Box
+// ---------------------------------------------------------------------------
+.vx_stat_box {
+    text-align: center;
+    padding: 2rem 1.5rem;
+
+    .vx_stat_number {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 3rem;
+        color: $vx-accent-hex;
+        line-height: 1;
+        margin-bottom: 0.5rem;
+    }
+
+    .vx_stat_label {
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.5);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 500;
+    }
+}
+
+.vx_stat_bar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 1.5rem 0;
+
+    &::before,
+    &::after {
+        display: none;
+    }
+
+    .vx_stat_box {
+        flex: 1 1 200px;
+        max-width: 280px;
+        border-right: 1px solid rgba(255, 255, 255, 0.08);
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Process Steps
+// ---------------------------------------------------------------------------
+.vx_process_steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    justify-content: center;
+    position: relative;
+
+    &::before,
+    &::after {
+        display: none;
+    }
+}
+
+.vx_process_step {
+    flex: 1 1 180px;
+    max-width: 220px;
+    text-align: center;
+    position: relative;
+    padding: 1.5rem 1rem;
+
+    .vx_process_step_number {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, $vx-accent-hex 0%, $vx-accent-dark-hex 100%);
+        color: $vx-white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.25rem;
+        box-shadow: 0 4px 20px rgba(46, 134, 222, 0.35);
+        position: relative;
+        z-index: 2;
+    }
+
+    .vx_process_step_title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 0.9375rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: $vx-primary-hex;
+        margin-bottom: 0.625rem;
+    }
+
+    .vx_process_step_desc {
+        font-size: 0.875rem;
+        color: #6B7280;
+        line-height: 1.6;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 47px;
+        right: -1rem;
+        width: calc(2rem);
+        height: 2px;
+        background: linear-gradient(90deg, $vx-accent-hex, transparent);
+    }
+
+    &:last-child::after {
+        display: none;
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Category Card
+// ---------------------------------------------------------------------------
+.vx_category_card {
+    background: $vx-white;
+    border: 1px solid #E8ECF1;
+    border-radius: 4px;
+    padding: 2.25rem 1.75rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, $vx-accent-hex, $vx-cyan-hex);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 0.3s ease;
+    }
+
+    &:hover {
+        box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08);
+        transform: translateY(-5px);
+
+        &::before {
+            transform: scaleX(1);
+        }
+
+        .vx_category_icon {
+            background: linear-gradient(135deg, $vx-accent-hex 0%, $vx-accent-dark-hex 100%);
+            color: $vx-white;
+            box-shadow: 0 4px 15px rgba(46, 134, 222, 0.3);
+        }
+    }
+
+    .vx_category_icon {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        background-color: rgba(46, 134, 222, 0.08);
+        color: $vx-accent-hex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.25rem;
+        font-size: 1.75rem;
+        transition: all 0.3s ease;
+    }
+
+    .vx_category_title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: $vx-primary-hex;
+        margin-bottom: 0.625rem;
+    }
+
+    .vx_category_desc {
+        font-size: 0.875rem;
+        color: #6B7280;
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Certification Badges
+// ---------------------------------------------------------------------------
+.vx_cert_badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+
+    &::before,
+    &::after {
+        display: none;
+    }
+}
+
+.vx_cert_badge_card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    padding: 1.75rem 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    min-width: 160px;
+
+    &:hover {
+        border-color: rgba(46, 134, 222, 0.4);
+        background: rgba(46, 134, 222, 0.06);
+        transform: translateY(-3px);
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Partner Section — dark section card styles
+// ---------------------------------------------------------------------------
+.vx_partner_feature {
+    padding: 1rem 1.25rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 4px;
+    border-left: 3px solid $vx-accent-hex;
+}
+
+.vx_icon_circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(46, 134, 222, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: $vx-accent-hex;
+}
+
+.vx_icon_circle_lg {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(46, 134, 222, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: $vx-accent-hex;
+}
+
+.vx_icon_circle_cert {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(46, 134, 222, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: $vx-accent-hex;
+}
+
+// Stats in dark sections
+.vx_stat_accent {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: $vx-accent-hex;
+}
+
+// ---------------------------------------------------------------------------
+// Contact Form
+// ---------------------------------------------------------------------------
+.vx_contact_form {
+    max-width: 100%;
+
+    .form-control,
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+        background-color: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 3px;
+        padding: 0.875rem 1rem;
+        font-size: 0.9375rem;
+        color: $vx-white;
+        transition: all 0.3s ease;
+        width: 100%;
+
+        &:focus {
+            border-color: $vx-accent-hex;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(46, 134, 222, 0.15);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.35);
+        }
+    }
+
+    label,
+    .col-form-label,
+    .s_website_form_label {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 0.8125rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 0.5rem;
+    }
+
+    textarea {
+        min-height: 140px;
+        resize: vertical;
+    }
+
+    select option {
+        background-color: $vx-primary-hex;
+        color: $vx-white;
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Feature List
+// ---------------------------------------------------------------------------
+.vx_feature_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .vx_feature_icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, rgba(46, 134, 222, 0.15) 0%, rgba(0, 212, 255, 0.08) 100%);
+        color: $vx-accent-hex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        font-size: 1.125rem;
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Tags
+// ---------------------------------------------------------------------------
+.vx_tag {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0.3rem 0.875rem;
+    border-radius: 2px;
+    background: linear-gradient(135deg, rgba(46, 134, 222, 0.08) 0%, rgba(0, 212, 255, 0.06) 100%);
+    color: $vx-accent-hex;
+    border: 1px solid rgba(46, 134, 222, 0.15);
+}
+
+// ---------------------------------------------------------------------------
+// Image block
+// ---------------------------------------------------------------------------
+.vx_image_block {
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Grid clearfix neutralization
+// ---------------------------------------------------------------------------
+.vx_process_steps,
+.vx_cert_badges,
+.vx_stat_bar,
+.vx_hero_actions,
+.vx_category_grid {
+    &::before,
+    &::after {
+        display: none;
+    }
+}
+
+.vx_category_grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+// ---------------------------------------------------------------------------
+// Geometric decorative elements
+// ---------------------------------------------------------------------------
+.vx_geo_corner {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 2px solid rgba(46, 134, 222, 0.15);
+    pointer-events: none;
+
+    &.vx_geo_tl {
+        top: 2rem;
+        left: 2rem;
+        border-right: none;
+        border-bottom: none;
+    }
+
+    &.vx_geo_br {
+        bottom: 2rem;
+        right: 2rem;
+        border-left: none;
+        border-top: none;
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Glow divider
+// ---------------------------------------------------------------------------
+.vx_glow_divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, $vx-accent-hex, transparent);
+    border: none;
+    margin: 0;
+    opacity: 0.3;
+}
+
+// ---------------------------------------------------------------------------
+// Info box (used in contact section)
+// ---------------------------------------------------------------------------
+.vx_info_box {
+    padding: 1rem 1.25rem;
+    background: rgba(46, 134, 222, 0.06);
+    border: 1px solid rgba(46, 134, 222, 0.15);
+    border-left: 3px solid $vx-accent-hex;
+    border-radius: 4px;
+}
+
+// Hidden form fields must stay hidden
+.s_website_form_dnone {
+    display: none !important;
+}
+
+// ---------------------------------------------------------------------------
+// Dark section text helpers
+// ---------------------------------------------------------------------------
+.vx_text_muted_dark {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.vx_text_body_dark {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.vx_text_subtle_dark {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+// Process step number circle
+.vx_step_number {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, $vx-accent-hex, $vx-accent-dark-hex);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0 auto 1.25rem;
+    box-shadow: 0 4px 20px rgba(46, 134, 222, 0.35);
+    position: relative;
+    z-index: 2;
+}
+
+// Step title on light bg
+.vx_step_title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: $vx-primary-hex;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 0.9rem;
+}
+
+// Cert card title on dark bg
+.vx_cert_title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: $vx-white;
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+}
+
+// Image card wrapper in dark sections
+.vx_image_card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+// Gradient text (hero accent word)
+.vx_gradient_text {
+    background: linear-gradient(90deg, $vx-accent-hex, $vx-cyan-hex);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+// About image accent corner
+.vx_accent_corner {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-right: 3px solid $vx-accent-hex;
+    border-bottom: 3px solid $vx-accent-hex;
+    z-index: -1;
+}
+
+// Experience badge
+.vx_experience_badge {
+    background: linear-gradient(135deg, $vx-accent-hex, $vx-accent-dark-hex);
+    padding: 1.25rem 1.5rem;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+// ---------------------------------------------------------------------------
+// Catalog section helpers
+// ---------------------------------------------------------------------------
+.vx_catalog_heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: $vx-white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 1rem;
+}
+
+.vx_catalog_desc {
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+}
+
+.vx_catalog_label {
+    color: $vx-accent-hex;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.vx_catalog_spec {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.vx_catalog_material_name {
+    color: $vx-white;
+    font-size: 0.85rem;
+}
+
+.vx_catalog_material_detail {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.85rem;
+}
+
+.vx_catalog_divider {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.vx_catalog_cta {
+    background: rgba(46, 134, 222, 0.06);
+    border: 1px solid rgba(46, 134, 222, 0.15);
+    border-radius: 4px;
+    padding: 2.5rem 2rem;
+}

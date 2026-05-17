@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_vx_china_partner" name="Ventorix China Partner">
+    <section class="s_vx_china_partner o_cc o_cc5 o_colored_level position-relative py-5 overflow-hidden">
+        <!-- Background image -->
+        <div class="position-absolute w-100 h-100"
+             style="top: 0; left: 0;
+                    background-image: url('/theme_ventorix/static/src/img/china-partner.jpg');
+                    background-size: cover; background-position: center;
+                    opacity: 0.1;"/>
+        <!-- Geometric corners -->
+        <div class="position-absolute d-none d-lg-block" style="top: 2rem; right: 2rem; width: 80px; height: 80px; border-right: 2px solid rgba(46,134,222,0.15); border-top: 2px solid rgba(46,134,222,0.15);"/>
+        <div class="position-absolute d-none d-lg-block" style="bottom: 2rem; left: 2rem; width: 80px; height: 80px; border-left: 2px solid rgba(46,134,222,0.15); border-bottom: 2px solid rgba(46,134,222,0.15);"/>
+
+        <div class="container position-relative py-5" style="z-index: 2;">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="vx_accent_line"/>
+                        <span class="vx_accent_label">
+                            Our Competitive Advantage
+                        </span>
+                    </div>
+                    <h2 class="vx_heading_light" style="font-size: 2.5rem;">
+                        Direct Partner<br/>
+                        <span style="color: #2E86DE;">in China</span>
+                    </h2>
+                    <p class="vx_text_body_dark" style="line-height: 1.8; margin-top: 1.5rem; font-size: 1.05rem;">
+                        Unlike typical trading companies, we have a dedicated business partner
+                        directly in China who owns and operates their own company.
+                    </p>
+
+                    <div class="mt-4">
+                        <div class="vx_partner_feature d-flex align-items-start gap-3 mb-4">
+                            <div class="vx_icon_circle">
+                                <i class="fa fa-shield" style="font-size: 0.9rem;"/>
+                            </div>
+                            <div>
+                                <strong style="font-size: 0.9rem;">Production Oversight</strong>
+                                <p class="vx_text_muted_dark mb-0" style="font-size: 0.8rem;">
+                                    Physical presence at manufacturing facilities
+                                </p>
+                            </div>
+                        </div>
+                        <div class="vx_partner_feature d-flex align-items-start gap-3 mb-4">
+                            <div class="vx_icon_circle">
+                                <i class="fa fa-search" style="font-size: 0.9rem;"/>
+                            </div>
+                            <div>
+                                <strong style="font-size: 0.9rem;">Quality Inspection</strong>
+                                <p class="vx_text_muted_dark mb-0" style="font-size: 0.8rem;">
+                                    Rigorous quality checks before every shipment
+                                </p>
+                            </div>
+                        </div>
+                        <div class="vx_partner_feature d-flex align-items-start gap-3 mb-4">
+                            <div class="vx_icon_circle">
+                                <i class="fa fa-archive" style="font-size: 0.9rem;"/>
+                            </div>
+                            <div>
+                                <strong style="font-size: 0.9rem;">Packaging Control</strong>
+                                <p class="vx_text_muted_dark mb-0" style="font-size: 0.8rem;">
+                                    Supervised packing for international transport
+                                </p>
+                            </div>
+                        </div>
+                        <div class="vx_partner_feature d-flex align-items-start gap-3">
+                            <div class="vx_icon_circle">
+                                <i class="fa fa-truck" style="font-size: 0.9rem;"/>
+                            </div>
+                            <div>
+                                <strong style="font-size: 0.9rem;">Shipment Coordination</strong>
+                                <p class="vx_text_muted_dark mb-0" style="font-size: 0.8rem;">
+                                    Direct logistics for optimal delivery
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="vx_image_card">
+                        <img src="/theme_ventorix/static/src/img/container-ship.jpg"
+                             class="img-fluid" alt="Global shipping"
+                             style="width: 100%; border-bottom: 1px solid rgba(255,255,255,0.08);"/>
+                        <div class="row g-0 text-center">
+                            <div class="col-4 py-4">
+                                <div class="vx_stat_accent" style="font-size: 2rem;">100%</div>
+                                <div class="vx_text_subtle_dark" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px;">Quality Verified</div>
+                            </div>
+                            <div class="col-4 py-4" style="border-left: 1px solid rgba(255,255,255,0.06); border-right: 1px solid rgba(255,255,255,0.06);">
+                                <div class="vx_stat_accent" style="font-size: 2rem;">Direct</div>
+                                <div class="vx_text_subtle_dark" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px;">Factory Access</div>
+                            </div>
+                            <div class="col-4 py-4">
+                                <div class="vx_stat_accent" style="font-size: 2rem;">Fast</div>
+                                <div class="vx_text_subtle_dark" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px;">Turnaround</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

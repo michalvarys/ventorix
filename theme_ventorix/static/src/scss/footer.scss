@@ -1,0 +1,220 @@
+// ============================================================================
+// Ventorix Global Trade — Footer Styles (Premium Dark)
+// Uses Odoo CSS custom properties from palette
+// ============================================================================
+
+$vx-white:           #FFFFFF;
+$vx-accent-hex:      #2E86DE;
+$vx-cyan-hex:        #00D4FF;
+$vx-primary-hex:     #0A1628;
+
+// ---------------------------------------------------------------------------
+// Main Footer
+// ---------------------------------------------------------------------------
+.vx-footer,
+#wrapwrap footer,
+#wrapwrap footer .o_footer {
+    background-color: $vx-primary-hex;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.vx-footer {
+    position: relative;
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    overflow: hidden;
+
+    a {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        transition: all 0.3s ease;
+
+        &:hover,
+        &:focus {
+            color: $vx-accent-hex;
+        }
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Footer glow divider at top
+// ---------------------------------------------------------------------------
+.vx-footer-glow {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, $vx-accent-hex, $vx-cyan-hex, $vx-accent-hex, transparent);
+    opacity: 0.35;
+}
+
+// ---------------------------------------------------------------------------
+// Footer Column Headings
+// ---------------------------------------------------------------------------
+.vx-footer-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $vx-white;
+    margin-bottom: 1.25rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background: linear-gradient(90deg, $vx-accent-hex, $vx-cyan-hex);
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Footer Links
+// ---------------------------------------------------------------------------
+.vx-footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        margin-bottom: 0.3rem;
+    }
+
+    a {
+        font-size: 0.875rem;
+        color: rgba(200, 215, 230, 0.75);
+        display: inline-flex;
+        align-items: center;
+        padding: 0.1rem 0;
+        position: relative;
+        transition: all 0.3s ease;
+
+        i.fa {
+            font-size: 0.65rem;
+            color: rgba(46, 134, 222, 0.6);
+            width: 1rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        &::before {
+            display: none;
+        }
+
+        &:hover,
+        &:focus {
+            color: $vx-white;
+
+            i.fa {
+                color: $vx-accent-hex;
+            }
+        }
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Footer Contact Items
+// ---------------------------------------------------------------------------
+.vx-footer-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.vx-footer-contact-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: rgba(46, 134, 222, 0.1);
+    color: $vx-accent-hex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 0.8rem;
+    border: 1px solid rgba(46, 134, 222, 0.15);
+}
+
+.vx-footer-contact-label {
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-bottom: 0.125rem;
+}
+
+// ---------------------------------------------------------------------------
+// Footer Cert Badges
+// ---------------------------------------------------------------------------
+.vx-cert-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 36px;
+    height: 28px;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    background: rgba(46, 134, 222, 0.1);
+    border: 1px solid rgba(46, 134, 222, 0.2);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: $vx-accent-hex;
+}
+
+// ---------------------------------------------------------------------------
+// Copyright Bar
+// ---------------------------------------------------------------------------
+.vx-copyright {
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 1.25rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.vx-copyright-text {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.35);
+    margin: 0;
+
+    a {
+        color: rgba(255, 255, 255, 0.45);
+
+        &:hover {
+            color: $vx-accent-hex;
+        }
+    }
+}
+
+.vx-copyright-links {
+    display: flex;
+    gap: 1.5rem;
+
+    &::before,
+    &::after {
+        display: none;
+    }
+
+    a {
+        font-size: 0.75rem;
+        color: rgba(255, 255, 255, 0.35);
+
+        &:hover {
+            color: $vx-accent-hex;
+        }
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Odoo overrides
+// ---------------------------------------------------------------------------
+#wrapwrap footer .o_footer_copyright {
+    background-color: rgba(0, 0, 0, 0.15);
+    color: rgba(255, 255, 255, 0.35);
+}

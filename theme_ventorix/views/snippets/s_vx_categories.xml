@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_vx_categories" name="Ventorix Product Categories">
+    <section class="s_vx_categories o_cc o_cc1 o_colored_level py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center gap-3 mb-3">
+                    <div class="vx_accent_line_left"/>
+                    <span class="vx_accent_label">
+                        Our Products
+                    </span>
+                    <div class="vx_accent_line_right"/>
+                </div>
+                <h2 class="vx_heading">
+                    What We Supply
+                </h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="vx_category_card h-100">
+                        <div class="vx_category_icon">
+                            <i class="fa fa-cog"/>
+                        </div>
+                        <h5 class="vx_category_title">Flanges</h5>
+                        <p class="vx_category_desc">
+                            Weld neck, slip-on, blind, socket weld, threaded and lap joint.
+                            DIN, ANSI/ASME, JIS. PN10-PN400.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="vx_category_card h-100">
+                        <div class="vx_category_icon">
+                            <i class="fa fa-industry"/>
+                        </div>
+                        <h5 class="vx_category_title">Pipes &amp; Tubes</h5>
+                        <p class="vx_category_desc">
+                            Seamless and welded steel pipes. Carbon, stainless, alloy steel.
+                            API 5L, ASTM A106, A53.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="vx_category_card h-100">
+                        <div class="vx_category_icon">
+                            <i class="fa fa-wrench"/>
+                        </div>
+                        <h5 class="vx_category_title">Fittings</h5>
+                        <p class="vx_category_desc">
+                            Elbows, tees, reducers, caps, couplings. Butt weld and socket weld.
+                            ASME B16.9, B16.11.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="vx_category_card h-100">
+                        <div class="vx_category_icon">
+                            <i class="fa fa-stop-circle"/>
+                        </div>
+                        <h5 class="vx_category_title">Valves</h5>
+                        <p class="vx_category_desc">
+                            Gate, globe, check, ball and butterfly valves.
+                            Class 150-2500. API 600, API 6D.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="vx_category_card h-100">
+                        <div class="vx_category_icon">
+                            <i class="fa fa-link"/>
+                        </div>
+                        <h5 class="vx_category_title">Pipeline Components</h5>
+                        <p class="vx_category_desc">
+                            Gaskets, bolts, studs, expansion joints, strainers.
+                            Complete pipeline assembly solutions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="vx_category_card h-100">
+                        <div class="vx_category_icon">
+                            <i class="fa fa-cubes"/>
+                        </div>
+                        <h5 class="vx_category_title">Industrial Materials</h5>
+                        <p class="vx_category_desc">
+                            Steel plates, bars, profiles, sheets.
+                            Carbon, stainless, duplex and special alloys.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="/products" class="btn vx_btn_primary px-5 py-3">
+                    View Full Catalog
+                </a>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Primary Variables -->
+    <record id="asset_primary_variables" model="theme.ir.asset">
+        <field name="key">theme_ventorix_primary_variables</field>
+        <field name="name">theme_ventorix primary_variables</field>
+        <field name="bundle">web._assets_primary_variables</field>
+        <field name="path">theme_ventorix/static/src/scss/primary_variables.scss</field>
+    </record>
+
+    <!-- Bootstrap Overrides -->
+    <record id="asset_bootstrap_overridden" model="theme.ir.asset">
+        <field name="key">theme_ventorix_bootstrap_overridden</field>
+        <field name="name">theme_ventorix bootstrap_overridden</field>
+        <field name="bundle">web._assets_frontend_helpers</field>
+        <field name="path">theme_ventorix/static/src/scss/bootstrap_overridden.scss</field>
+    </record>
+
+    <!-- Theme Stylesheet -->
+    <record id="asset_theme" model="theme.ir.asset">
+        <field name="key">theme_ventorix_theme</field>
+        <field name="name">theme_ventorix theme</field>
+        <field name="bundle">web.assets_frontend</field>
+        <field name="path">theme_ventorix/static/src/scss/theme.scss</field>
+        <field name="sequence">100</field>
+    </record>
+
+    <!-- Header Stylesheet -->
+    <record id="asset_header" model="theme.ir.asset">
+        <field name="key">theme_ventorix_header</field>
+        <field name="name">theme_ventorix header</field>
+        <field name="bundle">web.assets_frontend</field>
+        <field name="path">theme_ventorix/static/src/scss/header.scss</field>
+        <field name="sequence">110</field>
+    </record>
+
+    <!-- Footer Stylesheet -->
+    <record id="asset_footer" model="theme.ir.asset">
+        <field name="key">theme_ventorix_footer</field>
+        <field name="name">theme_ventorix footer</field>
+        <field name="bundle">web.assets_frontend</field>
+        <field name="path">theme_ventorix/static/src/scss/footer.scss</field>
+        <field name="sequence">120</field>
+    </record>
+
+    <!-- Responsive Stylesheet -->
+    <record id="asset_responsive" model="theme.ir.asset">
+        <field name="key">theme_ventorix_responsive</field>
+        <field name="name">theme_ventorix responsive</field>
+        <field name="bundle">web.assets_frontend</field>
+        <field name="path">theme_ventorix/static/src/scss/responsive.scss</field>
+        <field name="sequence">200</field>
+    </record>
+
+</odoo>

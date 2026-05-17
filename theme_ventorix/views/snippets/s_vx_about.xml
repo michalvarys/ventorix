@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_vx_about" name="Ventorix About Section">
+    <section class="s_vx_about o_cc o_cc5 o_colored_level py-5">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <img src="/theme_ventorix/static/src/img/factory.jpg"
+                             class="img-fluid" alt="Manufacturing facility"
+                             style="border-radius: 4px; border: 1px solid rgba(255,255,255,0.1);"/>
+                        <!-- Accent corner -->
+                        <div class="position-absolute vx_accent_corner"
+                             style="bottom: -8px; right: -8px;"/>
+                        <!-- Experience badge -->
+                        <div class="position-absolute d-none d-lg-block vx_experience_badge"
+                             style="bottom: 1.5rem; left: -1rem; padding: 1.25rem 1.5rem; border-radius: 4px; z-index: 2;">
+                            <div class="vx_heading_light" style="font-size: 1.5rem; line-height: 1;">
+                                100%
+                            </div>
+                            <div class="vx_text_muted_dark" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; margin-top: 0.25rem;">
+                                Quality Verified
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="vx_accent_line" style="width: 40px; height: 2px;"/>
+                        <span class="vx_accent_label" style="font-size: 0.8rem; letter-spacing: 3px; font-weight: 700; text-transform: uppercase;">
+                            About Ventorix
+                        </span>
+                    </div>
+                    <h2 class="vx_heading_light" style="font-size: 2.25rem; text-transform: uppercase; letter-spacing: 0.02em; line-height: 1.2; margin-bottom: 1.5rem;">
+                        Reliable Industrial<br/>Supply Since Day One
+                    </h2>
+                    <p class="vx_text_body_dark" style="line-height: 1.8; margin-bottom: 1.25rem;">
+                        Ventorix Global Trade specializes in high-quality piping materials,
+                        flanges, valves, and pipeline components for industrial projects worldwide.
+                        We bridge top-tier Chinese manufacturers and European industry.
+                    </p>
+                    <p class="vx_text_body_dark" style="line-height: 1.8; margin-bottom: 2.5rem;">
+                        With a dedicated partner directly in China overseeing production, quality control,
+                        packaging and shipment — we guarantee consistent quality and transparent process.
+                    </p>
+
+                    <div class="row g-4">
+                        <div class="col-6">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="vx_icon_circle">
+                                    <i class="fa fa-check" style="font-size: 0.9rem;"/>
+                                </div>
+                                <div>
+                                    <strong style="font-size: 0.9rem;">DIN/ANSI Standards</strong>
+                                    <p class="mb-0 vx_text_muted_dark" style="font-size: 0.8rem;">Full compliance</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="vx_icon_circle">
+                                    <i class="fa fa-check" style="font-size: 0.9rem;"/>
+                                </div>
+                                <div>
+                                    <strong style="font-size: 0.9rem;">Quality Control</strong>
+                                    <p class="mb-0 vx_text_muted_dark" style="font-size: 0.8rem;">On-site in China</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="vx_icon_circle">
+                                    <i class="fa fa-check" style="font-size: 0.9rem;"/>
+                                </div>
+                                <div>
+                                    <strong style="font-size: 0.9rem;">Fast Delivery</strong>
+                                    <p class="mb-0 vx_text_muted_dark" style="font-size: 0.8rem;">Direct logistics</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="vx_icon_circle">
+                                    <i class="fa fa-check" style="font-size: 0.9rem;"/>
+                                </div>
+                                <div>
+                                    <strong style="font-size: 0.9rem;">Competitive Pricing</strong>
+                                    <p class="mb-0 vx_text_muted_dark" style="font-size: 0.8rem;">Factory-direct</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="generate_primary_template" model="theme.ir.ui.view">
+        <field name="name">theme_ventorix.generate_primary_template</field>
+        <field name="key">theme_ventorix.generate_primary_template</field>
+        <field name="type">qweb</field>
+        <field name="arch" type="xml">
+            <t t-name="theme_ventorix.generate_primary_template">
+                <t t-set="palette" t-value="'ventorix-1'"/>
+            </t>
+        </field>
+    </record>
+</odoo>

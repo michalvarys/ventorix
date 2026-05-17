@@ -1,0 +1,115 @@
+// ============================================================================
+// Ventorix Global Trade — Primary Variables (Odoo 18 Palette)
+// Industrial B2B Theme: Flanges, Pipes, Valves, Fittings
+// ============================================================================
+
+// ---------------------------------------------------------------------------
+// Font Configurations
+// ---------------------------------------------------------------------------
+// Montserrat: headings — bold, uppercase industrial feel
+// Inter: body text — clean, highly legible for technical content
+$o-theme-font-configs: (
+    'Montserrat': (
+        'family': ('Montserrat', sans-serif),
+        'url': 'Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700',
+        'properties': (
+            'base': (
+                'font-size-base': 1rem,
+            ),
+        ),
+    ),
+    'Inter': (
+        'family': ('Inter', sans-serif),
+        'url': 'Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600',
+        'properties': (
+            'base': (
+                'font-size-base': 1rem,
+            ),
+        ),
+    ),
+) !default;
+
+// ---------------------------------------------------------------------------
+// Ventorix Palette #1 — Industrial Steel
+// ---------------------------------------------------------------------------
+// Color mapping:
+//   o-color-1: White          — primary background
+//   o-color-2: Dark charcoal  — primary text
+//   o-color-3: Light gray     — section alternate bg
+//   o-color-4: Accent blue    — CTAs, links, highlights
+//   o-color-5: Dark navy      — header, footer, dark sections
+// ---------------------------------------------------------------------------
+$o-website-values-palettes: (
+    'ventorix-1': (
+        // Core palette
+        'o-color-1': #FFFFFF,
+        'o-color-2': #333333,
+        'o-color-3': #F4F6F8,
+        'o-color-4': #2E86DE,
+        'o-color-5': #0A1628,
+
+        // Typography
+        'font':               'Inter',
+        'headings-font':      'Montserrat',
+        'font-size-base':     '1rem',
+        'headings-color':     'o-color-5',
+        'h1-font-size':       '2.75rem',
+        'h2-font-size':       '2.25rem',
+        'h3-font-size':       '1.75rem',
+        'h4-font-size':       '1.375rem',
+        'h5-font-size':       '1.125rem',
+        'h6-font-size':       '1rem',
+
+        // Buttons
+        'btn-primary-bg':       'o-color-4',
+        'btn-primary-color':    'o-color-1',
+        'btn-primary-border-color': 'o-color-4',
+        'btn-secondary-bg':     'transparent',
+        'btn-secondary-color':  'o-color-4',
+        'btn-secondary-border-color': 'o-color-4',
+        'btn-border-radius':    '2px',
+
+        // Links
+        'link-color':           'o-color-4',
+
+        // Header / Navbar
+        'menu':                 5,
+        'header-font-size':     '0.875rem',
+        'header-font':          'Montserrat',
+
+        // Footer
+        'footer':               5,
+        'copyright':            5,
+        'footer-font-size':     '0.875rem',
+
+        // Layout
+        'header-template':      'default',
+        'footer-template':      'default',
+
+        // Color combinations (CC) overrides
+        'o-cc1-bg':    'o-color-1',
+        'o-cc1-text':  'o-color-2',
+        'o-cc1-headings': 'o-color-5',
+        'o-cc1-btn-primary': 'o-color-4',
+
+        'o-cc2-bg':    'o-color-3',
+        'o-cc2-text':  'o-color-2',
+        'o-cc2-headings': 'o-color-5',
+        'o-cc2-btn-primary': 'o-color-4',
+
+        'o-cc3-bg':    'o-color-5',
+        'o-cc3-text':  'o-color-1',
+        'o-cc3-headings': 'o-color-1',
+        'o-cc3-btn-primary': 'o-color-4',
+
+        'o-cc4-bg':    'o-color-4',
+        'o-cc4-text':  'o-color-1',
+        'o-cc4-headings': 'o-color-1',
+        'o-cc4-btn-primary': 'o-color-5',
+
+        'o-cc5-bg':    'o-color-5',
+        'o-cc5-text':  'rgba(255, 255, 255, 0.85)',
+        'o-cc5-headings': 'o-color-1',
+        'o-cc5-btn-primary': 'o-color-4',
+    ),
+) !default;
