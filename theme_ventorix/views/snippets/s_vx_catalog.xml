@@ -10,7 +10,7 @@
                 <div class="row align-items-center g-4 mb-4">
                     <div class="col-lg-6">
                         <div class="vx_image_card">
-                            <img src="/theme_ventorix/static/src/img/products/flanges-types.jpg"
+                            <img src="/theme_ventorix/static/src/img/products/product-800x600.png"
                                  class="img-fluid w-100" alt="Flange types — weld neck, slip-on, blind, threaded, socket weld, lap joint, orifice, pressure vessel nozzles"/>
                         </div>
                     </div>
@@ -50,13 +50,13 @@
                 <div class="row g-3">
                     <div class="col-md-6">
                         <div class="vx_image_card">
-                            <img src="/theme_ventorix/static/src/img/products/flanges-photo.jpg"
+                            <img src="/theme_ventorix/static/src/img/products/product-800x600.png"
                                  class="img-fluid w-100" alt="Industrial flanges"/>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="vx_image_card">
-                            <img src="/theme_ventorix/static/src/img/products/steel-rods.jpg"
+                            <img src="/theme_ventorix/static/src/img/products/product-800x600.png"
                                  class="img-fluid w-100" alt="Steel round bars for flanges"/>
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                 <div class="row align-items-center g-4 mb-4">
                     <div class="col-lg-6 order-lg-2">
                         <div class="vx_image_card">
-                            <img src="/theme_ventorix/static/src/img/products/pipes-types.jpg"
+                            <img src="/theme_ventorix/static/src/img/products/product-800x600.png"
                                  class="img-fluid w-100" alt="Pipe types — seamless, welded, exhaust, square, rectangle, decorative tubes"/>
                         </div>
                     </div>
@@ -109,13 +109,13 @@
                 <div class="row g-3">
                     <div class="col-md-6">
                         <div class="vx_image_card">
-                            <img src="/theme_ventorix/static/src/img/products/pipes-stack.jpg"
+                            <img src="/theme_ventorix/static/src/img/products/product-800x600.png"
                                  class="img-fluid w-100" alt="Steel pipes stack"/>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="vx_image_card">
-                            <img src="/theme_ventorix/static/src/img/products/pipes-bundle.jpg"
+                            <img src="/theme_ventorix/static/src/img/products/product-800x600.png"
                                  class="img-fluid w-100" alt="Steel pipes bundle"/>
                         </div>
                     </div>
@@ -127,7 +127,7 @@
                 <div class="row align-items-center g-4 mb-4">
                     <div class="col-lg-6">
                         <div class="vx_image_card">
-                            <img src="/theme_ventorix/static/src/img/products/fittings-types.jpg"
+                            <img src="/theme_ventorix/static/src/img/products/product-800x600.png"
                                  class="img-fluid w-100" alt="Fitting types — butt-weld, socket-weld, screwed, flanged"/>
                         </div>
                     </div>
@@ -174,19 +174,19 @@
                 <div class="row g-3">
                     <div class="col-md-4">
                         <div class="vx_image_card">
-                            <img src="/theme_ventorix/static/src/img/products/fittings-elbows.jpg"
+                            <img src="/theme_ventorix/static/src/img/products/product-800x600.png"
                                  class="img-fluid w-100" alt="Stainless steel elbows"/>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="vx_image_card">
-                            <img src="/theme_ventorix/static/src/img/products/fittings-warehouse.jpg"
+                            <img src="/theme_ventorix/static/src/img/products/product-800x600.png"
                                  class="img-fluid w-100" alt="Large pipe fittings"/>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="vx_image_card">
-                            <img src="/theme_ventorix/static/src/img/products/fittings-reducers.jpg"
+                            <img src="/theme_ventorix/static/src/img/products/product-800x600.png"
                                  class="img-fluid w-100" alt="Pipe reducers and fittings"/>
                         </div>
                     </div>
@@ -198,7 +198,7 @@
                 <div class="row align-items-center g-4 mb-4">
                     <div class="col-lg-6 order-lg-2">
                         <div class="vx_image_card">
-                            <img src="/theme_ventorix/static/src/img/products/valves-grid.jpg"
+                            <img src="/theme_ventorix/static/src/img/products/product-800x600.png"
                                  class="img-fluid w-100" alt="Valve types — ball, butterfly, check, globe, gate, diaphragm, needle, plug, safety, solenoid"/>
                         </div>
                     </div>
@@ -241,13 +241,13 @@
                 <div class="row g-3">
                     <div class="col-md-6">
                         <div class="vx_image_card">
-                            <img src="/theme_ventorix/static/src/img/products/valve-ball.jpg"
+                            <img src="/theme_ventorix/static/src/img/products/product-800x600.png"
                                  class="img-fluid w-100" alt="Ball valve"/>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="vx_image_card">
-                            <img src="/theme_ventorix/static/src/img/products/steel-alloy-rods.jpg"
+                            <img src="/theme_ventorix/static/src/img/products/product-800x600.png"
                                  class="img-fluid w-100" alt="Alloy steel materials for valves"/>
                         </div>
                     </div>
@@ -259,7 +259,7 @@
                 <div class="row align-items-center g-4">
                     <div class="col-lg-6">
                         <div class="vx_image_card">
-                            <img src="/theme_ventorix/static/src/img/products/steel-bars.jpg"
+                            <img src="/theme_ventorix/static/src/img/products/product-800x600.png"
                                  class="img-fluid w-100" alt="Steel bars and round stock"/>
                         </div>
                     </div>

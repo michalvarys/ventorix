@@ -108,9 +108,8 @@
                         <div class="vx_rfq_form_wrapper">
                             <div class="container p-0">
                                 <form id="vx_rfq_form" action="#" method="post"
-                                      enctype="multipart/form-data"
-                                      class="o_mark_required" data-mark="*">
-                                    <div class="s_website_form_rows row s_col_no_bgcolor">
+                                      enctype="multipart/form-data">
+                                    <div class="row">
 
                                         <!-- ══════ SECTION 1: Contact Information ══════ -->
                                         <div class="col-12 mb-2">
@@ -121,45 +120,41 @@
                                         </div>
 
                                         <!-- Company Name -->
-                                        <div class="col-md-6 mb-3 s_website_form_field s_website_form_custom" data-type="char" data-name="Field">
-                                            <label class="s_website_form_label" style="width: 100%;" for="vxf1">
-                                                <span class="s_website_form_label_content">Company Name</span>
+                                        <div class="col-md-6 mb-3">
+                                            <label class="vx_form_label" style="width: 100%;" for="vxf1">
+                                                <span class="vx_form_label_content">Company Name</span>
                                             </label>
-                                            <input id="vxf1" type="text" class="form-control s_website_form_input"
-                                                   name="company" data-fill-with="commercial_company_name"
-                                                   placeholder="Your company name"/>
+                                            <input id="vxf1" type="text" class="form-control"
+                                                   name="company"                                                   placeholder="Your company name"/>
                                         </div>
 
                                         <!-- Contact Person -->
-                                        <div class="col-md-6 mb-3 s_website_form_field s_website_form_custom s_website_form_required" data-type="char" data-name="Field">
-                                            <label class="s_website_form_label" style="width: 100%;" for="vxf2">
-                                                <span class="s_website_form_label_content">Contact Person</span>
-                                                <span class="s_website_form_mark"> *</span>
+                                        <div class="col-md-6 mb-3">
+                                            <label class="vx_form_label" style="width: 100%;" for="vxf2">
+                                                <span class="vx_form_label_content">Contact Person</span>
+                                                <span class="vx_form_mark"> *</span>
                                             </label>
-                                            <input id="vxf2" type="text" class="form-control s_website_form_input"
-                                                   name="name" required="" data-fill-with="name"
-                                                   placeholder="Full name"/>
+                                            <input id="vxf2" type="text" class="form-control"
+                                                   name="name" required=""                                                   placeholder="Full name"/>
                                         </div>
 
                                         <!-- Email -->
-                                        <div class="col-md-6 mb-3 s_website_form_field s_website_form_required s_website_form_model_required" data-type="email" data-name="Field">
-                                            <label class="s_website_form_label" style="width: 100%;" for="vxf3">
-                                                <span class="s_website_form_label_content">Email</span>
-                                                <span class="s_website_form_mark"> *</span>
+                                        <div class="col-md-6 mb-3">
+                                            <label class="vx_form_label" style="width: 100%;" for="vxf3">
+                                                <span class="vx_form_label_content">Email</span>
+                                                <span class="vx_form_mark"> *</span>
                                             </label>
-                                            <input id="vxf3" type="email" class="form-control s_website_form_input"
-                                                   name="email_from" required="" data-fill-with="email"
-                                                   placeholder="email@company.com"/>
+                                            <input id="vxf3" type="email" class="form-control"
+                                                   name="email_from" required=""                                                   placeholder="email@company.com"/>
                                         </div>
 
                                         <!-- Phone -->
-                                        <div class="col-md-6 mb-3 s_website_form_field s_website_form_custom" data-type="char" data-name="Field">
-                                            <label class="s_website_form_label" style="width: 100%;" for="vxf4">
-                                                <span class="s_website_form_label_content">Phone</span>
+                                        <div class="col-md-6 mb-3">
+                                            <label class="vx_form_label" style="width: 100%;" for="vxf4">
+                                                <span class="vx_form_label_content">Phone</span>
                                             </label>
-                                            <input id="vxf4" type="tel" class="form-control s_website_form_input"
-                                                   name="phone" data-fill-with="phone"
-                                                   placeholder="+420 ..."/>
+                                            <input id="vxf4" type="tel" class="form-control"
+                                                   name="phone"                                                   placeholder="+420 ..."/>
                                         </div>
 
                                         <!-- ══════ SECTION 2: Product Specification ══════ -->
@@ -171,22 +166,22 @@
                                         </div>
 
                                         <!-- Subject -->
-                                        <div class="col-12 mb-3 s_website_form_field s_website_form_required s_website_form_model_required" data-type="char" data-name="Field">
-                                            <label class="s_website_form_label" style="width: 100%;" for="vxf5">
-                                                <span class="s_website_form_label_content">Subject / RFQ Title</span>
-                                                <span class="s_website_form_mark"> *</span>
+                                        <div class="col-12 mb-3">
+                                            <label class="vx_form_label" style="width: 100%;" for="vxf5">
+                                                <span class="vx_form_label_content">Subject / RFQ Title</span>
+                                                <span class="vx_form_mark"> *</span>
                                             </label>
-                                            <input id="vxf5" type="text" class="form-control s_website_form_input"
+                                            <input id="vxf5" type="text" class="form-control"
                                                    name="subject" required=""
                                                    placeholder="e.g. Flanges DN100 PN16, Carbon Steel A105"/>
                                         </div>
 
                                         <!-- Product Type -->
-                                        <div class="col-md-6 mb-3 s_website_form_field s_website_form_custom" data-type="selection" data-name="Field">
-                                            <label class="s_website_form_label" style="width: 100%;" for="vxf6">
-                                                <span class="s_website_form_label_content">Product Type</span>
+                                        <div class="col-md-6 mb-3">
+                                            <label class="vx_form_label" style="width: 100%;" for="vxf6">
+                                                <span class="vx_form_label_content">Product Type</span>
                                             </label>
-                                            <select id="vxf6" class="form-select s_website_form_input" name="Product Type">
+                                            <select id="vxf6" class="form-select" name="Product Type">
                                                 <option value="">Select product...</option>
                                                 <option value="Flanges">Flanges</option>
                                                 <option value="Pipes &amp; Tubes">Pipes &amp; Tubes</option>
@@ -201,11 +196,11 @@
                                         </div>
 
                                         <!-- Material Grade -->
-                                        <div class="col-md-6 mb-3 s_website_form_field s_website_form_custom" data-type="selection" data-name="Field">
-                                            <label class="s_website_form_label" style="width: 100%;" for="vxf7">
-                                                <span class="s_website_form_label_content">Material Grade</span>
+                                        <div class="col-md-6 mb-3">
+                                            <label class="vx_form_label" style="width: 100%;" for="vxf7">
+                                                <span class="vx_form_label_content">Material Grade</span>
                                             </label>
-                                            <select id="vxf7" class="form-select s_website_form_input" name="Material Grade">
+                                            <select id="vxf7" class="form-select" name="Material Grade">
                                                 <option value="">Select material...</option>
                                                 <option value="Carbon Steel (A105 / A234 WPB)">Carbon Steel (A105 / A234 WPB)</option>
                                                 <option value="Stainless 304/304L">Stainless Steel 304 / 304L</option>
@@ -219,11 +214,11 @@
                                         </div>
 
                                         <!-- Standard / Norm -->
-                                        <div class="col-md-4 mb-3 s_website_form_field s_website_form_custom" data-type="selection" data-name="Field">
-                                            <label class="s_website_form_label" style="width: 100%;" for="vxf8">
-                                                <span class="s_website_form_label_content">Standard / Norm</span>
+                                        <div class="col-md-4 mb-3">
+                                            <label class="vx_form_label" style="width: 100%;" for="vxf8">
+                                                <span class="vx_form_label_content">Standard / Norm</span>
                                             </label>
-                                            <select id="vxf8" class="form-select s_website_form_input" name="Standard">
+                                            <select id="vxf8" class="form-select" name="Standard">
                                                 <option value="">Select standard...</option>
                                                 <option value="ASME / ANSI">ASME / ANSI</option>
                                                 <option value="DIN / EN">DIN / EN</option>
@@ -236,20 +231,20 @@
                                         </div>
 
                                         <!-- Size / Dimensions -->
-                                        <div class="col-md-4 mb-3 s_website_form_field s_website_form_custom" data-type="char" data-name="Field">
-                                            <label class="s_website_form_label" style="width: 100%;" for="vxf9">
-                                                <span class="s_website_form_label_content">Size / Dimensions</span>
+                                        <div class="col-md-4 mb-3">
+                                            <label class="vx_form_label" style="width: 100%;" for="vxf9">
+                                                <span class="vx_form_label_content">Size / Dimensions</span>
                                             </label>
-                                            <input id="vxf9" type="text" class="form-control s_website_form_input"
+                                            <input id="vxf9" type="text" class="form-control"
                                                    name="Size" placeholder="e.g. DN100 / 4&quot; NPS / 114.3mm"/>
                                         </div>
 
                                         <!-- Pressure Class -->
-                                        <div class="col-md-4 mb-3 s_website_form_field s_website_form_custom" data-type="selection" data-name="Field">
-                                            <label class="s_website_form_label" style="width: 100%;" for="vxf10">
-                                                <span class="s_website_form_label_content">Pressure Class</span>
+                                        <div class="col-md-4 mb-3">
+                                            <label class="vx_form_label" style="width: 100%;" for="vxf10">
+                                                <span class="vx_form_label_content">Pressure Class</span>
                                             </label>
-                                            <select id="vxf10" class="form-select s_website_form_input" name="Pressure Class">
+                                            <select id="vxf10" class="form-select" name="Pressure Class">
                                                 <option value="">Select class...</option>
                                                 <option value="PN10">PN10</option>
                                                 <option value="PN16">PN16</option>
@@ -274,29 +269,29 @@
                                         </div>
 
                                         <!-- Quantity -->
-                                        <div class="col-md-4 mb-3 s_website_form_field s_website_form_custom" data-type="char" data-name="Field">
-                                            <label class="s_website_form_label" style="width: 100%;" for="vxf11">
-                                                <span class="s_website_form_label_content">Quantity</span>
+                                        <div class="col-md-4 mb-3">
+                                            <label class="vx_form_label" style="width: 100%;" for="vxf11">
+                                                <span class="vx_form_label_content">Quantity</span>
                                             </label>
-                                            <input id="vxf11" type="text" class="form-control s_website_form_input"
+                                            <input id="vxf11" type="text" class="form-control"
                                                    name="Quantity" placeholder="e.g. 50 pcs / 200 meters"/>
                                         </div>
 
                                         <!-- Delivery Country -->
-                                        <div class="col-md-4 mb-3 s_website_form_field s_website_form_custom" data-type="char" data-name="Field">
-                                            <label class="s_website_form_label" style="width: 100%;" for="vxf12">
-                                                <span class="s_website_form_label_content">Delivery Country</span>
+                                        <div class="col-md-4 mb-3">
+                                            <label class="vx_form_label" style="width: 100%;" for="vxf12">
+                                                <span class="vx_form_label_content">Delivery Country</span>
                                             </label>
-                                            <input id="vxf12" type="text" class="form-control s_website_form_input"
+                                            <input id="vxf12" type="text" class="form-control"
                                                    name="Delivery Country" placeholder="e.g. Germany, Czech Republic"/>
                                         </div>
 
                                         <!-- Desired Delivery Date -->
-                                        <div class="col-md-4 mb-3 s_website_form_field s_website_form_custom" data-type="char" data-name="Field">
-                                            <label class="s_website_form_label" style="width: 100%;" for="vxf13">
-                                                <span class="s_website_form_label_content">Desired Delivery</span>
+                                        <div class="col-md-4 mb-3">
+                                            <label class="vx_form_label" style="width: 100%;" for="vxf13">
+                                                <span class="vx_form_label_content">Desired Delivery</span>
                                             </label>
-                                            <input id="vxf13" type="text" class="form-control s_website_form_input"
+                                            <input id="vxf13" type="text" class="form-control"
                                                    name="Delivery Date" placeholder="e.g. Q3 2026 / ASAP / 8 weeks"/>
                                         </div>
 
@@ -309,22 +304,22 @@
                                         </div>
 
                                         <!-- Technical Requirements -->
-                                        <div class="col-12 mb-3 s_website_form_field s_website_form_custom" data-type="text" data-name="Field">
-                                            <label class="s_website_form_label" style="width: 100%;" for="vxf14">
-                                                <span class="s_website_form_label_content">Technical Requirements</span>
+                                        <div class="col-12 mb-3">
+                                            <label class="vx_form_label" style="width: 100%;" for="vxf14">
+                                                <span class="vx_form_label_content">Technical Requirements</span>
                                             </label>
-                                            <textarea id="vxf14" class="form-control s_website_form_input"
+                                            <textarea id="vxf14" class="form-control"
                                                       name="description" rows="5"
                                                       placeholder="Additional specifications, surface finish, coating, testing requirements (HIC/NACE/PMI), documentation needs (MTC 3.1/3.2), special packaging, etc."/>
                                         </div>
 
                                         <!-- File Upload -->
-                                        <div class="col-12 mb-3 s_website_form_field s_website_form_custom" data-type="binary" data-name="Field">
-                                            <label class="s_website_form_label" style="width: 100%;" for="vxf15">
-                                                <span class="s_website_form_label_content">Attach Specification / Drawing</span>
+                                        <div class="col-12 mb-3">
+                                            <label class="vx_form_label" style="width: 100%;" for="vxf15">
+                                                <span class="vx_form_label_content">Attach Specification / Drawing</span>
                                             </label>
                                             <div class="vx_rfq_upload_zone">
-                                                <input id="vxf15" type="file" class="form-control s_website_form_input"
+                                                <input id="vxf15" type="file" class="form-control"
                                                        name="Specification File"
                                                        accept=".pdf,.xls,.xlsx,.doc,.docx,.dwg,.dxf,.jpg,.png"/>
                                                 <div class="vx_rfq_upload_hint">
@@ -340,7 +335,7 @@
                                                style="font-size: 0.95rem;">
                                                 <i class="fa fa-paper-plane me-2"/>Submit RFQ
                                             </a>
-                                            <span id="s_website_form_result"/>
+                                            <span id="vx_rfq_result"/>
                                         </div>
 
                                     </div>
@@ -367,7 +362,7 @@
                         var form = document.getElementById('vx_rfq_form');
                         if (!form) return;
 
-                        var resultEl = document.getElementById('s_website_form_result');
+                        var resultEl = document.getElementById('vx_rfq_result');
                         var valid = true;
                         form.querySelectorAll('[required]').forEach(function(input) {
                             if (!input.value.trim()) { input.classList.add('is-invalid'); valid = false; }

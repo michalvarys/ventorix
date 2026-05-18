@@ -670,7 +670,7 @@ $vx-muted-text:       #6B7280;
 
     label,
     .col-form-label,
-    .s_website_form_label {
+    .vx_form_label {
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         font-size: 0.8125rem;
@@ -938,7 +938,7 @@ $vx-muted-text:       #6B7280;
 }
 
 // Hidden form fields must stay hidden
-.s_website_form_dnone {
+.vx_form_dnone {
     display: none !important;
 }
 
